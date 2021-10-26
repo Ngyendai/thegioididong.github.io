@@ -1,0 +1,1901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <!-- Glidejs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css">
+    <!--Carousel-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <!-- Optional Theme Stylesheet -->
+    <link rel="stylesheet" href="Style.css" />
+    <title>Thế giới di động</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--slider top-->
+        <div class="container_slider" id="glide_1">
+            <div class="container_slider-box">
+                <div class="container_slider_box-img">
+                    <img src="../images/slider1.png" style="width: 100%; height: 100%" class="images" />
+                    <img src="../images/slider2.png" style="width: 100%; height: 100%" class="images" />
+                    <img src="../images/slider3.png" style="width: 100%; height: 100%" class="images" />
+                </div>
+                <!-- slider controls -->
+                <div class="container_slider_box-icons">
+                    <i class="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></i>
+
+                    <i class="next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></i>
+                </div>
+            </div>
+        </div>
+        <!--end Slider top-->
+
+        <!--Header-->
+        <header>
+            <div class="container_header">
+                <div class="container_header-logo">
+                    <a href="../FE/index.html">
+                        <img src="../images/logo.jpg" class="container_header_logo-img" />
+                    </a>
+                </div>
+                <div class="container_header-center flex">
+                    <div class="container_header_center-text" id="login-btn">
+                        <p>Xem giá, khuyến mãi tại</p>
+                        <p>Hồ Chí Minh<i class="fas fa-caret-down down"></i></p>
+                    </div>
+                    <div class="container_header_center-search">
+                        <input type="text" placeholder="Bạn tìm gì" name="" id="" />
+                        <i class="fas fa-search search"></i>
+                    </div>
+                    <div class="container_header_center-cart flex">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>Gio hàng</p>
+                    </div>
+                    <div class="container_header_center-order">
+                        <p>Lịch sử đơn hàng</p>
+                    </div>
+                </div>
+                <div class="container_header-right flex">
+                    <div class="pluse">
+                        <i class="fas fa-circle" style="font-size: 20px"></i>
+                    </div>
+                    <div class="container_header_right-text">
+                        <a href="">
+                            Mobifore trả sau đến hạn thanh toán. Mua thẻ nạp ngay</a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">24h<br />Công nghệ</a>
+                        </li>
+                        <li>
+                            <a href="">Hỏi đáp</a>
+                        </li>
+                        <li>
+                            <a href="">Game App</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!--end Header-->
+
+        <!-- information form  -->
+        <div class="login-form-container">
+            <div id="close-login-btn">
+                <i class="fas fa-times"></i>
+                <p>Đóng</p>
+            </div>
+            <form action="">
+                <h5>Chọn địa chỉ, nhận hàng</h5>
+                <div class="form-des">
+                    <span><b>Chọn đầy đủ địa chỉ nhận hàng</b> để biết chính xác thời gian giao</span>
+                    <select class="section">
+                        <option value="nam">Bình Định</option>
+                        <option value="nu">Hồ Chí Minh</option>
+                    </select>
+                    <select class="section">
+                        <option value="nam">Vui lòng chọn Quận/Huyện</option>
+                        <option value="nu">TP.Quy Nhơn</option>
+                        <option value="nu">Huyện Hoài A</option>
+                        <option value="nu">Huyện Phù Cát</option>
+                        <option value="nu">Huyện Vĩnh Thạnh</option>
+                    </select>
+                    <select class="section">
+                        <option value="nam">Vui lòng chọn Phường/Xã</option>
+                        <option value="nu">Xã Cát Chánh</option>
+                        <option value="nu">Xã Cát Hải</option>
+                        <option value="nu">Xã Cát Sơn</option>
+                        <option value="nu">Xã Cát Tài</option>
+                        <option value="nu">Xã Cát Tường</option>
+                    </select>
+                    <input type="text" class="section" placeholder="Số nhà, tên đường (không bắt buộc)" />
+                    <button>XÁC NHẬN</button>
+                </div>
+
+            </form>
+        </div>
+        <!-- end information form  -->
+
+        <!--nav-->
+        <nav class="nav">
+            <ul class="nav_menu">
+                <div class="top">
+                    <label for="" class="btn close-btn"><i class="fas fa-times"></i></label>
+                </div>
+                <li>
+                    <a href="dienthoai.html" class="active"><i class="fas fa-mobile-alt"></i>Điện thoại</a>
+                </li>
+                <li>
+                    <a href="Laptop.html"><i class="fas fa-laptop"></i>Laptop</a>
+                </li>
+                <li>
+                    <a href="tablet.html"><i class="fas fa-tablet-alt"></i>Tablet</a>
+                </li>
+                <li>
+                    <a href="phukien.html"><i class="fas fa-headphones-alt"></i>Phụ kiện<i
+                            class="fas fa-caret-down"></i></a>
+                    <div class="mega_menu">
+                        <div class="mega_rows">
+                            <div class="mega_column">
+                                <div class="mega_column-title">PHỤ KIỆN DI ĐỘNG</div>
+                                <ul>
+                                    <li>
+                                        <a href="phukien.html">Pin sạc dự phòng</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Sạc, cáp</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Miếng dán màn hình</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Ốp lưng điện thoại</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Ốp lưng máy tính bảng</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div class="mega_column">
+                                <div class="mega_column-title">PHỤ KIỆN LAPTOP</div>
+                                <ul>
+                                    <li>
+                                        <a href="phukien.html">Chuột, bàn phím</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Thiết bị mạng</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Camera, Webcam</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Balo, túi chống sốc</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Phần mềm</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mega_column mega_column-width">
+                                <div class="mega_column-title">THƯƠNG HIỆU HÀNG ĐẦU<a href="" style="color:#288ad6">Xem
+                                        tất cả<i class="fas fa-caret-right"
+                                            style="margin-left:-1px;color:#288ad6"></i></a></div>
+                                <ul>
+                                    <li>
+                                        <a href="phukien.html">Apple</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Samsung</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Sony</a>
+                                    </li>
+                                    <li><a href="phukien.html">Anker</a></li>
+
+                                </ul>
+                            </div>
+                            <div class="mega_column mega_column-width">
+
+                                <ul>
+                                    <li>
+                                        <a href="phukien.html">Gậy tự sướng</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Gía đỡ laptop, điện thoại</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Đế, móc điện thoại</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Túi chống nước</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Túi đựng Airpods</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Phụ kiện Apad</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mega_column">
+                                <div class="mega_column-title">THIẾT BỊ ÂM THANH</a>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="phukien.html">Tai nghe</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Loa</a>
+                                    </li>
+                                    <div class="mega_column-title ">THIẾT BỊ ÂM THANH</a>
+                                    </div>
+                                    <li>
+                                        <a href="phukien.html">Thẻ nhớ</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">USB</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Ổ cứng di động</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mega_column mega_column-width">
+                                <div class="mega_column-title">PHỤ KIỆN KHÁC</div>
+                                <ul>
+                                    <li>
+                                        <a href="phukien.html">Thiết bị thông minh</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Phụ kiện ô tô</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Máy tính cầm tay</a>
+                                    </li>
+                                    <li><a href="phukien.html">May chiếu, TV Box</a></li>
+                                    <li>
+                                        <a href="phukien.html">Quạt mini</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Pin tiểu, pin điện thoại</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                </li>
+                <li>
+                    <a href="donghotm.html"><i class="fas fa-clock"></i>Đồng hồ thông minh</a>
+                </li>
+                <li>
+                    <a href="donghott.html"><i class="fas fa-clock"></i>Đồng hồ thời trang</a>
+                </li>
+                <li>
+                    <a href="mayin.html"><i class="fas fa-desktop"></i>PC, Máy in<i class="fas fa-caret-down"></i></a>
+
+                    <ul class="dropdown_menu">
+                        <li>
+                            <a href="mayin.html">Máy in</a>
+                        </li>
+                        <li>
+                            <a href="mayin.html">Mực in</a>
+                        </li>
+                        <li>
+                            <a href="mayin.html">Màn hình máy tính</a>
+                        </li>
+                        <li>
+                            <a href="mayin.html">Máy tính để bàn</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="maycu.html">Máy cũ giá rẻ</a>
+                </li>
+                <li>
+                    <a href="sim.html">Sim, Thẻ cào</a>
+                </li>
+                <li>
+                    <a href="tragop.html">Trả góp tiền điện</a>
+                </li>
+            </ul>
+            <label for="" class="btn open-btn"><i class="fas fa-bars" style="color: white;"></i></label>
+        </nav>
+        <!--end nav-->
+
+        <!--main-->
+        <div class="container_detial-products">
+            <div class="container_detial_products-header">
+                <div class="container_detial_products_header-title">
+                    <p>
+                        <a href="">Điện thoại</a> <i class="fas fa-angle-right"></i>
+                        <a href="">Điện thoại OPPO</a>
+                    </p>
+                </div>
+                <div class="container_detial_products_header-text d_flex">
+                    <div class="products_header_text-left">
+                        <h2>Điện thoại OPPO Reno5 5G</h2>
+                        <div class="products_header_text_left-star d_flex">
+                            <i class="fas fa-star color"></i>
+                            <i class="fas fa-star color"></i>
+                            <i class="fas fa-star color"></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star"></i>
+                            <span id="mx"><a href="">60 đánh giá</a></span>
+                            <span class="hidden"><a href="">So sánh</a></span>
+                        </div>
+                    </div>
+                    <div class="products_header_text-right">
+                        <button><a href=""><i class="fas fa-thumbs-up"></i>Thích 1.3k</a></button>
+                        <button><a href="">Chia sẻ</a></button>
+                    </div>
+                </div>
+            </div>
+            <hr style=" background-color: #E0E0E0;margin-bottom:1%">
+            <div class="container_detial_product">
+                <div class="container_detial_product-left">
+                    <div class="detial_product_left-silder">
+                        <img src="images/slider1.jpg" />
+                    </div>
+                    <div class="detial_product_left-items d_flex">
+                        <div class="detial_product_left-item">
+                            <i class="fas fa-medal acitve"></i>
+                            <p id="infoPro2">
+                                Điểm nổi bật
+                            </p>
+                        </div>
+                        <div class="detial_product_left-item">
+                            <img src="images/img1.jpg" />
+                            <p id="infoPro3">
+                                Bạc
+                            </p>
+                        </div>
+                        <div class="detial_product_left-item">
+                            <img src="images/img2.jpg" />
+                            <p id="infoPro4">
+                                Đen
+                            </p>
+                        </div>
+                        <div class="detial_product_left-item">
+                            <i class="fas fa-box-open"></i>
+                            <p id="infoPro5">
+                                Hình mở hộp
+                            </p>
+                        </div>
+                        <div class="detial_product_left-item">
+                            <i class="far fa-circle"></i>
+                            <p id="infoPro6">
+                                Hình 360 độ
+                            </p>
+                        </div>
+                        <div class="detial_product_left-item">
+                            <i class="fas fa-th-large"></i>
+                            <p id="infoPro7">
+                                Thông số kỹ thuật
+                            </p>
+                        </div>
+                        <div class="detial_product_left-item">
+                            <i class="far fa-edit"></i>
+                            <p id="infoPro8">
+                                Bài viết đánh giá
+                            </p>
+                        </div>
+                    </div>
+                    <div class="detial_product_left-contents">
+                        <div class="detial_product_left-content">
+
+                            <p>Hư gì đổi nấy <b>12 tháng</b> tại 2734 siêu thị toàn quốc (miễn phí tháng đầu) <a
+                                    href="">Xem chi tiết</a></p>
+                        </div>
+                        <div class="detial_product_left-content">
+
+                            <p>Bảo hành
+                                <b>chính hãng điện thoại 1 năm</b>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="detial_product_left-description">
+                        <div class="detial_product_left_description-text">
+                            <p>
+                                Bộ sản phẩm gồm: Hộp, Sách hướng dẫn, Cây lấy sim, Ốp lưng, Cáp Type C, Củ sạc nhanh rời
+                                đầu Type A, Tai nghe dây
+                                <a href="">Xem thêm</a>
+                            </p>
+                        </div>
+                        <img src="images/img3.jpg" />
+                        <h2>Bài viết đánh giá</h2><br>
+                        <p> Sau khi ra mắt <span>OPPO Reno5</span> chưa lâu thì <span>OPPO</span> lại cho ra mẫu
+                            <span>smartphone</span> mới mang tên <span>OPPO Reno6</span> với hàng loạt cải tiến mới về
+                            ngoại hình bên ngoài lẫn hiệu năng bên trong, mang
+                            đến trải nghiệm vượt bật cho người dùng.
+                        </p>
+                        <div class="detial_product_left_description-text1">
+                            <h2>Chip Dimensity 900 5G hiệu năng ổn định</h2>
+                            <p>OPPO Reno6 được trang bị vi xử lý MediaTek Dimensity 900 đáp ứng mọi nhu cầu giải trí
+                                hàng ngày, có thể chơi tất cả các game phổ biến hiện nay, tạo ấn tượng rất mạnh mẽ cho
+                                người dùng trải nghiệm mượt mà với cấu hình ổn định.</p>
+                        </div>
+
+                        <img src="images/img4.jpg" />
+                        <button id="infoPro1">Xem thêm<i class="fas fa-caret-right"></i></button>
+                    </div>
+                    <div class="detial_product_left-reviews">
+                        <h2>Đánh giá Điện thoại OPPO Reno6 5G</h2>
+                        <div class="detial_product_left_review">
+                            <div class="detial_product_left_review d_flex">
+                                <div class="detial_product_left_reviews">
+                                    <div class="detial_product_left_review-stars d_flex">
+                                        <div class="detial_product_left_review-star">
+                                            <p>3.8</p>
+                                        </div>
+                                        <div class="products_header_text_left-star d_flex">
+                                            <i class="fas fa-star color"></i>
+                                            <i class="fas fa-star color"></i>
+                                            <i class="fas fa-star color"></i>
+                                            <i class="fas fa-star "></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="detial_product_left_review-text">
+                                            <p>
+                                                75 đánh giá
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="detial_product_left-reviews-des">
+                                        <div class="detial_product_left-review-des ">
+                                            <p>5</p>
+                                            <i class="fas fa-star" style="color: #000;"></i>
+                                            <div class="line html"></div>
+                                            <p> <a href="" style="color: #3f77f3;">61%</a> </p>
+                                        </div>
+                                        <div class="detial_product_left-review-des ">
+                                            <p>4</p>
+                                            <i class="fas fa-star" style="color: #000;"></i>
+                                            <div class="line html1"></div>
+                                            <p> <a href="" style="color: #3f77f3;">21%</a> </p>
+                                        </div>
+                                        <div class="detial_product_left-review-des ">
+                                            <p>3</p>
+                                            <i class="fas fa-star" style="color: #000;"></i>
+                                            <div class="line html2"></div>
+                                            <p> <a href="" style="color: #3f77f3;">14%</a> </p>
+                                        </div>
+                                        <div class="detial_product_left-review-des ">
+                                            <p>2</p>
+                                            <i class="fas fa-star" style="color: #000;"></i>
+                                            <div class="line html3"></div>
+                                            <p> <a href="" style="color: #3f77f3;">4%</a> </p>
+                                        </div>
+                                        <div class="detial_product_left-review-des ">
+                                            <p>1</p>
+                                            <i class="fas fa-star" style="color: #000;"></i>
+                                            <div class="line html4"></div>
+                                            <p> <a href="">0%</a> </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="detial_product_left_review-img d_flex">
+                                    <img src="images/img5.jpg" />
+                                    <img src="images/img6.jpg" />
+                                    <img src="images/img7.jpg" />
+                                    <img src="images/img8.jpeg" />
+                                    <img src="images/img9.jpeg" />
+                                    <img src="images/img10.jpg" />
+                                </div>
+                            </div>
+                            <div class="detial_product_left_review-texts">
+                                <div class="detial_product_left_review-text">
+                                    <p>lương văn công <span>Đã mua tại TGDĐ</span></p>
+                                    <div class="products_header_text_left-star d_flex width">
+                                        <i class="fas fa-star color"></i>
+                                        <i class="fas fa-star color"></i>
+                                        <i class="fas fa-star color"></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <P class="detial_product_left_review-des">Mình mới mua đt reno6 5g dùng đc 1 tháng
+                                        mà bay h đt đã bị bong tróc mặt sau liệu mình có đc bảo hành sản phẩm k ạ </P>
+                                    <div class="detial_product_left_review_text-content">
+                                        <a><i class="fas fa-thumbs-up"></i>Hữu ích</a>
+                                        <a><i class="fas fa-comments"></i>1 thảo luận</a>
+                                        <a><i class="fas fa-question-circle"></i>Đã dùng khoản 1 tháng</a>
+                                    </div>
+                                </div>
+                                <hr style="background-color: #F1F1F1;">
+                                <div class="detial_product_left_review-text">
+                                    <p>hà thủy thị chung <span>Đã mua tại TGDĐ</span></p>
+                                    <div class="products_header_text_left-star d_flex width">
+                                        <i class="fas fa-star color"></i>
+                                        <i class="fas fa-star color"></i>
+                                        <i class="fas fa-star color"></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <P class="detial_product_left_review-des">Mình mới mua đt reno6 5g dùng đc 1 tháng
+                                        mà bay h đt đã bị bong tróc mặt sau liệu mình có đc bảo hành sản phẩm k ạ </P>
+                                    <div class="detial_product_left_review_text-content">
+                                        <a><i class="fas fa-thumbs-up"></i>Hữu ích</a>
+                                        <a><i class="fas fa-comments"></i>1 thảo luận</a>
+                                        <a><i class="fas fa-question-circle"></i>Đã dùng khoản 1 tháng</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detial_product_left_review-btn">
+                            <button><a href="">Xem tất cả đánh giá</a></button>
+                            <button><a href="">Viết đánh giá</a></button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="container_detial_product-right">
+                    <div class="detial_product_right_box-top">
+                        <div class="box_top-title">
+                            <button><a href="">Reno 6</a></button>
+                            <button><a href="">Reno6 Z</a></button>
+                        </div>
+                        <div class="box_top-color">
+                            <button><a href="">Bạc</a></button>
+                            <button><a href="">Đen</a></button>
+                        </div>
+                        <p>Gía tại
+                            <a href="">Hồ Chí Minh</a>
+                        </p>
+                        <p class="color_red">12.999.000<span>Trả góp 0%</span></p>
+                        <div class="box_top-text">
+                            <div class="box_top-text-top">
+                                <p><b>Khuyến mãi trị giá 600.000₫</b></p>
+                                <p class="font_size">Giá và khuyến mãi dự kiến áp dụng đến 23:00 09/10</p>
+                            </div>
+                            <div class="box_top-text-bottoms">
+                                <div class="box_top-text-bottom">
+                                    <div class="cricle">1</div>
+                                    <p>Tặng Phiếu mua hàng Gia dụng trị giá 300,000đ (Khuyến mãi chỉ chỉ áp dụng cho
+                                        Thành phố Hồ Chí Minh, Đà Nẵng, Đồng Nai, Phú Yên) </p>
+                                </div>
+                                <div class="box_top-text-bottom">
+                                    <div class="cricle ">2</div>
+                                    <p>Loa Bluetooth Tekin (Hết quà hoàn tiền 300.000₫)</p>
+                                </div>
+                                <div class="box_top-text-bottom">
+                                    <div class="cricle">3</div>
+                                    <p>Nhập mã DMX100 giảm 3% tối đa 100.000đ khi thanh toán quét QRcode qua App của
+                                        ngân hàng <a href="">xem chi tiết)</a> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box_top-infomation-stocking">
+                            <p class="color">CÒN HÀNG</p>
+                            <p class="margin">
+                                <a href=""><i class="fas fa-map-marker-alt"></i>Chọn địa điểm nhận hàng</a><span>để biết
+                                    thời gian giao</span>
+                            </p>
+                            <p><a href=""><i class="fas fa-store"></i>Xem siêu thị có hàng</a></p>
+                        </div>
+
+                    </div>
+                    <hr style="margin:2% 0; background-color: #E0E0E0;">
+                    <div class="detial_product_right_box-center">
+                        <p>Ưu đãi khi thanh toán</p>
+
+                        <div class="right_box_center-cart">
+                            <div class="right_box_center-cart-left">
+                                <img src="images/bank.png" />
+                                <p>Giảm <b>200.000₫</b></p>
+                                <span> Sản phẩm từ 1Tr</span>
+                            </div>
+                            <div class="right_box_center-cart-right">
+                                <a href="">Mua ngay</a>
+                            </div>
+                        </div>
+                        <div class="right_box_center-bank"><button><a href=""> Mua ngay</a></button></div>
+                        <div class="right_box_center-btn">
+                            <button><a href="">MUA TRẢ GÓP 0% Duyệt hồ sơ trong 5 phút</a></button>
+                            <button><a href="">TRẢ GÓP QUA THẺ Visa, Mastercard, JCB, Amex</a></button>
+                        </div>
+                        <div class="right_box_center-hot">
+                            <p>Gọi đặt mua <span><a href=""> 1800.1060</a></span> (7:30 - 22:00)</p>
+                        </div>
+                    </div>
+
+                    <div class="detial_product_right_box-bottom">
+                        <h2>Cấu hình Điện thoại OPPO Reno6 5G</h2>
+                        <div class="right_box_bottom-infomation_prouducts">
+                            <div class="right_box_bottom-infomation_prouduct bg_gray">
+                                <p>Màn hình:</p>
+                                <p>AMOLED6.43"Full HD+</p>
+                            </div>
+                            <div class="right_box_bottom-infomation_prouduct">
+                                <p>Hệ điều hành:</p>
+                                <p>Android 11</p>
+                            </div>
+                            <div class="right_box_bottom-infomation_prouduct bg_gray">
+                                <p>Camera sau:</p>
+                                <p> Chính 64 MP & Phụ 8 MP, 2 MP</p>
+                            </div>
+                            <div class="right_box_bottom-infomation_prouduct">
+                                <p>Camera trước:</p>
+                                <p>32 MP</p>
+                            </div>
+                            <div class="right_box_bottom-infomation_prouduct bg_gray">
+                                <p>Chip:</p>
+                                <p>MediaTek Dimensity 900 5G</p>
+                            </div>
+                            <div class="right_box_bottom-infomation_prouduct">
+                                <p>RAM:</p>
+                                <p>8 GB</p>
+                            </div>
+                            <div class="right_box_bottom-infomation_prouduct bg_gray">
+                                <p>Bộ nhớ trong:</p>
+                                <p>128 GB</p>
+                            </div>
+                            <div class="right_box_bottom-infomation_prouduct">
+                                <p>SIM:</p>
+                                <p>2 Nano SIMHỗ trợ 5G</p>
+                            </div>
+                            <div class="right_box_bottom-infomation_prouduct bg_gray">
+                                <p>Pin, Sạc:</p>
+                                <p>4300 mAh65 W</p>
+                            </div>
+                        </div>
+                        <button id="infoPro">Xem thêm cấu hình chi tiết<i class="fas fa-caret-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- des  -->
+
+            <div class="container_info_pro">
+                <div id="container_info_pro-btn">
+                    <i class="fas fa-times"></i>
+                    <p>Đóng</p>
+                </div>
+
+                <div class="container_info_pro-boxs">
+
+                    <div class="tabs">
+                        <div class="tab-header">
+                            <div class="active">Điểm nổi bật</div>
+                            <div>Bạc</div>
+                            <div>Đen</div>
+                            <div>Hình mở hộp</div>
+                            <div>Hình 360 độ</div>
+                            <div>Thông số kỹ thuật</div>
+                            <div>Bài viết đánh giá</div>
+                        </div>
+                        <div class="tab-indicator"></div>
+                        <div class="tab-body">
+                            <div class="active">
+                                <div class="owl-carousel owl-theme">
+                                    <div class="item">
+                                        <img src="./images/slider1.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/slider2.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/slider3.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/slider4.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/slider5.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/slider6.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/slider7.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/slider8.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/slider9.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/slider10.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/slider11.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/slider12.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="owl-carousel owl-theme">
+                                    <div class="item">
+                                        <img src="./images/bac1.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/bac2.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/bac3.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/bac4.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/bac5.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/bac6.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/bac7.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/bac8.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/bac9.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/bac10.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/bac11.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/bac12.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!--Đen-->
+                            <div>
+                                <div class="owl-carousel owl-theme">
+                                    <div class="item">
+                                        <img src="./images/den1.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/den2.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/den3.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/den4.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/den5.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/den6.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/den7.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/den8.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/den9.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/den10.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/den11.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/den12.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tag_images">
+                                <img src="./images/mohop.jpg" alt="">
+                                <p>Bộ hộp sản phẩm: Hộp, Sách hướng dẫn, Cây lấy sim, Ốp lưng, Cáp Type C, Củ sạc nhanh
+                                    rời đầu Type A, Tai nghe dây</p>
+                            </div>
+
+                            <div class="tag_images_do">
+                                <div class="owl-carousel owl-theme">
+                                    <div class="item">
+                                        <img src="./images/do2.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/do3.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/do4.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/do1.jpg" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- thông tin kỹ thuật-->
+                            <div class="tag_des">
+                                <div class="tag_des_img">
+                                    <img src="images/img3.jpg" />
+                                </div>
+                                <div class="tag_des_info">
+                                    <div class="tag_des_info_screens">
+                                        <h4>Màn hình</h4>
+                                        <div class="tag_des_info_screen">
+                                            <p>Công nghệ màn hình:</p>
+                                            <p><a href="">AMOLED</a></p>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p>Độ phân giải:</p>
+                                            <p><a href="">Full HD+ (1080 x 2400 Pixels)</a>
+                                            </p>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p>Màn hình rộng:</p>
+                                            <p> 6.43" - Tần số quét 90 Hz
+                                            </p>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p>Độ sáng tối đa:
+
+                                            </p>
+                                            <p>430 nits</p>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p>Mặt kính cảm ứng:
+
+                                            </p>
+                                            <p>
+                                                <a href=""> Kính cường lực Corning Gorilla Glass 5</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!--camera sau -->
+                                    <div class="tag_des_info_screens">
+                                        <h4>Màn hình</h4>
+                                        <div class="tag_des_info_screen">
+                                            <p><a href="">Độ phân giải:</a></p>
+                                            <p>Chính 64 MP & Phụ 8 MP, 2 MP</p>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p>Quay phim:</p>
+                                            <div class="tag_des_info_screen_content">
+                                                <p><a href="">4K 2160p@30fps</a></p>
+                                                <p>
+                                                    <a href="">FullHD 1080p@30fps</a>
+                                                </p>
+                                                <p>
+                                                    <a href="">FullHD 1080p@60fps</a>
+                                                </p>
+                                                <p>
+                                                    <a href="">HD 720p@30fps</a>
+                                                </p>
+                                                <p>
+                                                    <a href="">HD 720p@60fps</a>
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p>Đèn Flash:</p>
+                                            <p> <a href="">
+                                                    Có</a>
+                                            </p>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p>Tính năng:</p>
+                                            <div class="tag_des_info_screen_content">
+                                                <p><a href="">AI Camera</a></p>
+                                                <p>
+                                                    <a href="">Ban đêm (Night Mode)</a>
+                                                </p>
+                                                <p>
+                                                    <a href="">Chuyên nghiệp (Pro)</a>
+                                                </p>
+                                                <p>
+                                                    <a href="">Chạm lấy nét</a>
+                                                </p>
+                                                <p>
+                                                    <a href="">Góc rộng (Wide)</a>
+                                                </p>
+                                                <p>
+                                                    <a href="">HDR</a>
+                                                </p>
+                                                <p>
+                                                    <a href="">Làm đẹp</a>
+                                                </p>
+                                                <p>
+                                                    <a href="">Lấy nét theo pha (PDAF)</a>
+                                                </p>
+                                                <p>
+                                                    <a href="">Nhận diện khuôn mặt</a>
+                                                </p>
+                                                <p>
+                                                    <a href="">Siêu cận (Macro)</a>
+                                                </p>
+                                                <p>
+                                                    <a href="">Toàn cảnh (Panorama)</a>
+                                                </p>
+                                                <p>
+                                                    <a href="">Tự động lấy nét (AF)</a>
+                                                </p>
+                                                <p>
+                                                    <a href="">Xóa phông</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end camera sau -->
+
+
+                                    <!--camera trước -->
+                                    <div class="tag_des_info_screens">
+                                        <h4>Màn hình</h4>
+                                        <div class="tag_des_info_screen">
+                                            <p><a href="">Độ phân giải:</a></p>
+                                            <p>32 MP</p>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p>Tính năng:</p>
+                                            <div class="tag_des_info_screen_content">
+                                                <p><a href="">HDR</a></p>
+                                                <p>
+                                                    <a href="">Làm đẹp</a>
+                                                </p>
+                                                <p>
+                                                    <a href="">Nhãn dán (AR Stickers)</a>
+                                                </p>
+                                                <p>
+                                                    <a href="">Nhận diện khuôn mặt</a>
+                                                </p>
+                                                <p>
+                                                    <a href="">Quay video Full HD</a>
+                                                </p>
+                                                <p>
+                                                    <a href="">Toàn cảnh (Panorama)
+
+                                                    </a>
+                                                </p>
+                                                <p>
+                                                    <a href="">Tự động lấy nét (AF)</a>
+                                                </p>
+                                                <p>
+                                                    <a href="">Xóa phông
+
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end camera sau -->
+
+                                    <!--Hệ điều hành & CPU-->
+                                    <div class="tag_des_info_screens">
+                                        <h4>Màn hình</h4>
+                                        <div class="tag_des_info_screen">
+                                            <p>Hệ điều hành:</p>
+                                            <p><a href="">Android 11</a></p>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p>Chip xử lý (CPU):</p>
+                                            <p><a href="">
+                                                    MediaTek Dimensity 900 5G</a>
+                                            </p>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p><a href="">Tốc độ CPU:</a></p>
+                                            <p>
+                                                2 nhân 2.4 GHz & 6 nhân 2 GHz
+                                            </p>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p>Chip đồ họa (GPU):
+
+                                            </p>
+                                            <p><a href="">
+                                                    Mali-G68 MC4</a></p>
+                                        </div>
+
+                                    </div>
+                                    <!--Hệ điều hành & CPU-->
+
+
+                                    <!--Bộ nhớ & Lưu trữ-->
+                                    <div class="tag_des_info_screens">
+                                        <h4>Màn hình</h4>
+                                        <div class="tag_des_info_screen">
+
+                                            <p><a href="">RAM:</a></p>
+                                            <p>
+                                                8 GB</p>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p>Bộ nhớ trong:</p>
+                                            <p>
+                                                128 GB</p>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+
+                                            <p>
+                                                Bộ nhớ còn lại (khả dụng) khoảng:
+                                            </p>
+                                            <p>110 GB</p>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p>Danh bạ:
+                                            </p>
+                                            <p>
+                                                Không giới hạn</p>
+                                        </div>
+
+                                    </div>
+                                    <!--Bộ nhớ & Lưu trữ-->
+
+
+                                    <!--Kết nối -->
+                                    <div class="tag_des_info_screens">
+                                        <h4>Kết nối</h4>
+                                        <div class="tag_des_info_screen">
+
+                                            <p>Mạng di động:</p>
+                                            <p><a href="">
+                                                    Hỗ trợ 5G</a></p>
+                                        </div>
+
+                                        <div class="tag_des_info_screen">
+                                            <p>SIM:</p>
+                                            <p> <a href="">
+
+                                                    2 Nano SIM</a>
+                                            </p>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p>Wifi:</p>
+                                            <div class="tag_des_info_screen_content">
+                                                <p><a href="">Dual-band (2.4 GHz/5 GHz)</a></p>
+                                                <p>
+                                                    <a href="">Wi-Fi 802.11 a/b/g/n/ac/ax</a>
+                                                </p>
+                                                <p>
+                                                    <a href="">Wi-Fi Direct</a>
+                                                </p>
+                                                <p>
+                                                    <a href="">Wi-Fi hotspot</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p>GPS:</p>
+                                            <div class="tag_des_info_screen_content">
+                                                <p><a href="">A-GPS</a></p>
+                                                <p>
+                                                    <a href="">BDS</a>
+                                                </p>
+                                                <p>
+                                                    <a href="">GALILEO</a>
+                                                </p>
+                                                <p>
+                                                    <a href="">GLONASS</a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="tag_des_info_screen">
+                                            <p>Bluetooth:</p>
+                                            <div class="tag_des_info_screen_content">
+                                                <p><a href="">A2DP</a></p>
+                                                <p>
+                                                    <a href="">LE</a>
+                                                </p>
+                                                <p>
+                                                    <a href="">v5.2</a>
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p>Cổng kết nối/sạc:</p>
+                                            <p> <a href="">
+
+                                                    Type-C</a>
+                                            </p>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p>Jack tai nghe:</p>
+                                            <p> <a href="">
+
+                                                    Type-C</a>
+                                            </p>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p>Kết nối khác:</p>
+                                            <p> <a href="">
+
+                                                    OTG</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!--end Kết nối-->
+
+
+                                    <!--Pin & Sạc-->
+                                    <div class="tag_des_info_screens">
+                                        <h4>Pin & Sạc</h4>
+                                        <div class="tag_des_info_screen">
+                                            <p>Dung lượng pin:</p>
+                                            <p>
+                                                4300 mAh
+                                            </p>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p>Loại pin:</p>
+                                            <p><a href="">
+                                                    Li-Po</a>
+                                            </p>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p>Hỗ trợ sạc tối đa:</p>
+                                            <p>
+                                                65 W
+                                            </p>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p>Sạc kèm theo máy:
+
+                                            </p>
+                                            <p>
+                                                65 W</p>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p>Công nghệ pin:
+
+                                            </p>
+                                            <p>
+                                                <a href=""> Sạc siêu nhanh SuperVOOC</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!--end Pin & Sạc-->
+
+                                    <!--Tiện ích-->
+                                    <div class="tag_des_info_screens">
+                                        <h4>Tiện ích</h4>
+                                        <div class="tag_des_info_screen">
+                                            <p>Bảo mật nâng cao:</p>
+                                            <p><a href="">
+                                                    Mở khoá khuôn mặtMở khoá vân tay dưới màn hình</a></p>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p>Tính năng đặc biệt:</p>
+                                            <p><a href="">
+
+                                                    Chạm 2 lần sáng màn hìnhỨng dụng kép (Nhân bản ứng dụng)</a>
+                                            </p>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p>Kháng nước, bụi:</p>
+                                            <p>
+
+                                                Không có
+                                            </p>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p>Ghi âm:
+
+                                            </p>
+                                            <p>
+
+                                                Có</p>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p>Radio:
+
+                                            </p>
+                                            <p>
+
+                                                Có</p>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p>Xem phim:</p>
+                                            <div class="tag_des_info_screen_content">
+                                                <p><a href="">3GP</a></p>
+                                                <p>
+                                                    <a href="">AVI</a>
+                                                </p>
+                                                <p>
+                                                    <a href="">MP4</a>
+                                                </p>
+                                                <p>
+                                                    <a href="">WMV</a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="tag_des_info_screen">
+                                            <p>Nghe nhạc:</p>
+                                            <div class="tag_des_info_screen_content">
+                                                <p><a href="">
+                                                        AAC</a></p>
+                                                <p>
+                                                    <a href="">AMR</a>
+                                                </p>
+                                                <p>
+                                                    <a href="">MP3</a>
+                                                </p>
+                                                <p>
+                                                    <a href="">WAV</a>
+                                                </p>
+                                                <p>
+                                                    <a href="">WAV</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Tiện ích-->
+
+                                    <!--Thông tin chung-->
+                                    <div class="tag_des_info_screens mb">
+                                        <h4>Thông tin chung</h4>
+                                        <div class="tag_des_info_screen">
+                                            <p>Thiết kế::</p>
+                                            <p><a href="">
+                                                    Nguyên khối</a></p>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p>Chất liệu:</p>
+                                            <p>Khung hợp kim & Mặt lưng kính Panda</p>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p>Kích thước, khối lượng:</p>
+                                            <p> Dài 156.8 mm - Ngang 72.1 mm - Dày 7.59 mm - Nặng 182 g
+                                            </p>
+                                        </div>
+                                        <div class="tag_des_info_screen">
+                                            <p>Thời điểm ra mắt:
+
+                                            </p>
+                                            <p>
+                                                07/2021</p>
+                                        </div>
+
+                                    </div>
+                                    <!--end thông tin chung-->
+                                </div>
+                            </div>
+                            <!-- end thông tin kỹ thuật-->
+
+                            <div class="tag_text">
+                                <h3>Sau khi ra mắt <a href="">OPPO Reno5</a> chưa lâu thì <a href="">OPPO</a> lại cho ra
+                                    mẫu <a href="">smartphone</a>mới mang tên <a href="">OPPO Reno6</a>với hàng loạt cải
+                                    tiến mới về ngoại hình bên ngoài lẫn hiệu năng bên
+                                    trong, mang đến trải nghiệm vượt bật cho người dùng.
+                                </h3>
+                                <h3>Chip Dimensity 900 5G hiệu năng ổn định</h3>
+                                <p>OPPO Reno6 được trang bị vi xử lý MediaTek Dimensity 900 đáp ứng mọi nhu cầu giải trí
+                                    hàng ngày, có thể chơi tất cả các game phổ biến hiện nay, tạo ấn tượng rất mạnh mẽ
+                                    cho người dùng trải nghiệm mượt mà với cấu hình ổn
+                                    định.
+                                </p>
+                                <img src="images/img4.jpg" />
+                                <p>Máy hỗ trợ hệ điều hành Android 11 được cải tiến với nhiều tính năng vượt trội. Đi
+                                    kèm đó là <a href="">RAM 8 GB</a>cho đa nhiệm thoải mái nhiều ứng dụng cùng một lúc.
+                                    <a href="">Bộ nhớ trong 128 GB</a>cho bạn thoải mái tải những tệp nặng và những tựa
+                                    game yêu thích dễ dàng hơn.
+                                </p>
+                                <img src="images/img11.jpg" />
+                                <p>Theo xu hướng hiện nay thì OPPO Reno6 cũng được trang bị kết nối mạng 5G hiện đại với
+                                    tốc độ truyền tải dữ liệu nhanh hơn gấp nhiều lần 4G, tải mọi game và ứng dụng nặng
+                                    đều không thể làm khó được sự mạnh mẽ này. </p>
+                                <img src="images/img12.jpg" />
+                                <h3>Trải nghiệm thú vị cùng những bộ ảnh cực chất</h3>
+                                <p>Mặt sau của OPPO Reno6 sở hữu cụm 3 camera bao gồm: Cảm biến chính 64 MP,
+                                    <a href="">camera góc siêu rộng</a>8 MP,
+                                    <a href="">camera macro</a>2 MP giúp người dùng thoải mái sử dụng ghi lại những
+                                    khoảnh khắc hàng ngày.
+                                </p>
+                                <img src="images/img13.jpg" />
+                                <p>Thiết bị cũng hỗ trợ nhiều chế độ chụp ảnh thú vị khác như, HDR, chụp xóa phông, quay
+                                    phim 4K, hỗ trợ quay video Full HD,... đáp ứng tốt nhu cầu sử dụng thông thường.</p>
+                                <img src="images/img14.jpg" />
+                                <p>Mặt trước còn được trang bị camera selfie có độ phân giải 13 MP, hỗ trợ
+                                    tính năng tự động lấy nét và nhận diện khuôn mặt thông minh giúp người dùng có
+                                    những bức ảnh chụp trọn vẹn và đẹp mắt nhất.</p>
+                                <img src="images/img15.jpg" />
+                                <h3>Thiết kế thời thượng, đẳng cấp
+                                </h3>
+                                <p>Vẻ ngoài mảnh mai và thon gọn đến bất ngờ với trọng lượng chỉ 182 g cho bạn cầm nắm
+                                    thoải mái, bỏ túi hay cặp đều tiện lợi.</p>
+                                <img src="images/img16.jpg" />
+                                <p>Reno6 có điểm nổi bật so với thế hệ trước là thiết kế nguyên khối vuông vức khá giống
+                                    với
+                                    <a href="">iPhone 12</a>, mặt sau của máy được phủ một lớp nhám mờ cho độ bám vân
+                                    tay ít hơn, không bị trơn trượt trong quá trình sử dụng, tạo nên sự sang trọng khi
+                                    mang theo bên mình.
+                                </p>
+                                <img src="images/img17.jpg" />
+                                <h3>Giải trí sống động màn hình Full HD+
+                                </h3>
+                                <p>Sử dụng công nghệ màn hình AMOLED với kích thước 6.43 inch cùng độ sáng tối đa 750
+                                    nits cho tái tạo màu và độ chân thực cao hơn, hình ảnh nét hơn, độ tương phản cao
+                                    giúp người dùng có thể sử dụng điện thoại dưới mọi điều
+                                    kiện sáng và góc nhìn rộng hơn đáng kể. </p>
+                                <img src="images/img18.jpg" />
+                                <p>Mặt kính của OPPO Reno6 được trang bị kính cường lực Corning Gorilla Glass 5 chịu áp
+                                    lực cao khi va chạm vào bề mặt cứng cho bạn yên tâm hơn khi bỏ cặp hay túi quần.</p>
+                                <p>Hỗ trợ
+                                    <a href="">bảo mật vân tay</a> dưới màn hình cho phép người dùng chỉ cần thao tác
+                                    một chạm nhẹ nhàng để mở khóa màn hình, nhanh chóng và tiện lợi mà không ảnh hưởng
+                                    đến vẻ thẩm mỹ của chiếc smartphone.
+                                </p>
+                                <img src="images/img19.jpg" />
+                                <p>Ngoài ra, màn hình tần số quét 90 Hz và tốc độ lấy mẫu cảm ứng từ 180 Hz, mang đến độ
+                                    mượt mà trong trải nghiệm.
+                                </p>
+                                <img src="images/img20.jpg" />
+                                <h3>Cả ngày tràn đầy năng lượng</h3>
+                                <p>Reno6 sở hữu cho mình viên pin tương đối khủng, dung lượng 4300 mAh. Như vậy việc sử
+                                    dụng để quay phim, chụp ảnh liên tục lên đến nhiều tiếng không phải là quá khó khăn
+                                    với chiếc máy này.</p>
+                                <img src="images/img21.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Moblet-->
+            <section class="container_product-accessory">
+                <div class="container_product_mobilet-menu">
+                    <h2>Phụ kiện thường mua cùng</h2>
+                    <p>
+                        <a href="">Xem tất cả</a>
+                    </p>
+                </div>
+                <div class="container_product-accessory d_flex">
+                    <div class="container_product_accessory " id="c1">
+                        <div class="container_product_accessory_img">
+                            <img src="./images/pk1.jpg" />
+                        </div>
+                        <div class="container_product_accessory_box">
+                            <h3>
+                                <a href="">Tai nghe Có Dây EP OPPO MH151</a>
+                            </h3>
+                            <p> Online giá rẻ</p>
+                            <del>590.000đ</del>
+                            <span>30%</span>
+                            <strong>413.000₫</strong>
+                            <div class="container_product_accessory_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star"></i>
+                                <span>8</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_product_accessory " id="c1">
+                        <div class="container_product_accessory_img">
+                            <img src="./images/pk2.jpg" />
+                        </div>
+                        <div class="container_product_accessory_box">
+                            <h3>
+                                <a href="">Cáp Type C SuperVOOC 1m OPPO DL129 Trắng</a>
+                            </h3>
+                            <p> Online giá rẻ</p>
+                            <del>190.000đ</del>
+                            <span>-20%</span>
+                            <strong>152.000₫</strong>
+                            <div class="container_product_accessory_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <span>5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_product_accessory " id="c1">
+                        <div class="container_product_accessory_img">
+                            <img src="./images/pk3.jpg" />
+                        </div>
+                        <div class="container_product_accessory_box">
+                            <h3>
+                                <a href="">Móc dán điện thoại OSMIA RingCK039 Cún Trắng</a>
+                            </h3>
+                            <del>40.000đ</del>
+                            <span>-50%</span>
+                            <strong>20.000₫</strong>
+                        </div>
+                    </div>
+
+                    <div class="container_product_accessory " id="c1">
+                        <div class="container_product_accessory_img">
+                            <img src="./images/pk4.jpg" />
+                        </div>
+                        <div class="container_product_accessory_box">
+                            <h3>
+                                <a href="">Đế điện thoại OSMIA CK-CH1/CK-CH3</a>
+                            </h3>
+                            <del>50.000đ</del>
+                            <span>-50%</span>
+                            <strong>25.000₫</strong>
+
+                        </div>
+                    </div>
+                    <div class="container_product_accessory " id="c1">
+                        <div class="container_product_accessory_img">
+                            <img src="./images/pk5.jpg" />
+                        </div>
+                        <div class="container_product_accessory_box">
+                            <h3>
+                                <a href="">USB OTG 3.1 64GB Type C Sandisk SDDDC3 Đen</a>
+                            </h3>
+                            <p> Online giá rẻ</p>
+                            <del>450.000đ</del>
+                            <span>-25%</span>
+                            <strong>337.000₫</strong>
+                            <div class="container_product_accessory_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star "></i>
+                                <span>3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="container_detial_products-other ">
+                <div class="container_detial_products_other-title">
+                    <h2>Xem thêm điện thoại khác</h2>
+                </div>
+                <ul class="container_detial_products_other-menu">
+                    <li>
+                        <a href="" class="active">OPPO</a>
+                    </li>
+                    <li>
+                        <a href="">Từ 7 - 13 triệu</a>
+                    </li>
+                    <li>
+                        <a href="">OPPO Reno</a>
+                    </li>
+                    <li>
+                        <a href="">Android</a>
+                    </li>
+                    <li>
+                        <a href="">8GB</a>
+                    </li>
+                    <li>
+                        <a href="">Chơi game / Cấu hình cao</a>
+                    </li>
+                    <li><a href="">Sạc pin nhanh</a></li>
+                    <li>
+                        <a href="">128GB</a>
+                    </li>
+                    <li>
+                        <a href="">Chụp cận cảnh (Macro)</a>
+                    </li>
+                    <li>
+                        <a href="">Chụp gốc rộng</a>
+                    </li>
+                    <li>
+                        <a href="">Chụp xóa phông</a>
+                    </li>
+                    <li>
+                        <a href="">Hỗ trợ 5G</a>
+                    </li>
+
+                    <li><a href="">Bảo mật khuôn mặt</a></li>
+                    <li>
+                        <a href="">Bảo mật vân tay</a>
+                    </li>
+                    <li>
+                        <a href="">Tràn viền</a>
+                    </li>
+                    <li><a href="">Từ 6 inch trở lên</a></li>
+                </ul>
+
+
+                <div class="glide" id="glide2">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <div class="container_product-sale border  height" id="c1">
+                                    <div class="container_product_sale_img">
+                                        <img src="../images/img1.jpg" />
+                                    </div>
+                                    <div class="container_product_sale_box">
+                                        <h3>
+                                            <a href="">iPhone 13 Pro Max 128GB</a>
+                                        </h3>
+                                        <p>Hàng sắp về</p>
+                                        <strong>33.990.000đ</strong>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="container_product-sale border  height" id="c1">
+                                    <div class="container_product_sale_img">
+                                        <img src="../images/img2.jpg" />
+                                    </div>
+                                    <div class="container_product_sale_box">
+                                        <h3>
+                                            <a href="">Vivo X70 Pro 5G</a>
+                                        </h3>
+                                        <p>Hàng sắp về</p>
+                                        <strong>19.990.000đ</strong>
+                                        <span>Giam ngay 3 triệu + TG 0% + Loa Bluetooth Foomee HH17 + Bảo hành 18 tháng
+                                            + Bảo hiểm rơi vỡ 6 tháng</span>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="container_product-sale border  height" id="c1">
+                                    <div class="container_product_sale_img">
+                                        <img src="../images/img3.jpg" />
+                                    </div>
+                                    <div class="container_product_sale_box">
+                                        <h3>
+                                            <a href="">Samsung Galaxy Z Flip3 5G 128GB</a>
+                                        </h3>
+                                        <strong>24.990.000đ</strong>
+                                        <span>Qùa 300.000đ</span>
+                                        <div class="container_product_sale_box-star">
+                                            <i class="fas fa-star color"></i>
+                                            <i class="fas fa-star color"></i>
+                                            <i class="fas fa-star color"></i>
+                                            <i class="fas fa-star color"></i>
+                                            <i class="fas fa-star"></i>
+                                            <span>12</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="container_product-sale border  height" id="c1">
+                                    <div class="container_product_sale_img">
+                                        <img src="../images/img4.jpg" />
+                                    </div>
+                                    <div class="container_product_sale_box">
+                                        <h3>
+                                            <a href="">Xiaomi Mi 11 Life</a>
+                                        </h3>
+                                        <p>Hàng sắp về</p>
+                                        <del>7.990.000đ</del>
+                                        <span>-5%</span><br>
+                                        <strong>7.590.000đ</strong>
+                                        <span>Qùa 300.000đ</span>
+                                        <div class="container_product_sale_box-star">
+                                            <i class="fas fa-star color"></i>
+                                            <i class="fas fa-star color"></i>
+                                            <i class="fas fa-star color"></i>
+                                            <i class="fas fa-star color"></i>
+                                            <i class="fas fa-star"></i>
+                                            <span>618</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="container_product-sale border  height" id="c1">
+                                    <div class="container_product_sale_img">
+                                        <img src="../images/img5.jpg" />
+                                    </div>
+                                    <div class="container_product_sale_box">
+                                        <h3>
+                                            <a href="">Samsung Galaxy A52s 5G</a>
+                                        </h3>
+                                        <strong>10.990.000đ</strong>
+                                        <span>Qùa 300.000đ</span>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="container_product-sale border  height" id="c1">
+                                    <div class="container_product_sale_img">
+                                        <img src="../images/img6.jpg" />
+                                    </div>
+                                    <div class="container_product_sale_box">
+                                        <h3>
+                                            <a href="">Realme 8 5G</a>
+                                        </h3>
+                                        <del>7.999.000đ</del>
+                                        <strong>7.690.000đ</strong>
+                                        <span>Qùa 300.000đ</span>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="container_product-sale border  height" id="c1">
+                                    <div class="container_product_sale_img">
+                                        <img src="../images/img7.jpg" />
+                                    </div>
+                                    <div class="container_product_sale_box">
+                                        <h3>
+                                            <a href="">iPhone 11 64GB</a>
+                                        </h3>
+                                        <del>16.490.000đ</del>
+                                        <strong>15.490.000đ</strong>
+                                        <p>Gía rẻ: 15.010.000đ</p>
+                                        <div class="container_product_sale_box-star">
+                                            <i class="fas fa-star color"></i>
+                                            <i class="fas fa-star color"></i>
+                                            <i class="fas fa-star color"></i>
+                                            <i class="fas fa-star-half-alt color"></i>
+                                            <i class="fas fa-star"></i>
+                                            <span>374</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="container_product-sale border  height" id="c1">
+                                    <div class="container_product_sale_img">
+                                        <img src="../images/img8.jpg" />
+                                    </div>
+                                    <div class="container_product_sale_box">
+                                        <h3>
+                                            <a href="">OPPO Reno5 5G</a>
+                                        </h3>
+                                        <del>11.990.999đ</del>
+                                        <strong>10.990.000đ</strong>
+                                        <p>Gía rẻ: 10.490.000đ</p>
+                                        <div class="container_product_sale_box-star">
+                                            <i class="fas fa-star color"></i>
+                                            <i class="fas fa-star color"></i>
+                                            <i class="fas fa-star color"></i>
+                                            <i class="fas fa-star "></i>
+                                            <i class="fas fa-star"></i>
+                                            <span>60</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="container_product-sale" id="c1">
+                                    <div class="container_product_sale_img">
+                                        <img src="../images/img9.jpg" />
+                                    </div>
+                                    <div class="container_product_sale_box">
+                                        <h3>
+                                            <a href="">VivoY20s</a>
+                                        </h3>
+                                        <del>4.990.999đ</del>
+                                        <span>-6%</span>
+                                        <strong>4.690.000đ</strong>
+                                        <span>Qùa 200.000đ</span>
+                                        <div class="container_product_sale_box-star">
+                                            <i class="fas fa-star color"></i>
+                                            <i class="fas fa-star color"></i>
+                                            <i class="fas fa-star-half-alt color"></i>
+                                            <i class="fas fa-star "></i>
+                                            <i class="fas fa-star"></i>
+                                            <span>129</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!--end main-->
+
+        <!--Footer-->
+        <footer>
+            <div class="container_footer">
+                <div class="container_footer-row">
+                    <div class="container_footer-column">
+                        <ul>
+                            <li>
+                                <a href="../FE/index.html">Lịch sử mua hàng</a>
+                            </li>
+                            <li>
+                                <a href="../FE/index.html">Cộng tác bán hàng TGDĐ</a>
+                            </li>
+                            <li>
+                                <a href="../FE/index.html">Tìm hiểu về mua trả góp</a>
+                            </li>
+                            <li>
+                                <a href="../FE/index.html">Chính sách bảo hành</a>
+                            </li>
+
+                            <div id="show" style="display: none;">
+                                <li>
+                                    <a href="../FE/index.html">Chính sách đổi trả</a>
+                                </li>
+                                <li>
+                                    <a href="../FE/index.html">Giao hàng & Thanh toán</a>
+                                </li>
+                                <li>
+                                    <a href="../FE/index.html">Hướng dẫn mua online</a>
+                                </li>
+                                <li>
+                                    <a href="../FE/index.html">Bán hàng doanh nghiệp</a>
+                                </li>
+                                <li>
+                                    <a href="../FE/index.html">Phiếu mua hàng</a>
+                                </li>
+                                <li>
+                                    <a href="../FE/index.html">In hóa đơn điện tử</a>
+                                </li>
+                                <li>
+                                    <a href="../FE/index.html">Quy chế hoạt động</a>
+                                </li>
+                                <li>
+                                    <a href="../FE/index.html">Nội dung cửa hàng</a>
+                                </li>
+                                <li>
+                                    <a href="../FE/index.html">Chất lượng phục vụ</a>
+                                </li>
+                                <li>
+                                    <a href="../FE/index.html">Cảnh báo giả mạo</a>
+                                </li>
+                                <li><a href="../FE/index.html">Chính sách khui hộp sản phẩm Apple</a></li>
+                            </div>
+                            <li id="toggle" style="margin: 2% 0; cursor: pointer;">
+                                Xem thêm
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="container_footer-column">
+                        <ul>
+                            <li>
+                                <a href="../FE/index.html">Gioi thiệu công ty</a>
+                            </li>
+                            <li>
+                                <a href="../FE/index.html">Tuyển dụng</a>
+                            </li>
+                            <li>
+                                <a href="../FE/index.html">Gửi góp ý, khiếu nại</a>
+                            </li>
+                            <li>
+                                <a href="../FE/index.html">Chính sách bảo hành</a>
+                            </li>
+                            <li>
+                                <a href="../FE/index.html">Tìm siêu thị (2.736 shop)</a>
+                            </li>
+                            <li>
+                                <a href="../FE/index.html">Xem bản moblet</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="container_footer-column">
+                        <ul>
+                            <li>
+                                <p><b>Tổng đài hỗ trợ</b> (Miễn phí gọi)</p>
+                            </li>
+                            <li>
+                                <span>Gọi mua:</span><a href="">1800.1060 (7:30 - 22:00)</a>
+                            </li>
+                            <li>
+                                <span>Gọi mua:</span><a href="">1800.1763 (7:30 - 22:00)</a>
+                            </li>
+                            <li>
+                                <span>Gọi mua:</span><a href="">1800.1062 (8:00 - 21:30)</a>
+                            </li>
+                            <li>
+                                <span>Bảo hảnh:</span><a href="">1800.1064 (8:00 - 21:00)</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="container_footer-column width">
+                        <ul class="flex">
+                            <li>
+                                <a href="https://www.facebook.com/thegioididongcom"><i
+                                        class="fab fa-facebook"></i>3689.2k Fan</a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/user/TGDDVideoReviews"><i class="fab fa-youtube"
+                                        style="color: red;"></i>818k
+                                    Đăng ký</a>
+                            </li>
+
+                        </ul>
+                        <div class="container_footer_column-img">
+                            <p>Website cùng tập đoàn</p>
+                            <div class="container_footer_column-imgs flex">
+                                <img src="../images/foo2.png">
+                                <img src="../images/foo3.png">
+                                <img src="../images/foo4.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+        <!--end footer-->
+    </div>
+    <!--end giao diện-->
+
+    <!--JS-->
+    <!-- Glidejs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="Main.js"></script>
+    <script>
+        var glide = new Glide("#glide2", {
+            type: "carousel",
+            perView: 5,
+            focusAt: "center",
+            breakpoints: {
+                800: {
+                    perView: 2,
+                },
+                480: {
+                    perView: 1,
+                },
+            },
+        });
+
+        glide.mount();
+        /// form
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            items: 1,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+
+        let loginForm = document.querySelector(".login-form-container");
+
+        document.querySelector("#login-btn").onclick = () => {
+            loginForm.classList.toggle("active");
+        };
+
+        document.querySelector("#close-login-btn").onclick = () => {
+            loginForm.classList.remove("active");
+        };
+    </script>
+</body>
+
+</html>
+
+</html>
+
+</html>
+
+</html>

@@ -1,0 +1,2385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <!--swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Glidejs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css">
+    <link rel='shortcut icon' href='../images/iconlogo.jpg' />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="Css/Style.css" />
+    <title>Thế giới di động</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--slider top-->
+        <div class="container_slider">
+            <div class="container_slider-box">
+                <div class="container_slider_box-img">
+                    <img src="../images/slider1.png" style="width: 100%; height: 100%" class="images" />
+                    <img src="../images/slider2.png" style="width: 100%; height: 100%" class="images" />
+                    <img src="../images/slider3.png" style="width: 100%; height: 100%" class="images" />
+                </div>
+                <!-- slider controls -->
+                <div class="container_slider_box-icons">
+                    <i class="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></i>
+
+                    <i class="next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></i>
+                </div>
+            </div>
+        </div>
+        <!--END Slider top-->
+
+        <!--Header-->
+        <header>
+            <div class="container_header">
+                <div class="container_header-logo">
+                    <a href="index.html">
+                        <img src="../images/logo.jpg" class="container_header_logo-img" />
+                    </a>
+                </div>
+                <div class="container_header-center flex">
+                    <div class="container_header_center-text" id="login-btn">
+                        <p>Xem giá, khuyến mãi tại</p>
+                        <p>Hồ Chí Minh<i class="fas fa-caret-down down"></i></p>
+                    </div>
+                    <div class="container_header_center-search">
+                        <input type="text" placeholder="Bạn tìm gì" name="" id="" />
+                        <i class="fas fa-search search"></i>
+                    </div>
+                    <div class="container_header_center-cart flex">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>Gio hàng</p>
+                    </div>
+                    <div class="container_header_center-order">
+                        <p>Lịch sử đơn hàng</p>
+                    </div>
+                </div>
+                <div class="container_header-right flex">
+                    <div class="pluse">
+                        <i class="fas fa-circle" style="font-size: 20px"></i>
+                    </div>
+                    <div class="container_header_right-text">
+                        <a href="index.html">
+                            Mobifore trả sau đến hạn thanh toán. Mua thẻ nạp ngay</a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="index.html">24h<br />Công nghệ</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Hỏi đáp</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Game App</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!--end Header-->
+
+
+
+        <!-- information form  -->
+        <div class="login-form-container">
+            <div id="close-login-btn">
+                <i class="fas fa-times"></i>
+                <p>Đóng</p>
+            </div>
+            <form action="">
+                <h5>Chọn địa chỉ, nhận hàng</h5>
+                <div class="form-des">
+                    <span><b>Chọn đầy đủ địa chỉ nhận hàng</b> để biết chính xác thời gian giao</span>
+                    <select class="section">
+                        <option value="binhdinh">Bình Định</option>
+                        <option value="hochiminh">Hồ Chí Minh</option>
+                    </select>
+                    <select class="section">
+                        <option value="vuilongchonqh">Vui lòng chọn Quận/Huyện</option>
+                        <option value="quynhon">TP.Quy Nhơn</option>
+                        <option value="hoanan">Huyện Hoài Ân</option>
+                        <option value="phucat">Huyện Phù Cát</option>
+                        <option value="vinhthanh">Huyện Vĩnh Thạnh</option>
+                    </select>
+                    <select class="section">
+                        <option value="vuilongchonpx">Vui lòng chọn Phường/Xã</option>
+                        <option value="catchanh">Xã Cát Chánh</option>
+                        <option value="cathai">Xã Cát Hải</option>
+                        <option value="catson">Xã Cát Sơn</option>
+                        <option value="cattai">Xã Cát Tài</option>
+                        <option value="cattuong">Xã Cát Tường</option>
+                    </select>
+                    <input type="text" class="section" placeholder="Số nhà, tên đường (không bắt buộc)" />
+                    <button>XÁC NHẬN</button>
+                </div>
+
+            </form>
+        </div>
+        <!--end information form  -->
+
+        <!--nav-->
+        <nav class="nav">
+            <ul class="nav_menu">
+                <div class="top">
+                    <label for="" class="btn close-btn"><i class="fas fa-times"></i></label>
+                </div>
+                <li>
+                    <a href="../Backend/dienthoai.html"><i class="fas fa-mobile-alt"></i>Điện thoại</a>
+                </li>
+                <li>
+                    <a href="../Backend/Laptop.html"><i class="fas fa-laptop"></i>Laptop</a>
+                </li>
+                <li>
+                    <a href="../Backend/tablet.html"><i class="fas fa-tablet-alt"></i>Tablet</a>
+                </li>
+                <li>
+                    <a href="../Backend/phukien.html"><i class="fas fa-headphones-alt"></i>Phụ kiện<i
+                            class="fas fa-caret-down"></i></a>
+                    <div class="mega_menu">
+                        <div class="mega_rows">
+                            <div class="mega_column">
+                                <div class="mega_column-title">PHỤ KIỆN DI ĐỘNG</div>
+                                <ul>
+                                    <li>
+                                        <a href="../Backend/phukien.html">Pin sạc dự phòng</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Backend/phukien.html">Sạc, cáp</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Backend/phukien.html">Miếng dán màn hình</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Backend/phukien.html">Ốp lưng điện thoại</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Backend/phukien.html">Ốp lưng máy tính bảng</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div class="mega_column">
+                                <div class="mega_column-title">PHỤ KIỆN LAPTOP</div>
+                                <ul>
+                                    <li>
+                                        <a href="../Backend/phukien.html">Chuột, bàn phím</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Backend/phukien.html">Thiết bị mạng</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Backend/phukien.html">Camera, Webcam</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Backend/phukien.html">Balo, túi chống sốc</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Backend/phukien.html">Phần mềm</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mega_column mega_column-width">
+                                <div class="mega_column-title">THƯƠNG HIỆU HÀNG ĐẦU<a href="" style="color:#288ad6">Xem
+                                        tất cả<i class="fas fa-caret-right"
+                                            style="margin-left:-1px;color:#288ad6"></i></a></div>
+                                <ul>
+                                    <li>
+                                        <a href="../Backend/phukien.html">Apple</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Backend/phukien.html">Samsung</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Backend/phukien.html">Sony</a>
+                                    </li>
+                                    <li><a href="../Backend/phukien.html">Anker</a></li>
+
+                                </ul>
+                            </div>
+                            <div class="mega_column mega_column-width">
+
+                                <ul>
+                                    <li>
+                                        <a href="../Backend/phukien.html">Gậy tự sướng</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Backend/phukien.html">Gía đỡ laptop, điện thoại</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Backend/phukien.html">Đế, móc điện thoại</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Backend/phukien.html">Túi chống nước</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Backend/phukien.html">Túi đựng Airpods</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Backend/phukien.html">Phụ kiện Apad</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mega_column">
+                                <div class="mega_column-title">THIẾT BỊ ÂM THANH</a>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="../Backend/phukien.html">Tai nghe</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Backend/phukien.html">Loa</a>
+                                    </li>
+                                    <div class="mega_column-title ">THIẾT BỊ ÂM THANH</a>
+                                    </div>
+                                    <li>
+                                        <a href="../Backend/phukien.html">Thẻ nhớ</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Backend/phukien.html">USB</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Backend/phukien.html">Ổ cứng di động</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mega_column mega_column-width">
+                                <div class="mega_column-title">PHỤ KIỆN KHÁC</div>
+                                <ul>
+                                    <li>
+                                        <a href="../Backend/phukien.html">Thiết bị thông minh</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Backend/phukien.html">Phụ kiện ô tô</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Backend/phukien.html">Máy tính cầm tay</a>
+                                    </li>
+                                    <li><a href="../Backend/phukien.html">May chiếu, TV Box</a></li>
+                                    <li>
+                                        <a href="../Backend/phukien.html">Quạt mini</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Backend/phukien.html">Pin tiểu, pin điện thoại</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                </li>
+                <li>
+                    <a href="../Backend/donghotm.html"><i class="fas fa-clock"></i>Đồng hồ thông minh</a>
+                </li>
+                <li>
+                    <a href="../Backend/donghott.html"><i class="fas fa-clock"></i>Đồng hồ thời trang</a>
+                </li>
+                <li>
+                    <a href="../Backend/mayin.html"><i class="fas fa-desktop"></i>PC, Máy in<i
+                            class="fas fa-caret-down"></i></a>
+
+                    <ul class="dropdown_menu">
+                        <li>
+                            <a href="./Backend/mayin.html">Máy in</a>
+                        </li>
+                        <li>
+                            <a href="./Backend/mayin.html">Mực in</a>
+                        </li>
+                        <li>
+                            <a href="./Backend/mayin.html">Màn hình máy tính</a>
+                        </li>
+                        <li>
+                            <a href="./Backend/mayin.html">Máy tính để bàn</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Backend/maycu.html">Máy cũ giá rẻ</a>
+                </li>
+                <li>
+                    <a href="../Backend/sim.html">Sim, Thẻ cào</a>
+                </li>
+                <li>
+                    <a href="../Backend/tragop.html">Trả góp tiền điện</a>
+                </li>
+            </ul>
+            <label for="" class="btn open-btn"><i class="fas fa-bars" style="color: white;"></i></label>
+        </nav>
+        <!--end nav-->
+
+        <!--Slider bar-->
+        <div class="container_slide">
+            <div class="container_slide-left">
+                <div class="container_slider_left-img">
+                    <img src="../images/slide.png" style="width: 100%; height: 100%" />
+                </div>
+                <div class="container_slider_left-img">
+                    <img src="../images/slide1.png" style="width: 100%; height: 100%" />
+                </div>
+
+                <div class="container_slider_left-img">
+                    <img src="../images/slide2.png" style="width: 100%; height: 100%" />
+                </div>
+                <div class="container_slider_left-img">
+                    <img src="../images/slide3.png" style="width: 100%; height: 100%" />
+                </div>
+                <div class="container_slider_left-img">
+                    <img src="../images/slide4.png" style="width: 100%; height: 100%" />
+                </div>
+                <!-- onclick js -->
+                <i class="prev1" onclick="plusSlides1(-1)"><i class="fas fa-chevron-left"></i></i>
+
+                <i class="next1" onclick="plusSlides1(1)"><i class="fas fa-chevron-right"></i></i>
+                <ul class="container_dot">
+                    <li onclick="currentSlide1(1)" class="dot">
+                        <p> Chờ đón siêu phẩm Iphone 13 Pro | iPhone 13</p>
+
+                    </li>
+                    <li onclick="currentSlide1(2)" class="dot">
+                        <p> Galaxy Z Fold3 Flip3 Trả Góp 0%</p>
+
+                    </li>
+                    <li onclick="currentSlide1(3)" class="dot">
+                        <p> Đặt trước Vivo X70Pro Tặng Ngay 3 Triệu</p>
+
+                    </li>
+                    <li onclick="currentSlide1(4)" class="dot">
+                        <p> OPPO Reno5 Series Trả Được Từ 1.9 Triệu</p>
+
+                    </li>
+
+                    <li onclick="currentSlide1(5)" class="dot">
+                        <p> Sắm Apple Watch Giam Đến 3.3 Triệu</p>
+
+                    </li>
+            </div>
+            <div class="container_slide-right">
+                <img src="../images/slider4.jpg" />
+                <img src="../images/slider5.jpg" />
+                <img src="../images/slider6.jpg" />
+                <img src="../images/slider7.jpg" />
+            </div>
+        </div>
+        <!--end slider bar-->
+
+        <!--Banner1-->
+        <div class="container_banner">
+            <img src="../images/banner1.png" />
+        </div>
+        <!--end Banner1-->
+
+        <!--main-->
+        <main class="container_product">
+            <!--Sale-->
+            <section class="container_product-sales">
+                <div class="container_product_sale-title">Săn Sale Online Mỗi Ngày</div>
+                <div class="carousel owl-carousel">
+                    <div class="container_product-sale" id="c1">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img1.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html../Backend/oppo.html">iPhone 13 Pro Max 128GB</a>
+                            </h3>
+                            <p>Hàng sắp về</p>
+                            <strong>33.990.000đ</strong>
+
+                        </div>
+                    </div>
+                    <div class="container_product-sale" id="c2">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img2.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Vivo X70 Pro 5G</a>
+                            </h3>
+                            <p>Hàng sắp về</p>
+                            <strong>19.990.000đ</strong>
+                            <span>Giam ngay 3 triệu + TG 0% + Loa Bluetooth Foomee HH17 + Bảo hành 18 tháng + Bảo hiểm
+                                rơi vỡ 6 tháng</span>
+                        </div>
+                    </div>
+                    <div class="container_product-sale" id="c3">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img3.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Samsung Galaxy Z Flip3 5G 128GB</a>
+                            </h3>
+
+                            <strong>24.990.000đ</strong>
+                            <span>Qùa 300.000đ</span>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star"></i>
+                                <span>12</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale" id="c5">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img4.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Xiaomi Mi 11 Life</a>
+                            </h3>
+                            <del>7.990.000đ</del>
+                            <span>-5%</span><br>
+                            <strong>7.590.000đ</strong>
+                            <span>Qùa 300.000đ</span>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star"></i>
+                                <span>618</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_product-sale" id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img5.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Samsung Galaxy A52s 5G</a>
+                            </h3>
+                            <strong>10.990.000đ</strong>
+                            <span>Qùa 300.000đ</span>
+                        </div>
+                    </div>
+                    <div class="container_product-sale" id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img80.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Realme 8 5G</a>
+                            </h3>
+                            <del>7.999.000đ</del>
+                            <strong>7.690.000đ</strong>
+                            <span>Qùa 300.000đ</span>
+                        </div>
+                    </div>
+                    <div class="container_product-sale" id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img7.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">iPhone 11 64GB</a>
+                            </h3>
+                            <del>16.490.000đ</del>
+                            <strong>15.490.000đ</strong>
+                            <p>Gía rẻ: 15.010.000đ</p>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star-half-alt color"></i>
+                                <i class="fas fa-star"></i>
+                                <span>374</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale" id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img8.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">OPPO Reno5 5G</a>
+                            </h3>
+                            <del>11.990.999đ</del>
+                            <strong>10.990.000đ</strong>
+                            <p>Gía rẻ: 10.490.000đ</p>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star"></i>
+                                <span>60</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale" id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img81.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">VivoY20s</a>
+                            </h3>
+                            <del>4.990.999đ</del>
+                            <span>-6%</span>
+                            <strong>4.690.000đ</strong>
+                            <span>Qùa 200.000đ</span>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star-half-alt color"></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star"></i>
+                                <span>129</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale" id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img10.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Samsung Galaxy A12 (4GB/128GB)</a>
+                            </h3>
+                            <strong>4.290.000đ</strong>
+                            <span>Qùa 200.000đ</span>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star"></i>
+                                <span>225</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale" id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/11.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Xiaomi Redmi 9T (6GB/128GB)</a>
+                            </h3>
+                            <del>4.999.000đ</del>
+                            <span>-18%</span>
+                            <strong>4.090.000đ</strong>
+                            <span>Qùa 200.000đ</span>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star"></i>
+                                <span>443</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale" id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/12.jpg" style="width:100%;height: 70%;" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Laptop Nitro 5 Gaming AN515 5774NU i7 11800H...</a>
+                            </h3>
+                            <div class="container_product_sale_box-compare">
+                                <span>RAM 8GB</span>
+                                <span>SSD 512GB</span>
+                            </div>
+                            <del>29.990.000đ</del>
+                            <strong>28.990.000đ</strong>
+                            <span>Qùa 2.350.000đ</span>
+
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale" id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/13.jpg" style="width:100%;height: 70%;" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Lenovo IdeaPad Gaming 3 15IMH05 i5 10300H...</a>
+                            </h3>
+                            <div class="container_product_sale_box-compare">
+                                <span>RAM 8GB</span>
+                                <span>SSD 512GB</span>
+                            </div>
+                            <del>22.990.000đ</del>
+                            <strong>20.990.000đ</strong>
+                            <span>Qùa 1.090.000đ</span>
+
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale" id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/14.jpg" style="width:100%;height: 70%;" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Laptop Apple MacBook Air M1 2020 8GB/256GB/7-core GPU</a>
+                            </h3>
+                            <div class="container_product_sale_box-compare">
+                                <span>RAM 8GB</span>
+                                <span>SSD 512GB</span>
+                            </div>
+                            <span>Online giá rẻ</span>
+                            <del>28.990.000₫</del>
+                            <strong>27.490.000₫ </strong>
+                            <span>Qùa 300.000đ</span>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <span>14</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale" id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/15.jpg" style="width:100%;height: 100%;" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Samsung Galaxy Watch 4 LTE 44mm)</a>
+                            </h3>
+                            <div class="container_product_sale_box-compare">
+                                <span>Đo nồng độ oxy (SpO2)</span><br>
+                                <span>Có nghe gọi</span>
+                            </div>
+                            <strong>7.990.000₫</strong>
+
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale" id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img82.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Apple Watch S6 40mm viền nhôm dây cao su </a>
+                            </h3>
+                            <div class="container_product_sale_box-compare">
+                                <span>Đo nồng độ oxy (SpO2)</span><br>
+                                <span>Có nghe gọi</span>
+                            </div>
+                            <del>11.990.000₫</del>
+                            <span>-18%</span>
+                            <p>Online giá rẻ</p>
+                            <strong>9.831.000₫</strong>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <span>5</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale" id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img17.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Samsung Galaxy Watch 3 LTE 45mm viền thép dây da</a>
+                            </h3>
+                            <div class="container_product_sale_box-compare">
+                                <span>Đo nồng độ oxy (SpO2)</span><br>
+                                <span>Có nghe gọi</span>
+                            </div>
+
+                            <del>10.990.000₫ </del>
+                            <span>-36%</span>
+                            <strong>6.990.000₫</strong>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star "></i>
+                                <span>53</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale" id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img18.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Tai nghe Bluetooth True Wireless Galaxy Buds Pro</a>
+                            </h3>
+                            <div class="container_product_sale_box-compare">
+                                <span>Active Noise Cancelling</span>
+                            </div>
+                            <del>4.990.000₫</del>
+                            <span>-20%</span>
+                            <strong>3.990.000₫</strong>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star "></i>
+                                <span>24</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale" id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img19.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Loa Bluetooth Harman Kardon Aura Studio 3 </a>
+                            </h3>
+                            <div class="container_product_sale_box-compare">
+                                <span>130 W</span>
+                            </div>
+                            <p>Online giá rẻ</p>
+                            <del>6.900.000₫</del>
+                            <span>-20%</span>
+                            <strong>5.520.000₫</strong>
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale" id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img20.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Pin sạc dự phòng Polymer 10.000 mAh Type C
+                                    Energize...</a>
+                            </h3>
+                            <p>Chỉ bán online</p>
+                            <del>550.000₫ </del>
+                            <span>-20%</span>
+                            <strong>440.000₫</strong>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--end Sale-->
+
+            <!--Moblet-->
+            <section class="container_product-mobilets">
+                <div class="container_product_mobilet-menu">
+                    <h2>ĐIỆN THOẠI NỔI BẬT NHẤT</h2>
+                    <ul>
+                        <li>
+                            <a href="../Backend/dienthoai.html">Samsung Galaxy A72</a>
+                        </li>
+                        <li>
+                            <a href="../Backend/dienthoai.html">iPhone 12 Pro Max 128GB</a>
+                        </li>
+                        <li>
+                            <a href="../Backend/dienthoai.html">Oppo Reno6 Z 5G</a>
+                        </li>
+                        <li>
+                            <a href="../Backend/dienthoai.html">Xem tất cả <b>200</b>điện thoại</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container_product-mobilet">
+                    <div class="container_product-sale border " id="c1">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img21.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Samsung Galaxy Z Fold3 5G 256GB</a>
+                            </h3>
+                            <strong>41.990.000₫</strong>
+                            <span>Qùa 15.999.000đ</span>
+
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c2">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img22.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">iPhone 12 64GB</a>
+                            </h3>
+                            <del>22.490.000đ</del>
+                            <strong>20.490.000đ</strong>
+                            <p>Gía rẻ: 19.950.000d</p>
+
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c3">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img23.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Xiaomi Redmi 10 (6GB/128GB)</a>
+                            </h3>
+
+                            <strong>4.690.000₫</strong>
+                            <span>Qùa 200.000đ</span>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star"></i>
+                                <span>149</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border " id="c5">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img24.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Vivo Y12s (4GB/128GB)</a>
+                            </h3>
+                            <del> 4.290.000₫ </del>
+                            <span>-11%</span><br>
+                            <strong>3.790.000₫</strong>
+                            <span>Qùa 200.000đ</span>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star"></i>
+                                <span>102</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img25.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Vivo Y12s (4GB/128GB)</a>
+                            </h3>
+                            <del>4.290.000đ</del>
+                            <span>-11%</span>
+                            <strong>3.790.000₫</strong>
+                            <span>Qùa 200.000đ</span>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star"></i>
+                                <span>102</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img26.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Samsung Galaxy S21 5G</a>
+                            </h3>
+                            <del>20.990.000₫</del>
+                            <span>-14%</span>
+                            <strong>17.990.000₫</strong>
+                            <span>Qùa 300.000đ</span>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star"></i>
+                                <span>192</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img27.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">OPPO A74</a>
+                            </h3>
+
+                            <strong>6.690.000₫</strong>
+                            <span>Qùa 300.000đ</span>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star"></i>
+                                <span>109</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img28.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Realme C21Y 4GB </a>
+                            </h3>
+                            <span>Online giá rẻ</span>
+                            <del>3.990.999đ</del>
+                            <strong>3.890.000₫</strong>
+                            <span>Qùa 200.000đ</span>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star-half-alt color"></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star"></i>
+                                <span>56</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img29.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Xiaomi Redmi Note 10 5G 8GB</a>
+                            </h3>
+
+                            <strong>5.990.000₫</strong>
+                            <span>Qùa 300.000đ</span>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star"></i>
+                                <span>336</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img30.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Vivo Y53s</a>
+                            </h3>
+                            <strong>6.990.000₫</strong>
+                            <span>Qùa 300.000đ</span>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star"></i>
+                                <span>25</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--end Moblet-->
+
+            <!--Latop-->
+            <section class="container_product-sales bg_white">
+                <div class="container_product_mobilet-menu" id="ml">
+                    <h2>LATOP, TABLET NỔI BẬT NHẤT</h2>
+                    <ul>
+                        <li>
+                            <a href="../Backend/Laptop.html">Laptop Asus</a>
+                        </li>
+                        <li>
+                            <a href="../Backend/Laptop.html">Laptop HP</a>
+                        </li>
+                        <li>
+                            <a href="../Backend/Laptop.html">iPad Air4 Wifi 64GB</a>
+                        </li>
+                        <li>
+                            <a href="../Backend/Laptop.html">Xem tất cả <b>156</b> Laptop</a>
+                        </li>
+                        <li>
+                            <a href="../Backend/tablet.html">Xem tất cả <b>46</b> Tablet</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="carousel owl-carousel" id="ml">
+                    <div class="container_product-sale border  height" id="c1">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img31.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">iPhone 13 Pro Max 128GB</a>
+                            </h3>
+                            <p>Hàng sắp về</p>
+                            <strong>33.990.000đ</strong>
+
+                        </div>
+                    </div>
+                    <div class="container_product-sale border height" id="c2">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img32.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Vivo X70 Pro 5G</a>
+                            </h3>
+                            <p>Hàng sắp về</p>
+                            <strong>19.990.000đ</strong>
+                            <span>Giam ngay 3 triệu + TG 0% + Loa Bluetooth Foomee HH17 + Bảo hành 18 tháng + Bảo hiểm
+                                rơi vỡ 6 tháng</span>
+                        </div>
+                    </div>
+                    <div class="container_product-sale border height" id="c3">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img33.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Samsung Galaxy Z Flip3 5G 128GB</a>
+                            </h3>
+
+                            <strong>24.990.000đ</strong>
+                            <span>Qùa 300.000đ</span>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star"></i>
+                                <span>12</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border height" id="c5">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img34.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Xiaomi Mi 11 Life</a>
+                            </h3>
+                            <del>7.990.000đ</del>
+                            <span>-5%</span><br>
+                            <strong>7.590.000đ</strong>
+                            <span>Qùa 300.000đ</span>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star"></i>
+                                <span>618</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_product-sale border height" id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img35.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Samsung Galaxy A52s 5G</a>
+                            </h3>
+                            <strong>10.990.000đ</strong>
+                            <span>Qùa 300.000đ</span>
+                        </div>
+                    </div>
+                    <div class="container_product-sale border height" id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img36.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Realme 8 5G</a>
+                            </h3>
+                            <del>7.999.000đ</del>
+                            <strong>7.690.000đ</strong>
+                            <span>Qùa 300.000đ</span>
+                        </div>
+                    </div>
+                    <div class="container_product-sale border height" id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img37.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">iPhone 11 64GB</a>
+                            </h3>
+                            <del>16.490.000đ</del>
+                            <strong>15.490.000đ</strong>
+                            <p>Gía rẻ: 15.010.000đ</p>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star-half-alt color"></i>
+                                <i class="fas fa-star"></i>
+                                <span>374</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border height" id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img38.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">OPPO Reno5 5G</a>
+                            </h3>
+                            <del>11.990.999đ</del>
+                            <strong>10.990.000đ</strong>
+                            <p>Gía rẻ: 10.490.000đ</p>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star"></i>
+                                <span>60</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border height" id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img39.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">VivoY20s</a>
+                            </h3>
+                            <del>4.990.999đ</del>
+                            <span>-6%</span>
+                            <strong>4.690.000đ</strong>
+                            <span>Qùa 200.000đ</span>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star-half-alt color"></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star"></i>
+                                <span>129</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border height height" id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img40.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Samsung Galaxy A12 (4GB/128GB)</a>
+                            </h3>
+                            <strong>4.290.000đ</strong>
+                            <span>Qùa 200.000đ</span>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star"></i>
+                                <span>225</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--end Latop-->
+
+            <!--Tablet-->
+            <section class="container_product-sales bg_white">
+                <div class="container_product_mobilet-menu" id="ml">
+                    <h2>PHỤ KIỆN NỔI BẬT NHẤT</h2>
+                    <ul>
+                        <li>
+                            <a href="../Backend/phukien.html">Sạc dự phòng</a>
+                        </li>
+                        <li>
+                            <a href="../Backend/phukien.html">Cáp xạc</a>
+                        </li>
+                        <li>
+                            <a href="../Backend/phukien.html">Tai nghe</a>
+                        </li>
+                        <li>
+                            <a href="../Backend/phukien.html">Loa</a>
+                        </li>
+                        <li>
+                            <a href="../Backend/phukien.html">Ốp lưng</a>
+                        </li>
+                        <li>
+                            <a href="../Backend/phukien.html">Xem tất cả <b>2.797</b> điện thoại</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="carousel owl-carousel" id="ml width">
+                    <div class="container_product-sale border height" id="c1">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img41.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">iPhone 13 Pro Max 128GB</a>
+                            </h3>
+                            <p>Hàng sắp về</p>
+                            <strong>33.990.000đ</strong>
+
+                        </div>
+                    </div>
+                    <div class="container_product-sale border height" id="c2">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img42.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Vivo X70 Pro 5G</a>
+                            </h3>
+                            <p>Hàng sắp về</p>
+                            <strong>19.990.000đ</strong>
+                            <span>Giam ngay 3 triệu + TG 0% + Loa Bluetooth Foomee HH17 + Bảo hành 18 tháng + Bảo hiểm
+                                rơi vỡ 6 tháng</span>
+                        </div>
+                    </div>
+                    <div class="container_product-sale border height" id="c3">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img43.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Samsung Galaxy Z Flip3 5G 128GB</a>
+                            </h3>
+
+                            <strong>24.990.000đ</strong>
+                            <span>Qùa 300.000đ</span>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star"></i>
+                                <span>12</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border height" id="c5">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img44.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Xiaomi Mi 11 Life</a>
+                            </h3>
+                            <del>7.990.000đ</del>
+                            <span>-5%</span><br>
+                            <strong>7.590.000đ</strong>
+                            <span>Qùa 300.000đ</span>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star"></i>
+                                <span>618</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_product-sale border height" id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img45.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Samsung Galaxy A52s 5G</a>
+                            </h3>
+                            <strong>10.990.000đ</strong>
+                            <span>Qùa 300.000đ</span>
+                        </div>
+                    </div>
+                    <div class="container_product-sale border height" id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img46.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Realme 8 5G</a>
+                            </h3>
+                            <del>7.999.000đ</del>
+                            <strong>7.690.000đ</strong>
+                            <span>Qùa 300.000đ</span>
+                        </div>
+                    </div>
+                    <div class="container_product-sale border height" id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img47.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">iPhone 11 64GB</a>
+                            </h3>
+                            <del>16.490.000đ</del>
+                            <strong>15.490.000đ</strong>
+                            <p>Gía rẻ: 15.010.000đ</p>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star-half-alt color"></i>
+                                <i class="fas fa-star"></i>
+                                <span>374</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border height" id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img48.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">OPPO Reno5 5G</a>
+                            </h3>
+                            <del>11.990.999đ</del>
+                            <strong>10.990.000đ</strong>
+                            <p>Gía rẻ: 10.490.000đ</p>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star"></i>
+                                <span>60</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border height" id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img49.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">VivoY20s</a>
+                            </h3>
+                            <del>4.990.999đ</del>
+                            <span>-6%</span>
+                            <strong>4.690.000đ</strong>
+                            <span>Qùa 200.000đ</span>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star-half-alt color"></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star"></i>
+                                <span>129</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border height" id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="../Backend/oppo.html">
+                                <img src="../images/img50.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="../Backend/oppo.html">Samsung Galaxy A12 (4GB/128GB)</a>
+                            </h3>
+                            <strong>4.290.000đ</strong>
+                            <span>Qùa 200.000đ</span>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star"></i>
+                                <span>225</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--end Tablet-->
+
+            <!--Watch-->
+            <section class="container_product-watch">
+                <div class="container_product_watch-products">
+                    <div class="container_product_watch_products-menu">
+                        <ul>
+                            <div class="filter" id="all">
+                                <li class="active">Đồng hồ thông minh
+                                </li>
+                            </div>
+                            <div class="filter" id="nam">
+                                <li>
+                                    Đồng hồ thời trang Nam
+                                </li>
+                            </div>
+                            <div class="filter" id="nu">
+                                <li>
+                                    Đồng hồ thời trang Nữ
+                                </li>
+                            </div>
+                            <div class="filter" id="treem">
+                                <li>
+                                    Định vị trẻ em
+                                </li>
+                            </div>
+
+                        </ul>
+                        <p>
+                            <a href="../Backend/donghotm.html">Xem tất cả <b>134</b> Đồng hồ thông minh<i
+                                    class="fas fa-caret-right" style="margin-left: 5px;"></i></a>
+                        </p>
+                    </div>
+                    <div class=" container_product_watch-product">
+                        <div class="container_product-sale mx all" id="height">
+                            <div class="container_product_sale_img">
+                                <a href="../Backend/oppo.html">
+                                    <img src="../images/img51.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="../Backend/oppo.html">Đồng hồ thông minh BeU B2 Đen</a>
+                                </h3>
+                                <del>690.000đ</del>
+                                <span>-20%</span>
+                                <strong>552.000₫</strong>
+                            </div>
+                        </div>
+                        <div class="container_product-sale mx all" id="height">
+                            <div class="container_product_sale_img">
+                                <a href="../Backend/oppo.html">
+                                    <img src="../images/img52.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="../Backend/oppo.html">Samsung Galaxy Watch 4 LTE Classic 46mm</a>
+                                </h3>
+                                <div class="container_product_sale_box-compare">
+                                    <span>Đo nồng độ oxy (SpO2)</span><br>
+                                    <span>Có nghe gọi</span>
+                                </div>
+                                <strong>9.990.000₫</strong>
+                            </div>
+                        </div>
+                        <div class="container_product-sale mx all" id="height">
+                            <div class="container_product_sale_img">
+                                <a href="../Backend/oppo.html">
+                                    <img src="../images/img53.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="../Backend/oppo.html">Vòng đeo tay thông minh Mi Band 6 </a>
+                                </h3>
+                                <div class="container_product_sale_box-compare">
+                                    <span>Đo nồng độ oxy (SpO2)</span>
+                                </div>
+                                <del>1.290.000₫</del>
+                                <span>-23%</span>
+                                <strong>990.000₫</strong>
+                                <div class="container_product_sale_box-compare">
+                                    <span>Đo nồng độ Oxy (SpO2)</span>
+                                </div>
+
+                                <div class="container_product_sale_box-star">
+                                    <i class="fas fa-star color"></i>
+                                    <i class="fas fa-star color"></i>
+                                    <i class="fas fa-star color"></i>
+                                    <i class="fas fa-star color"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>26</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container_product-sale mx all" id="height">
+                            <div class="container_product_sale_img">
+                                <a href="../Backend/oppo.html">
+                                    <img src="../images/img54.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="../Backend/oppo.html">Samsung Galaxy Watch 4 40mm </a>
+                                </h3>
+                                <div class="container_product_sale_box-compare">
+                                    <span>Đo nồng độ oxy (SpO2)</span><br>
+                                    <span>Có nghe gọi</span>
+                                </div>
+                                <strong>6.490.000₫</strong>
+                            </div>
+                        </div>
+
+                        <div class="container_product-sale mx all " id="height">
+                            <div class="container_product_sale_img">
+                                <a href="../Backend/oppo.html">
+                                    <img src="../images/imh67.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="../Backend/oppo.html">Đồng hồ thông minh Garmin Forerunner 45 dây silicone
+                                        đỏ </a>
+                                </h3>
+                                <div class="container_product_sale_box-compare">
+                                    <span>Đo nồng độ oxy (SpO2)</span><br>
+                                    <span>Có nghe gọi</span>
+                                </div>
+                                <del>4.072.000₫ </del>
+                                <span>-20%</span>
+                                <strong>4.072.000đ</strong>
+                            </div>
+                        </div>
+
+                        <!--Đồng hồ Nam-->
+                        <div class="container_product-sale mx all nam " id="height">
+                            <div class="container_product_sale_img">
+                                <a href="../Backend/oppo.html">
+                                    <img src="../images/img68.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="../Backend/oppo.html">Đồng hồ Nam Fossil FS5638</a>
+                                </h3>
+
+                                <del>3.480.000₫ </del>
+                                <span>-25</span>
+                                <strong>2.610.000₫</strong>
+                            </div>
+                        </div>
+                        <div class="container_product-sale mx all nam " id="height">
+                            <div class="container_product_sale_img">
+                                <a href="../Backend/oppo.html">
+                                    <img src="../images/img67.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="../Backend/oppo.html">Đồng hồ Nam Tommy Hilfiger 1791740 </a>
+                                </h3>
+
+                                <del>2.925.000₫</del>
+                                <span>-25</span>
+                                <strong>3.900.000₫ </strong>
+                            </div>
+                        </div>
+
+                        <div class="container_product-sale mx all nam " id="height">
+                            <div class="container_product_sale_img">
+                                <a href="../Backend/oppo.html">
+                                    <img src="../images/img68.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="../Backend/oppo.html">Đồng hồ Nam MVW ML050-01</a>
+                                </h3>
+                                <del>1.417.000₫</del>
+                                <span>-25%</span><br>
+                                <strong>1.890.000₫</strong>
+
+                            </div>
+                        </div>
+
+                        <div class="container_product-sale mx all nam" id="height">
+                            <div class="container_product_sale_img">
+                                <a href="../Backend/oppo.html">
+                                    <img src="../images/img69.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="../Backend/oppo.html">Đồng hồ Nam Bulova 98A187 </a>
+                                </h3>
+                                <strong>9.600.000₫</strong>
+                            </div>
+                        </div>
+
+                        <div class="container_product-sale mx all nam" id="height">
+                            <div class="container_product_sale_img">
+                                <a href="../Backend/oppo.html">
+                                    <img src="../images/img70.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="../Backend/oppo.html">Đồng hồ Nam Coach 14602152</a>
+                                </h3>
+                                <del>3.600.000₫ </del>
+                                <span>-25%</span><br>
+                                <strong>2.700.000₫</strong>
+
+
+                            </div>
+                        </div>
+                        <!--end Đồng hồ Nam-->
+
+                        <!--Đồng hồ Nữ-->
+                        <div class="container_product-sale mx all nu" id="height">
+                            <div class="container_product_sale_img">
+                                <a href="../Backend/oppo.html">
+                                    <img src="../images/img59.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="../Backend/oppo.html">Đồng hồ Nữ Citizen EU6073-53A</a>
+                                </h3>
+                                <del>4.200.000₫</del>
+                                <span>-30%</span>
+                                <strong>2.940.000₫</strong>
+
+                            </div>
+                        </div>
+                        <div class="container_product-sale mx all nu" id="height">
+                            <div class="container_product_sale_img">
+                                <a href="../Backend/oppo.html">
+                                    <img src="../images/img60.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="../Backend/oppo.html">Đồng hồ Nữ ELLE ELL21064 </a>
+                                </h3>
+                                <del>2.180.000₫</del>
+                                <span>-30%</span>
+                                <strong>1.526.000₫ </strong>
+
+                            </div>
+                        </div>
+                        <div class="container_product-sale mx all nu" id="height">
+                            <div class="container_product_sale_img">
+                                <a href="../Backend/oppo.html">
+                                    <img src="../images/img71.png" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="../Backend/oppo.html">Đồng hồ Nữ ELLE ELL21030</a>
+                                </h3>
+                                <del>2.720.000₫</del>
+                                <span>-30%</span>
+                                <strong>1.904.000₫</strong>
+                            </div>
+                        </div>
+
+                        <div class="container_product-sale mx all nu" id="height">
+                            <div class="container_product_sale_img">
+                                <a href="../Backend/oppo.html">
+                                    <img src="../images/img72.png" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="../Backend/oppo.html">Đồng hồ Nữ DKNY NY2947</a>
+                                </h3>
+                                <del>4.390.000₫</del>
+                                <span>-30%</span>
+                                <strong>3.073.000₫</strong>
+                                <p>Gía rẻ: 10.490.000đ</p>
+
+                            </div>
+                        </div>
+
+                        <div class="container_product-sale mx all nu" id="height">
+                            <div class="container_product_sale_img">
+                                <a href="../Backend/oppo.html">
+                                    <img src="../images/img73.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="../Backend/oppo.html">Đồng hồ Nữ Lacoste 2001005</a>
+                                </h3>
+                                <del>4.600.000₫</del>
+                                <span>-40%</span>
+                                <strong>3.220.000₫</strong>
+                            </div>
+                        </div>
+                        <!--end Đồng hồ Nữ-->
+
+
+                        <!--Đồng hồ Trẻ em-->
+                        <div class="container_product-sale mx all treem" id="height">
+                            <div class="container_product_sale_img">
+                                <a href="../Backend/oppo.html">
+                                    <img src="../images/img74.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="../Backend/oppo.html">Đồng hồ định vị trẻ em 4G Kidcare S6 Hồng</a>
+                                </h3>
+                                <div class="container_product_sale_box-compare">
+                                    <span>Có nghe gọi</span>
+                                </div>
+                                ../Backend/oppo.html <del>1.790.000₫</del>
+                                <span>-10%</span>
+                                <strong>1.611.000₫</strong>
+
+                            </div>
+                        </div>
+                        <div class="container_product-sale mx all treem" id="height">
+                            <div class="container_product_sale_img">
+                                <a href="../Backend/oppo.html">
+                                    <img src="../images/img64.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="../Backend/oppo.html">Đồng hồ định vị trẻ em 4G Kidcare S8 Đen</a>
+                                </h3>
+                                <div class="container_product_sale_box-compare">
+                                    <span>Có nghe gọi</span>
+                                </div>
+                                ../Backend/oppo.html <del>2.290.000₫</del>
+                                <span>-10%</span>
+                                <strong>2.061.000₫</strong>
+
+                            </div>
+                        </div>
+                        <div class="container_product-sale mx all treem" id="height">
+                            <div class="container_product_sale_img">
+                                <a href="../Backend/oppo.html">
+                                    <img src="../images/img75.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="../Backend/oppo.html">Đồng hồ định vị trẻ em Kidcare 08S</a>
+                                </h3>
+                                <div class="container_product_sale_box-compare">
+                                    <span>Có nghe gọi</span>
+                                </div>
+                                ../Backend/oppo.html <del>1.390.000₫</del>
+                                <span>-10%</span>
+                                <strong>1.251.000₫</strong>
+
+                            </div>
+                        </div>
+                        <div class="container_product-sale mx all treem" id="height">
+                            <div class="container_product_sale_img">
+                                <a href="../Backend/oppo.html">
+                                    <img src="../images/img76.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="../Backend/oppo.html">Đồng hồ định vị trẻ em 4G Abardeen T3 Hồng)</a>
+                                </h3>
+                                <div class="container_product_sale_box-compare">
+                                    <span>Có nghe gọi</span>
+                                </div>
+                                ../Backend/oppo.html <del>2.690.000₫</del>
+                                <span>-10%</span>
+                                <strong>2.421.000₫</strong>
+                            </div>
+                        </div>
+
+                        <div class="container_product-sale mx all treem" id="height">
+                            <div class="container_product_sale_img">
+                                <a href="../Backend/oppo.html">
+                                    <img src="../images/img77.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="../Backend/oppo.html">Đồng hồ định vị trẻ em Masstel Super Hero 4G</a>
+                                </h3>
+                                <div class="container_product_sale_box-compare">
+                                    <span>Có nghe gọi</span>
+                                </div>
+                                ../Backend/oppo.html <del>2.490.000₫</del>
+                                <span>-20%</span>
+                                <strong>1.992.000₫</strong>
+                            </div>
+                        </div>
+                        <!--end đồng hồ trẻ em-->
+                    </div>
+                    <!--end watch-->
+            </section>
+            <!--end Watch-->
+
+
+            <!--banner thương hiệu-->
+            <div class="container_product-banner">
+                <div class="container_product_banner-title">CHUYÊN TRANG THƯƠNG HIỆU</div>
+                <div class="container_product_banner-images">
+                    <img src="../images/banner3.png" />
+                    <img src="../images/banner4.png" />
+                    <img src="../images/banner5.png" />
+                </div>
+            </div>
+            <!--end banner thương hiệu-->
+
+
+            <!--slider sản phẩm-->
+            <div class="container_product-banner">
+                <div class="container_product_banner-title">SẢN PHẨM MỚI</div>
+                <div class="glide" id="glide1">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <img src="../images/banner6.jpg" alt="">
+                            </li>
+                            <li class="glide__slide">
+                                <img src="../images/banner7.jpg" alt="">
+                            </li>
+                            <li class="glide__slide">
+                                <img src="../images/banner8.jpg" alt="">
+                            </li>
+                            <li class="glide__slide">
+                                <img src="../images/banner9.jpg" alt="">
+                            </li>
+                            <li class="glide__slide">
+                                <img src="../images/banner10.jpg" alt="">
+                            </li>
+                            <li class="glide__slide">
+                                <img src="../images/banner11.jpg" alt="">
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--end slider sản phẩm-->
+
+            <!--new-->
+            <section class="container_news">
+                <div class="container_news-left">
+                    <div class="container_news_left-title">
+                        <h3>24H CÔNG NGHỆ</h3>
+                        <p>
+                            <a href="">Xem thêm <i class="fas fa-angle-right"></i></a>
+                        </p>
+                    </div>
+                    <div class="container_news_left-box">
+                        <div class="container_news_left_box_item">
+                            <img src="../images/new1.jpg" />
+                            <p><a href="index.html">Tháng 10 bình thường mới trở lại, sắm laptop có ngay ưu đãi nhân 3
+                                    cực khủng cho học sinh - sinh viên, đừng bỏ lỡ</a></p>
+                        </div>
+                        <div class="container_news_left_box_items">
+                            <div class="container_news_left_box_items-new">
+                                <div class="left_box_items_new-img">
+                                    <img src="../images/new2.jpg" />
+                                </div>
+                                <div class="left_box_items_new-title">
+                                    <p><a href="index.html" style="color: #000;">Thế Giới Di Động triển khai dịch vụ vay
+                                            tiền mặt FE Credit: Thủ tục đơn giản, nhanh gọn...</a></p>
+                                </div>
+                            </div>
+                            <div class="container_news_left_box_items-new mb">
+                                <div class="left_box_items_new-img">
+                                    <img src="../images/new3.jpg" />
+                                </div>
+                                <div class="left_box_items_new-title">
+                                    <p><a href="" style="color: #000">Sắm laptop mùa tựu trường tại Thế Giới Di Động, có
+                                            ngay ưu đãi nhân 3, các tân sinh viên...</a></p>
+                                </div>
+                            </div>
+                            <div class="container_news_left_box_items-new mb">
+                                <div class="left_box_items_new-img">
+                                    <img src="../images/new4.png" />
+                                </div>
+                                <div class="left_box_items_new-title">
+                                    <p><a href="index.html" style="color: #000">Duy nhất ngày 01/10: Nạp thẻ Viettel
+                                            nhận ngay khuyến mãi 20% giá trị thẻ nạp, dễ mua...</a></p>
+                                </div>
+                            </div>
+                            <div class="container_news_left_box_items-new mb">
+                                <div class="left_box_items_new-img">
+                                    <img src="../images/new4.jpg" />
+                                </div>
+                                <div class="left_box_items_new-title">
+                                    <p><a href="index.html" style="color: #000">Duy nhất ngày 01/10: Nạp thẻ Viettel
+                                            nhận ngay khuyến mãi 20% giá trị thẻ nạp, dễ mua...</a></p>
+                                </div>
+                            </div>
+                            <div class="container_news_left_box_items-new">
+                                <div class="left_box_items_new-img">
+                                    <img src="../images/new5.jpg" />
+                                </div>
+                                <div class="left_box_items_new-title">
+                                    <p><a href="index.html" style="color: #000">Vivo Y21s - món hời đáng mua trong tầm
+                                            giá dưới 6 triệu với ngoại hình thời thượng...</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container_news-right">
+                    <div class="container_news_right-title">
+                        <h3>GAME, ỨNG DUNG</h3>
+                        <p><a href="">Xem thêm <i class="fas fa-angle-right"></i></a></p>
+
+                    </div>
+                    <div class="swiper featured-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide box">
+                                <div class="image">
+                                    <a href="index.html">
+                                        <img src="../images/new6.jpg" alt="" />
+                                    </a>
+
+                                </div>
+                                <div class="swiper-slide_box">
+                                    <div class="swiper-slide_box-img">
+                                        <img src="../images/new10.png" />
+                                    </div>
+                                    <div class="swiper-slide_box-content">
+                                        <p>Counter: Side - Siêu phẩm game thẻ tướng Anime</p>
+                                        <button>Miễn phí</button>
+                                        <span>Chiến thuật, Hành động, Nhập vai</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide_box-item">
+                                    <ul>
+                                        <li>
+                                            <a href="index.html"> <span>&#9679;</span>Cách tải và chơi geam Counter:
+                                                Slide trên PC, máy tính</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.html"> <span>&#9679;</span>Counter Slide mới nhất | Cách nhập
+                                                vai</a>
+                                        </li>
+                                </div>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide box">
+                                <div class="image">
+                                    <a href="index.html"> <img src="../images/new7.jpg" alt="" /></a>
+
+                                </div>
+                                <div class="swiper-slide_box">
+                                    <div class="swiper-slide_box-img">
+                                        <img src="../images/new11.png" />
+                                    </div>
+                                    <div class="swiper-slide_box-content">
+                                        <p>VSCO: Chỉnh sửa Ảnh và Video</p>
+                                        <button>Miễn phí</button>
+                                        <span>Chụp & hình ảnh</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide_box-item">
+                                    <ul>
+                                        <li>
+                                            <a href="index.html"> <span>&#9679;</span>2 Cách đăng ký VSCO, tạo tài khoản
+                                                VSCO chỉnh sửa ảnh đơn giản nhất</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.html"> <span>&#9679;</span>TOP 11 app chỉnh sửa màu Hàn Quốc
+                                                đẹp, miễn phí cho Android, iOS</a>
+                                        </li>
+                                </div>
+                                </ul>
+                            </div>
+
+                            <div class="swiper-slide box">
+                                <div class="image">
+                                    <a href="index.html">
+                                        <img src="../images/new8.jpg" alt="" />
+                                    </a>
+
+                                </div>
+                                <div class="swiper-slide_box">
+                                    <div class="swiper-slide_box-img">
+                                        <img src="../images/new12.png" />
+                                    </div>
+                                    <div class="swiper-slide_box-content">
+                                        <p>Play Together | Game phiêu lưu thế giới mở đáng yêu</p>
+                                        <button>Miễn phí</button>
+                                        <span> Nhập vai, Phiêu lưu</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide_box-item">
+                                    <ul>
+                                        <li>
+                                            <a href="index.html"> <span>&#9679;</span>Cách nạp thẻ Play Together đơn
+                                                giản, an toàn</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.html"> <span>&#9679;</span>Cách nạp thẻ Play Together đơn
+                                                giản, an toàn</a>
+                                        </li>
+                                </div>
+                                </ul>
+                            </div>
+
+                            <div class="swiper-slide box">
+
+                                <div class="image"> <a href="index.html"> <img src="../images/new9.jpg" alt="" /></a>
+
+                                </div>
+                                <div class="swiper-slide_box">
+                                    <div class="swiper-slide_box-img">
+                                        <img src="../images/img13.png" />
+                                    </div>
+                                    <div class="swiper-slide_box-content">
+                                        <p>GoViet - Ứng dụng đặt xe, giao hàng nhanh</p>
+                                        <button>Miễn phí</button>
+                                        <span>Du lịch & Địa phương</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide_box-item">
+                                    <ul>
+                                        <li>
+                                            <a href="index.html"> <span>&#9679;</span>Cách chuyển tài khaorn GoViet sang
+                                                GoJek đề nhận khuyến mãi 1 phần nước
+                                        </li>
+                                        <li>
+                                            <a href="index.html"> <span>&#9679;</span>Hướng dẫn đặt xe, đặt đồ ăn trên
+                                                ứng dụng GoViet</a>
+                                        </li>
+                                </div>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+            </section>
+            <!--end new-->
+        </main>
+        <!--end main-->
+
+        <!--Footer-->
+        <footer>
+            <div class="container_footer">
+                <div class="container_footer-row">
+                    <div class="container_footer-column">
+                        <ul>
+                            <li>
+                                <a href="index.html">Lịch sử mua hàng</a>
+                            </li>
+                            <li>
+                                <a href="index.html">Cộng tác bán hàng TGDĐ</a>
+                            </li>
+                            <li>
+                                <a href="index.html">Tìm hiểu về mua trả góp</a>
+                            </li>
+                            <li>
+                                <a href="index.html">Chính sách bảo hành</a>
+                            </li>
+
+                            <div id="show" style="display: none;">
+                                <li>
+                                    <a href="index.html">Chính sách đổi trả</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">Giao hàng & Thanh toán</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">Hướng dẫn mua online</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">Bán hàng doanh nghiệp</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">Phiếu mua hàng</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">In hóa đơn điện tử</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">Quy chế hoạt động</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">Nội dung cửa hàng</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">Chất lượng phục vụ</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">Cảnh báo giả mạo</a>
+                                </li>
+                                <li><a href="index.html">Chính sách khui hộp sản phẩm Apple</a></li>
+                            </div>
+                            <li id="toggle" style="margin: 2% 0; cursor: pointer;">
+                                Xem thêm
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="container_footer-column">
+                        <ul>
+                            <li>
+                                <a href="index.html">Gioi thiệu công ty</a>
+                            </li>
+                            <li>
+                                <a href="index.html">Tuyển dụng</a>
+                            </li>
+                            <li>
+                                <a href="index.html">Gửi góp ý, khiếu nại</a>
+                            </li>
+                            <li>
+                                <a href="index.html">Chính sách bảo hành</a>
+                            </li>
+                            <li>
+                                <a href="index.html">Tìm siêu thị (2.736 shop)</a>
+                            </li>
+                            <li>
+                                <a href="index.html">Xem bản moblet</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="container_footer-column">
+                        <ul>
+                            <li>
+                                <p><b>Tổng đài hỗ trợ</b> (Miễn phí gọi)</p>
+                            </li>
+                            <li>
+                                <span>Gọi mua:</span><a href="">1800.1060 (7:30 - 22:00)</a>
+                            </li>
+                            <li>
+                                <span>Gọi mua:</span><a href="">1800.1763 (7:30 - 22:00)</a>
+                            </li>
+                            <li>
+                                <span>Gọi mua:</span><a href="">1800.1062 (8:00 - 21:30)</a>
+                            </li>
+                            <li>
+                                <span>Bảo hảnh:</span><a href="">1800.1064 (8:00 - 21:00)</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="container_footer-column width">
+                        <ul class="flex">
+                            <li>
+                                <a href="https://www.facebook.com/thegioididongcom"><i
+                                        class="fab fa-facebook"></i>3689.2k Fan</a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/user/TGDDVideoReviews"><i class="fab fa-youtube"
+                                        style="color: red;"></i>818k Đăng ký</a>
+                            </li>
+
+                        </ul>
+                        <div class="container_footer_column-img">
+                            <p>Website cùng tập đoàn</p>
+                            <div class="container_footer_column-imgs flex">
+                                <img src="../images/foo2.png">
+                                <img src="../images/foo3.png">
+                                <img src="../images/foo4.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+        <!--end footer-->
+    </div>
+    <!--end giao diện -->
+
+    <!--script-->
+    <!--swiper-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- Glidejs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+    <!-- Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <!-- Animate On Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="Js/Main.js"></script>
+
+    <script>
+        const myslide1 = document.querySelectorAll(".container_slider_left-img"),
+            dot1 = document.querySelectorAll(".dot");
+        let counter1 = 1;
+        slidefun1(counter1);
+
+        let timer1 = setInterval(autoSlide1, 5000);
+
+        function autoSlide1() {
+            counter1 += 1;
+            slidefun1(counter1);
+        }
+
+        function plusSlides1(n) {
+            counter1 += n;
+            slidefun1(counter1);
+
+            resetTimer1();
+        }
+
+        function currentSlide1(n) {
+            counter1 = n;
+            slidefun1(counter1);
+
+            resetTimer1();
+        }
+
+        function resetTimer1() {
+            clearInterval1(timer);
+            timer1 = setInterval(autoSlide, 5000);
+        }
+
+        function slidefun1(n) {
+            let i;
+            for (i = 0; i < myslide1.length; i++) {
+                myslide1[i].style.display = "none";
+            }
+            for (i = 0; i < dot1.length; i++) {
+                dot1[i].className = dot1[i].className.replace(" active", "");
+            }
+            if (n > myslide1.length) {
+                counter1 = 1;
+            }
+            if (n < 1) {
+                counter1 = myslide1.length;
+            }
+            myslide1[counter1 - 1].style.display = "block";
+            dot1[counter1 - 1].className += " active";
+        }
+
+    </script>
+</body>
+
+</html>
