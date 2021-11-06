@@ -1,0 +1,2588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Glidejs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css">
+    <link rel='shortcut icon' href='../images/iconlogo.jpg' />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./style/donghott.css" />
+    <title>Đồng hồ thời trang</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--slider top-->
+        <div class="container_slider">
+            <div class="container_slider-box">
+                <div class="container_slider_box-img">
+                    <img src="../images/slider1.png" style="width: 100%; height: 100%" class="images" />
+                    <img src="../images/slider2.png" style="width: 100%; height: 100%" class="images" />
+                    <img src="../images/slider3.png" style="width: 100%; height: 100%" class="images" />
+                </div>
+                <!-- slider controls -->
+                <div class="container_slider_box-icons">
+                    <i class="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></i>
+
+                    <i class="next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></i>
+                </div>
+            </div>
+        </div>
+        <!--end Slider top-->
+
+        <!--Header-->
+        <header>
+            <div class="container_header">
+                <div class="container_header-logo">
+                    <a href="../index.html">
+                        <img src="../images/logo.jpg" class="container_header_logo-img" />
+                    </a>
+                </div>
+                <div class="container_header-center flex">
+                    <div class="container_header_center-text" id="login-btn">
+                        <p>Xem giá, khuyến mãi tại</p>
+                        <p>Hồ Chí Minh<i class="fas fa-caret-down down"></i></p>
+                    </div>
+                    <div class="container_header_center-search">
+                        <input type="text" placeholder="Bạn tìm gì" name="" id="" />
+                        <i class="fas fa-search search"></i>
+                    </div>
+                    <div class="container_header_center-cart flex">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>Gio hàng</p>
+                    </div>
+                    <div class="container_header_center-order">
+                        <p>Lịch sử đơn hàng</p>
+                    </div>
+                </div>
+                <div class="container_header-right flex">
+                    <div class="pluse">
+                        <i class="fas fa-circle" style="font-size: 20px"></i>
+                    </div>
+                    <div class="container_header_right-text">
+                        <a href="">
+                            Mobifore trả sau đến hạn thanh toán. Mua thẻ nạp ngay</a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">24h<br />Công nghệ</a>
+                        </li>
+                        <li>
+                            <a href="">Hỏi đáp</a>
+                        </li>
+                        <li>
+                            <a href="">Game App</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- information form  -->
+        <div class="login-form-container">
+            <div id="close-login-btn">
+                <i class="fas fa-times"></i>
+                <p>Đóng</p>
+            </div>
+            <form action="">
+                <h5>Chọn địa chỉ, nhận hàng</h5>
+                <div class="form-des">
+                    <span><b>Chọn đầy đủ địa chỉ nhận hàng</b> để biết chính xác thời gian giao</span>
+                    <select class="section">
+                        <option value="nam">Bình Định</option>
+                        <option value="nu">Hồ Chí Minh</option>
+                    </select>
+                    <select class="section">
+                        <option value="nam">Vui lòng chọn Quận/Huyện</option>
+                        <option value="nu">TP.Quy Nhơn</option>
+                        <option value="nu">Huyện Hoài A</option>
+                        <option value="nu">Huyện Phù Cát</option>
+                        <option value="nu">Huyện Vĩnh Thạnh</option>
+                    </select>
+                    <select class="section">
+                        <option value="nam">Vui lòng chọn Phường/Xã</option>
+                        <option value="nu">Xã Cát Chánh</option>
+                        <option value="nu">Xã Cát Hải</option>
+                        <option value="nu">Xã Cát Sơn</option>
+                        <option value="nu">Xã Cát Tài</option>
+                        <option value="nu">Xã Cát Tường</option>
+                    </select>
+                    <input type="text" class="section" placeholder="Số nhà, tên đường (không bắt buộc)" />
+                    <button>XÁC NHẬN</button>
+                </div>
+
+            </form>
+        </div>
+        <!-- end information form  -->
+
+        <!--nav-->
+        <nav class="nav">
+            <ul class="nav_menu">
+                <div class="top">
+                    <label for="" class="btn close-btn"><i class="fas fa-times"></i></label>
+                </div>
+                <li>
+                    <a href="dienthoai.html"><i class="fas fa-mobile-alt"></i>Điện thoại</a>
+                </li>
+                <li>
+                    <a href="Laptop.html"><i class="fas fa-laptop"></i>Laptop</a>
+                </li>
+                <li>
+                    <a href="tablet.html"><i class="fas fa-tablet-alt"></i>Tablet</a>
+                </li>
+                <li>
+                    <a href="phukien.html"><i class="fas fa-headphones-alt"></i>Phụ kiện<i
+                            class="fas fa-caret-down"></i></a>
+                    <div class="mega_menu">
+                        <div class="mega_rows">
+                            <div class="mega_column">
+                                <div class="mega_column-title">PHỤ KIỆN DI ĐỘNG</div>
+                                <ul>
+                                    <li>
+                                        <a href="phukien.html">Pin sạc dự phòng</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Sạc, cáp</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Miếng dán màn hình</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Ốp lưng điện thoại</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Ốp lưng máy tính bảng</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div class="mega_column">
+                                <div class="mega_column-title">PHỤ KIỆN LAPTOP</div>
+                                <ul>
+                                    <li>
+                                        <a href="phukien.html">Chuột, bàn phím</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Thiết bị mạng</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Camera, Webcam</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Balo, túi chống sốc</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Phần mềm</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mega_column mega_column-width">
+                                <div class="mega_column-title">THƯƠNG HIỆU HÀNG ĐẦU<a href="" style="color:#288ad6">Xem
+                                        tất cả<i class="fas fa-caret-right"
+                                            style="margin-left:-1px;color:#288ad6"></i></a></div>
+                                <ul>
+                                    <li>
+                                        <a href="phukien.html">Apple</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Samsung</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Sony</a>
+                                    </li>
+                                    <li><a href="phukien.html">Anker</a></li>
+
+                                </ul>
+                            </div>
+                            <div class="mega_column mega_column-width">
+
+                                <ul>
+                                    <li>
+                                        <a href="phukien.html">Gậy tự sướng</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Gía đỡ laptop, điện thoại</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Đế, móc điện thoại</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Túi chống nước</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Túi đựng Airpods</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Phụ kiện Apad</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mega_column">
+                                <div class="mega_column-title">THIẾT BỊ ÂM THANH</a>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="phukien.html">Tai nghe</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Loa</a>
+                                    </li>
+                                    <div class="mega_column-title ">THIẾT BỊ ÂM THANH</a>
+                                    </div>
+                                    <li>
+                                        <a href="phukien.html">Thẻ nhớ</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">USB</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Ổ cứng di động</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mega_column mega_column-width">
+                                <div class="mega_column-title">PHỤ KIỆN KHÁC</div>
+                                <ul>
+                                    <li>
+                                        <a href="phukien.html">Thiết bị thông minh</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Phụ kiện ô tô</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Máy tính cầm tay</a>
+                                    </li>
+                                    <li><a href="phukien.html">May chiếu, TV Box</a></li>
+                                    <li>
+                                        <a href="phukien.html">Quạt mini</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Pin tiểu, pin điện thoại</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                </li>
+                <li>
+                    <a href="donghotm.html"><i class="fas fa-clock"></i>Đồng hồ thông minh</a>
+                </li>
+                <li>
+                    <a href="donghott.html" class="active"><i class="fas fa-clock"></i>Đồng hồ thời trang</a>
+                </li>
+                <li>
+                    <a href="mayin.html"><i class="fas fa-desktop"></i>PC, Máy in<i class="fas fa-caret-down"></i></a>
+
+                    <ul class="dropdown_menu">
+                        <li>
+                            <a href="mayin.html">Máy in</a>
+                        </li>
+                        <li>
+                            <a href="mayin.html">Mực in</a>
+                        </li>
+                        <li>
+                            <a href="mayin.html">Màn hình máy tính</a>
+                        </li>
+                        <li>
+                            <a href="mayin.html">Máy tính để bàn</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="maycu.html">Máy cũ giá rẻ</a>
+                </li>
+                <li>
+                    <a href="sim.html">Sim, Thẻ cào</a>
+                </li>
+                <li>
+                    <a href="tragop.html">Trả góp tiền điện</a>
+                </li>
+            </ul>
+            <label for="" class="btn open-btn"><i class="fas fa-bars" style="color: white;"></i></label>
+        </nav>
+        <!--end nav-->
+
+        <!--Slider bar-->
+        <div class="container_slide">
+            <div class="container_slide-left">
+                <div class="container_slider_left-img">
+                    <img src="./images/donghotm/sldier2.png" style="width: 100%; height: 100%" />
+                </div>
+                <div class="container_slider_left-img">
+                    <img src="./images/donghotm/slider3.png" style="width: 100%; height: 100%" />
+                </div>
+
+                <div class="container_slider_left-img">
+                    <img src="./images/donghotm/slider4.png" style="width: 100%; height: 100%" />
+                </div>
+                <div class="container_slider_left-img">
+                    <img src="./images/donghotm/slider5.png" style="width: 100%; height: 100%" />
+                </div>
+                <div class="container_slider_left-img">
+                    <img src="./images/donghotm/slider6.png" style="width: 100%; height: 100%" />
+                </div>
+
+                <!-- onclick js -->
+                <i class="prev1" onclick="plusSlides1(-1)"><i class="fas fa-chevron-left"></i></i>
+
+                <i class="next1" onclick="plusSlides1(1)"><i class="fas fa-chevron-right"></i></i>
+            </div>
+            <div class="dotsbox" style="text-align:center">
+                <span class="dot" onclick="currentSlide1(1)"></span>
+                <span class="dot" onclick="currentSlide1(2)"></span>
+                <span class="dot" onclick="currentSlide2(3)"></span>
+                <span class="dot" onclick="currentSlide3(4)"></span>
+                <span class="dot" onclick="currentSlide4(5)"></span>
+            </div>
+
+
+        </div>
+        <!--end slider bar-->
+
+        <!--bộ lọc-->
+        <div class="gia filter" id="showfilter" style="display: none;">
+            <ul>
+                <li>
+                    <a href="">Giam giá</a>
+                </li>
+                <li>
+                    <a href="">Góp 0%</a>
+                </li>
+                <li>
+                    <a href="">Độc quyền</a>
+                </li>
+                <li>
+                    <a href="">Mới</a>
+                </li>
+            </ul>
+        </div>
+        <!--end bộ lọc-->
+
+        <!--hãng-->
+        <div class="hang" id="showhang" style="display: none;">
+            <ul>
+                <li>
+                    <img src="images/donghott/item1.png">
+                </li>
+                <li>
+                    <img src="images/donghott/item2.jpg">
+                </li>
+                <li>
+                    <img src="images/donghott/item3.png">
+                </li>
+                <li>
+                    <img src="images/donghott/item4.jpg">
+                </li>
+                <li>
+                    <img src="images/donghott/item5.jpg">
+                </li>
+                <li>
+                    <img src="images/donghott/item6.jpg">
+                </li>
+                <li>
+                    <img src="images/donghott/item7.jpg">
+                </li>
+                <li>
+                    <img src="images/donghott/item8.png">
+                </li>
+                <li>
+                    <img src="images/donghott/item8.png">
+                </li>
+                <li>
+                    <img src="images/donghott/item9.jpg">
+                </li>
+                <li>
+                    <img src="images/donghott/item10.jpg">
+                </li>
+                <li>
+                    <img src="images/donghott/item11.jpg">
+                </li>
+                <li>
+                    <img src="images/donghott/item12.jpg">
+                </li>
+                <li>
+                    <img src="images/donghott/item13.png">
+                </li>
+                <li>
+                    <img src="images/donghott/item14.jpg">
+                </li>
+                <li>
+                    <img src="images/donghott/item15.jpg">
+                </li>
+                <li>
+                    <img src="images/donghott/item16.jpg">
+                </li>
+                <li>
+                    <img src="images/donghott/item17.jpg">
+                </li>
+                <li>
+                    <img src="images/donghott/item18.jpg">
+                </li>
+                <li>
+                    <img src="images/donghott/item19.png">
+                </li>
+                <li>
+                    <img src="images/donghott/item20.jpg">
+                </li>
+                <li>
+                    <img src="images/donghott/item21.jpg">
+                </li>
+                <li>
+                    <img src="images/donghott/item22.jpg">
+                </li>
+                <li>
+                    <img src="images/donghott/item23.jpg">
+                </li>
+                <li>
+                    <img src="images/donghott/item24.jpg">
+                </li>
+            </ul>
+        </div>
+        <!--end hãng-->
+
+        <!--gia-->
+        <div class="gia" id="showgia" style="display: none;">
+            <ul>
+                <li>
+                    Dưới 1 triệu
+                </li>
+                <li>
+                    Từ 1 - 3 triệu
+                </li>
+                <li>
+                    Từ 3 - 5 triệu
+                </li>
+
+                <li>
+                    Từ 6 - 7 triệu
+                </li>
+                <li>
+                    Từ 7 - 15 triệu
+                </li>
+                <li>
+                    Từ 15 - 30 triệu
+                </li>
+                <li>
+                    Từ 30 - 50 triệu
+                </li>
+                <li>
+                    Trên 50 triệu
+                </li>
+            </ul>
+        </div>
+        <!--end giá-->
+
+        <!--Tính năng đặc biệt-->
+        <div class="gia tinhnang" id="showtinhnang" style="display: none;">
+            <ul>
+                <li>
+                    <a href="">Nam</a>
+                </li>
+                <li>
+                    <a href="">Nữ</a>
+                </li>
+                <li>
+                    <a href="">Cặp đôi</a>
+                </li>
+                <li>
+                    <a href="">Trẻ em</a>
+                </li>
+            </ul>
+        </div>
+        <!--end Tính năng đặc biệt-->
+
+        <!--Xếp hang-->
+        <div class="gia nhucau" id="shownhucau" style="display: none;">
+            <ul>
+                <li>
+                    <a href="">Dưới 29 mm</a>
+                </li>
+                <li>
+                    <a href="">29 - 33 mm</a>
+                </li>
+                <li>
+                    <a href="">33 - 37 mm</a>
+                </li>
+                <li>
+                    <a href="">37 - 40 mm</a>
+                </li>
+                <li>
+                    <a href="">40 - 42 mm</a>
+                </li>
+                <li>
+                    <a href="">42 - 45 mm</a>
+                </li>
+                <li>
+                    <a href="">Trên 45 mm</a>
+                </li>
+            </ul>
+        </div>
+        <!--end Xếp hạng-->
+
+        <!--Khuyến mãi-->
+        <div class="gia sale" id="showsale" style="display: none;">
+            <ul>
+                <li>
+                    <a href="">Cơ tự động (Automatic)</a>
+                </li>
+                <li>
+                    <a href="">Pin (Quartz)</a>
+                </li>
+            </ul>
+        </div>
+        <!--end Khuyến mãi-->
+
+        <!--Trả góp ưu đãi-->
+        <div class="gia tragop" id="showtragop" style="display: none;">
+            <ul>
+                <li>
+                    <a href="">Pin</a>
+                </li>
+                <li>
+                    <a href="">Ánh sáng mặt trời</a>
+                </li>
+
+            </ul>
+        </div>
+        <!--end Trả góp ưu đãi-->
+
+        <!--Xếp hang-->
+        <div class="gia chatlieu" id="showchatlieu" style="display: none;">
+            <ul>
+                <li>
+                    <a href="">Kính Sapphire</a>
+                </li>
+                <li>
+                    <a href="">Kính khoáng (Mineral)</a>
+                </li>
+                <li>
+                    <a href="">Nhựa Resin</a>
+                </li>
+
+            </ul>
+        </div>
+        <!--end Xếp hạng-->
+
+        <!--Mặt số-->
+        <div class="gia matso" id="showmatso" style="display: none;">
+            <ul>
+                <li>
+                    <a href="">Đồng hồ kim (Analog)</a>
+                </li>
+                <li>
+                    <a href="">Đồng hồ điện tử (Analog)</a>
+                </li>
+                <li>
+                    <a href="">Đồng hồ kim - điện tử (Ana-Digi)</a>
+                </li>
+
+            </ul>
+        </div>
+        <!--end Mặt số-->
+
+        <!--Hình dạng-->
+        <div class="gia hinhdang" id="showhinhdang" style="display: none;">
+            <ul>
+                <li>
+                    <a href="">Tròn</a>
+                </li>
+                <li>
+                    <a href="">Vuông</a>
+                </li>
+                <li>
+                    <a href="">Chữ nhật</a>
+                </li>
+
+            </ul>
+        </div>
+        <!--end Hình dạng-->
+
+        <!--Chất liệu dây-->
+        <div class="gia day" id="showday" style="display: none;">
+            <ul>
+                <li>
+                    <a href="">Da</a>
+                </li>
+                <li>
+                    <a href="">Hợp kim</a>
+                </li>
+                <li>
+                    <a href="">Silicone</a>
+                </li>
+                <li>
+                    <a href="">Cao su</a>
+                </li>
+
+                <li>
+                    <a href="">Vải</a>
+                </li>
+
+                <li>
+                    <a href="">Caramic</a>
+                </li>
+                <li>
+                    <a href="">Nhựa</a>
+                </li>
+            </ul>
+        </div>
+        <!--end Chất liệu dây-->
+
+
+        <!--Kháng nước-->
+        <div class="gia khangnuoc" id="showkhangnuoc" style="display: none;">
+            <ul>
+                <li>
+                    <a href="">3 AMT - Rửa tay, đi mưa</a>
+                </li>
+                <li>
+                    <a href="">5 AMT - Đi mưa ,tắm</a>
+                </li>
+                <li>
+                    <a href="">10 AMT - Tắm, Bơi</a>
+                </li>
+                <li>
+                    <a href="">20 AMT - Bơi lặn</a>
+                </li>
+            </ul>
+        </div>
+        <!--end Kháng nước-->
+
+        <!--Màu mặt-->
+        <div class="gia maumat" id="showmaumat" style="display: none;">
+            <ul>
+                <li>
+                    <a href="">Bạc</a>
+                </li>
+                <li>
+                    <a href="">Đen</a>
+                </li>
+                <li>
+                    <a href="">Nâu</a>
+                </li>
+                <li>
+                    <a href="">Vàng</a>
+                </li>
+                <li>
+                    <a href="">Vàng hồng</a>
+                </li>
+                <li>
+                    <a href="">Trăng</a>
+                </li>
+                <li>
+                    <a href="">Xanh dương</a>
+                </li>
+                <li>
+                    <a href="">Xanh lá</a>
+                </li>
+                <li>
+                    <a href="">Xanh bộ đội</a>
+                </li>
+                <li>
+                    <a href="">Hồng</a>
+                </li>
+                <li>
+                    <a href="">Xám</a>
+                </li>
+                <li>
+                    <a href="">Đỏ</a>
+                </li>
+                <li>
+                    <a href="">Kem</a>
+                </li>
+                <li>
+                    <a href="">Phối màu</a>
+                </li>
+                <li>
+                    <a href="">Cam</a>
+                </li>
+                <li>
+                    <a href="">Tím</a>
+                </li>
+                <li>
+                    <a href="">Xà cừ</a>
+                </li>
+            </ul>
+        </div>
+        <!--end Màu mặt-->
+
+        <!--Màu dây-->
+        <div class="gia mauday" id="showmauday" style="display: none;">
+            <ul>
+                <li>
+                    <a href="">Bạc</a>
+                </li>
+                <li>
+                    <a href="">Đen</a>
+                </li>
+                <li>
+                    <a href="">Nâu</a>
+                </li>
+                <li>
+                    <a href="">Vàng</a>
+                </li>
+                <li>
+                    <a href="">Vàng hồng</a>
+                </li>
+                <li>
+                    <a href="">Trăng</a>
+                </li>
+                <li>
+                    <a href="">Xanh dương</a>
+                </li>
+                <li>
+                    <a href="">Xanh lá</a>
+                </li>
+                <li>
+                    <a href="">Xanh bộ đội</a>
+                </li>
+                <li>
+                    <a href="">Hồng</a>
+                </li>
+                <li>
+                    <a href="">Xám</a>
+                </li>
+                <li>
+                    <a href="">Đỏ</a>
+                </li>
+                <li>
+                    <a href="">Kem</a>
+                </li>
+                <li>
+                    <a href="">Phối màu</a>
+                </li>
+                <li>
+                    <a href="">Cam</a>
+                </li>
+                <li>
+                    <a href="">Tím</a>
+                </li>
+
+            </ul>
+        </div>
+        <!--Màu dây-->
+
+        <!--chức năng-->
+        <div class="gia chucnang" id="showchucnang" style="display: none;">
+            <ul>
+                <li>
+                    <a href="">Chrongraph</a>
+                </li>
+                <li>
+                    <a href="">Kết nối Bluetooth</a>
+                </li>
+                <li>
+                    <a href="">Kim dạ quang</a>
+                </li>
+                <li>
+                    <a href="">Báo thức</a>
+                </li>
+                <li>
+                    <a href="">Bấm giờ thể thao</a>
+                </li>
+                <li>
+                    <a href="">Bấm giờ đếm ngược</a>
+                </li>
+                <li>
+                    <a href="">Đèn nền</a>
+                </li>
+                <li>
+                    <a href="">Lịch ngày</a>
+                </li>
+
+            </ul>
+        </div>
+        <!--end chức năng-->
+
+        <!--nhóm sản phẩm-->
+        <div class="gia nhom" id="shownhom" style="display: none;">
+            <ul>
+                <li>
+                    <a href="">Siêu anh hùng</a>
+                </li>
+                <li>
+                    <a href="">Độc quyền</a>
+                </li>
+                <li>
+                    <a href="">Thụy Sỹ</a>
+                </li>
+                <li>
+                    <a href="">Cơ lộ máy</a>
+                </li>
+                <li>
+                    <a href="">Thể thao</a>
+                </li>
+
+            </ul>
+        </div>
+        <!--end nhóm sản phẩm-->
+
+
+        <!--main-->
+        <main class="container_product">
+            <!--items-->
+            <div class="container_product_items">
+                <div class="container_product_items_top hidden">
+                    <ul>
+                        <li id="filter">
+                            Bộ lọc
+                            <i class="fas fa-caret-down"></i>
+                        </li>
+                        <li id="hang">
+                            Hãng
+                            <i class="fas fa-caret-down"></i>
+                        </li>
+                        <li id="gia">
+                            Mức giá
+                            <i class="fas fa-caret-down"></i>
+                        </li>
+
+                        <li id="tinhnang">
+                            Đối tượng sử dụng
+                            <i class="fas fa-caret-down"></i>
+                        </li>
+                        <li id="nhucau">
+                            Đường kính mặt
+                            <i class="fas fa-caret-down"></i>
+                        </li>
+                        <li id="sale">
+                            Bộ máy
+                            <i class="fas fa-caret-down"></i>
+                        </li>
+                        <li id="tragop">
+                            Nguồn năng lượng
+                            <i class="fas fa-caret-down"></i>
+                        </li>
+                        <li id="chatlieu">
+                            Chất liệu mặt kính
+                            <i class="fas fa-caret-down"></i>
+                        </li>
+                        <li id="matso">
+                            Loại mặt số
+                            <i class="fas fa-caret-down"></i>
+                        </li>
+                        <li id="hinhdang">
+                            Hình dáng mặt số
+                            <i class="fas fa-caret-down"></i>
+                        </li>
+                        <li id="day">
+                            Chất liệu dây
+                            <i class="fas fa-caret-down"></i>
+                        </li>
+                        <li id="khangnuoc">
+                            Kháng nước
+                            <i class="fas fa-caret-down"></i>
+                        </li>
+                        <li id="maumat">
+                            Màu mặt
+                            <i class="fas fa-caret-down"></i>
+                        </li>
+                        <li id="mauday">
+                            Màu dây
+                            <i class="fas fa-caret-down"></i>
+                        </li>
+                        <li id="chucnang">
+                            Chức năng
+                            <i class="fas fa-caret-down"></i>
+                        </li>
+                        <li id="nhom">
+                            Nhóm sản phẩm
+                            <i class="fas fa-caret-down"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container_product_items_bottom container_product_items_top">
+                    <ul>
+                        <li>
+                            <img src="images/donghott/img1.png" style="width:10px" /> Giam sốc
+
+                        </li>
+                        <li>
+                            <img src="images/donghott/img2.png" style="width:10px" />Nam
+
+                        </li>
+                        <li>
+                            <img src="images/donghott/img3.png" style="width:10px" /> Nữ
+
+                        </li>
+                        <li>
+                            <img src="images/donghott/img4.png" style="width:10px" /> Trẻ em
+                        </li>
+                        <li>
+                            <img src="images/donghott/img5.png" style="width:10px" /> Cặp đôi
+
+                        </li>
+                        <li>
+                            <img src="images/donghott/img6.png" style="width:10px" /> Dây đồng hồ
+
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="bosuutap">
+                    <div class="bosuutap_top">
+                        <h3>Bộ sưu tập</h3>
+                        <a href="">Xem tất cả bộ sưu tập<i class="fas fa-caret-right"></i></a>
+                    </div>
+                    <div class="bosuutap_img">
+                        <img src="images/donghott/banner1.png" class="bosuutap_imgs" />
+                        <img src="images/donghott/banner2.png" class="bosuutap_imgs" />
+                        <img src="images/donghott/banner3.png" class="bosuutap_imgs" />
+                        <img src="images/donghott/banner4.png" class="bosuutap_imgs" />
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Moblet-->
+            <section class="container_product-mobilets">
+                <h3>ĐỒNG HỒ ĐỘC QUYỀN</h3>
+                <div class="container_product-mobilet">
+                    <div class="container_product-sale border " id="c1">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img2.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">MVW 42 mm kính sapphire Nam MS075-01</a>
+                            </h3>
+                            <del>1.990.000₫</del>
+                            <span>-25%</span>
+                            <strong>1.492.000₫</strong>
+
+
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c2">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img3.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">MVW 42 mm kính sapphire Nam ML064-01</a>
+                            </h3>
+                            <del>1.990.000₫</del>
+                            <span>-25%</span>
+                            <strong>1.492.000₫</strong>
+
+
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c3">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img4.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">MVW 42 mm kính sapphire Nam ML057-01</a>
+                            </h3>
+                            <del>1.790.000₫</del>
+                            <strong>1.342.000₫</strong>
+                            <span>Qùa 200.000đ</span>
+
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border " id="c5">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img5.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">MVW 40 mm kính sapphire Nam ML054-01
+                                </a>
+                            </h3>
+                            <del> 1.690.000₫ </del>
+                            <span>-11%</span><br>
+                            <strong>1.267.000₫</strong>
+
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img6.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">MVW 41 mm Nam ML062-01</a>
+                            </h3>
+                            <del>1.990.000₫ </del>
+                            <span>-11%</span>
+                            <strong>1.492.000₫</strong>
+
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img7.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">MVW 40 mm kính sapphire Nam MS070-01</a>
+                            </h3>
+                            <del>1.990.000₫</del>
+                            <span>-14%</span>
+                            <strong>1.492.000₫</strong>
+
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img8.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">MVW 40 mm kính sapphire Nam MS070-02</a>
+                            </h3>
+                            <del>1.990.000₫</del>
+                            <strong>1.492.000₫</strong>
+
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img9.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">MVW 41 mm Nam MS073-01</a>
+                            </h3>
+
+                            <del>2.190.000₫</del>
+                            <strong>1.642.000₫</strong>
+
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img10.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">MVW 40 mm Nam MS065-01</a>
+                            </h3>
+                            <del>1.990.000₫</del>
+                            <strong>1.492.000₫</strong>
+
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img11.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">MVW 42 mm kính sapphire Nam MS063-03</a>
+                            </h3>
+                            <del>1.890.000₫</del>
+                            <strong>1.417.000₫</strong>
+
+                        </div>
+                    </div>
+
+
+                    <!--show-->
+                    <div class="container_product-mobilet" id="showitem" style="display: none; ">
+                        <div class="container_product-sale border " id="c1">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img42.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">MVW 42 mm Nam MS063-01</a>
+                                </h3>
+                                <del>1.890.000₫</del>
+                                <span>-25%</span>
+                                <strong>1.417.000₫</strong>
+
+
+                            </div>
+                        </div>
+                        <div class="container_product-sale border " id="c2">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img43.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">MVW 42 mm Nam ML047-01</a>
+                                </h3>
+                                <del>1.790.000₫</del> <span>-25%</span>
+                                <strong>1.342.000₫</strong>
+
+
+                            </div>
+                        </div>
+                        <div class="container_product-sale border " id="c3">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img44.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">MVW 40 mm Nam MS060-01</a>
+                                </h3>
+                                <del>1.890.000₫ </del> <span>-25%</span>
+                                <strong>1.417.000₫</strong>
+
+                            </div>
+                        </div>
+
+                        <div class="container_product-sale border " id="c5">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img45.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">Vivo Y12s (4GB/128GB)</a>
+                                </h3>
+                                <del>1.890.000₫</del>
+                                <span>-25%</span>
+                                <strong>1.417.000₫</strong>
+
+                            </div>
+                        </div>
+                        <div class="container_product-sale border " id="c6">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img46.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">MVW 41 mm kính sapphire Nam MS066-01</a>
+                                </h3>
+                                <del>1.990.000₫ </del>
+                                <span>-25%</span>
+                                <strong>1.492.000₫</strong>
+
+                            </div>
+                        </div>
+                        <div class="container_product-sale border " id="c6">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img47.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">MVW 43 mm kính sapphire Nam ML051-01</a>
+                                </h3>
+                                <del>1.890.000₫</del>
+                                <span>-25%</span>
+                                <strong>1.417.000₫</strong>
+
+                            </div>
+                        </div>
+                        <div class="container_product-sale border " id="c6">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img48.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">MVW 40 mm kính sapphire Nam MS064-01</a>
+                                </h3>
+                                <del>1.990.000₫</del> <span>-25%</span>
+                                <strong>1.990.000₫</strong>
+
+                            </div>
+                        </div>
+
+                        <div class="container_product-sale border " id="c6">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img49.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">MVW 43 mm kính sapphire Nam ML050-01</a>
+                                </h3>
+
+                                <del>1.890.000₫</del> <span>-25%</span>
+                                <strong>1.417.000₫</strong>
+
+                            </div>
+                        </div>
+
+                        <div class="container_product-sale border " id="c6">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img50.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">MVW 40 mm kính sapphire Nam ML052-01</a>
+                                </h3>
+                                <del>1.890.000₫ </del>
+                                <span>-25%</span>
+                                <strong>1.417.000₫</strong>
+
+                            </div>
+                        </div>
+
+                        <div class="container_product-sale border " id="c6">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img51.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">MVW 43 mm kính sapphire Nam ML051-02</a>
+                                </h3>
+                                <del>1.890.000₫</del>
+                                <span>-25%</span>
+                                <strong>1.417.000₫</strong>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button id="Xemthem">Xem thêm đồng hồ độc quyền</button>
+            </section>
+            <!--end đồng hồ độc quyền-->
+
+
+            <!--đồng hồ cao cấp-->
+            <section class="container_product-mobilets">
+                <div class="container_product-mobilet">
+                    <div class="container_product-sale border " id="c1">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img12.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">CITIZEN 33 mm Nữ ED8183-54A</a>
+                            </h3>
+                            <p>Online giá rẻ</p>
+                            <del>4.580.000₫</del>
+                            <span>-35%</span>
+                            <strong>2.977.000₫</strong>
+
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c2">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img13.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">CITIZEN 42 mm Nam BH5003-51L</a>
+                            </h3>
+                            <del>3.950.000₫</del>
+                            <span>-25%</span>
+                            <strong>2.962.000₫</strong>
+
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c3">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img14.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">CITIZEN 30 mm Nữ ER0216-59D</a>
+                            </h3>
+                            <del>4.370.000₫</del>
+                            <span>-35%</span>
+                            <strong>2.840.000₫</strong>
+
+
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border " id="c5">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img15.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">CITIZEN 41 mm Nam BF2011-51E</a>
+                            </h3>
+                            <del>2.840.000₫</del>
+                            <span>-25%</span>
+                            <strong>2.130.000₫</strong>
+
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img16.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">CITIZEN 39 mm Nam BE9170-72A</a>
+                            </h3>
+                            <del>3.910.000₫</del>
+                            <span>-25%</span>
+                            <strong>2.932.000₫</strong>
+
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img17.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">CITIZEN 39 mm Nam BE9176-76L</a>
+                            </h3>
+                            <del>4.580.000₫</del>
+                            <span>-25%</span>
+                            <strong>3.435.000₫</strong>
+
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img18.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">CITIZEN 42 mm Nam AN8195-58E</a>
+                            </h3>
+                            <del>5.630.000₫</del>
+                            <span>-25%</span>
+                            <strong>4.222.000₫</strong>
+
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img19.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">CITIZEN 42 mm Nam AN8190-51L
+                                </a>
+                            </h3>
+                            <del>4.960.000₫</del>
+                            <span>-25%</span>
+                            <strong>3.720.000₫</strong>
+
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img20.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">CITIZEN 42 mm Nam AN8052-55P</a>
+                            </h3>
+                            <del>5.090.000₫ </del>
+                            <span>-25%</span>
+                            <strong>3.817.000₫</strong>
+
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img21.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">CITIZEN 41 mm Nam AN3616-75L</a>
+                            </h3>
+                            <del>5.590.000₫</del>
+                            <span>-25%</span>
+                            <strong>4.192.000₫</strong>
+
+                        </div>
+                    </div>
+
+
+                    <!--show-->
+                    <div class="container_product-mobilet" id="showitem1" style="display: none; ">
+                        <div class="container_product-sale border " id="c1">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img52.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">CITIZEN 41 mm Nam AN3616-75E</a>
+                                </h3>
+                                <del>5.590.000₫ </del> <span>-25%</span>
+                                <strong>4.192.000₫</strong>
+
+
+                            </div>
+                        </div>
+                        <div class="container_product-sale border " id="c2">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img53.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">CITIZEN 42 mm Nam AN8054-50E</a>
+                                </h3>
+                                <del>5.090.000₫ </del> <span>-25%</span>
+                                <strong>3.817.000₫
+                                </strong>
+
+
+                            </div>
+                        </div>
+                        <div class="container_product-sale border " id="c3">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img54.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">CITIZEN 42 mm Nam AN8190-51A</a>
+                                </h3>
+                                <del>4.960.000₫</del> <span>-25%</span>
+                                <strong>3.720.000₫</strong>
+
+                            </div>
+                        </div>
+
+                        <div class="container_product-sale border " id="c5">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img55.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">CITIZEN 32 mm Nữ EM0500-73L</a>
+                                </h3>
+                                <p>Online giá rẻ</p>
+                                <del>5.460.000₫ </del>
+                                <span>-25%</span>
+                                <strong>3.549.000₫</strong>
+
+                            </div>
+                        </div>
+                        <div class="container_product-sale border " id="c6">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img56.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">CITIZEN 42 mm Nam BI1035-09A</a>
+                                </h3>
+                                <del>3.530.000₫</del>
+                                <span>-25%</span>
+                                <strong>2.647.000₫</strong>
+
+                            </div>
+                        </div>
+                        <div class="container_product-sale border " id="c6">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img57.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">CITIZEN 41 mm Nam AK5006-58A</a>
+                                </h3>
+                                <del>4.570.000₫</del>
+                                <span>-25%</span>
+                                <strong>3.427.000₫</strong>
+
+                            </div>
+                        </div>
+                        <div class="container_product-sale border " id="c6">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img58.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">CITIZEN 30 mm Nữ FE1220-89L</a>
+                                </h3>
+                                <p>Online giá rẻ</p>
+                                <del>5.210.000₫</del> <span>-35%</span>
+                                <strong>3.386.000₫</strong>
+
+                            </div>
+                        </div>
+
+                        <div class="container_product-sale border " id="c6">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img59.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">CITIZEN 41 mm Nam AN3610-71A </a>
+                                </h3>
+
+                                <del>4.960.000₫</del> <span>-25%</span>
+                                <strong>3.720.000₫</strong>
+
+                            </div>
+                        </div>
+
+                        <div class="container_product-sale border " id="c6">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img60.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">CITIZEN 41 mm Nam AN3610-71E</a>
+                                </h3>
+                                <del>4.960.000₫</del> <span>-25%</span>
+                                <strong>3.720.000₫</strong>
+
+                            </div>
+                        </div>
+
+                        <div class="container_product-sale border " id="c6">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img61.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">CITIZEN 40 mm Nam BM7460-88H</a>
+                                </h3>
+                                <del>5.800.000₫</del>
+                                <span>-25%</span>
+                                <strong>4.350.000₫</strong>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button id="Xemthem1">Xem thêm đồng hồ cao cấp</button>
+            </section>
+            <!--end đồng hồ cao cấp-->
+
+
+
+            <!--đồng hồ phái mạnh-->
+            <section class="container_product-mobilets">
+                <div class="container_product-mobilet">
+                    <div class="container_product-sale border " id="c1">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img22.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">FESTINA 43 mm Nam F20425/4</a>
+                            </h3>
+                            <del>2.920.000₫</del>
+                            <span>-25%</span>
+                            <strong>2.190.000₫</strong>
+
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c2">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img23.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">Q&Q 43 mm Nam VR18J007Y</a>
+                            </h3>
+                            <del>429.000₫</del>
+                            <span>-45%</span>
+                            <strong>235.000₫</strong>
+
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c3">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img24.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">Q&Q 40 mm Nam S280J304Y</a>
+                            </h3>
+                            <del>940.000₫</del>
+                            <span>-45%</span>
+                            <strong>517.000₫</strong>
+
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border " id="c5">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img25.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">DANIEL WELLINGTON 40 mm Nam DW00100134</a>
+                            </h3>
+
+                            <strong>5.300.000₫</strong>
+
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img26.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">DANIEL WELLINGTON 40 mm Nam DW00100130</a>
+                            </h3>
+
+                            <strong>5.300.000₫</strong>
+
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img27.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">DANIEL WELLINGTON 40 mm Nam DW00100014</a>
+                            </h3>
+
+                            <strong>4.192.000₫</strong>
+
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img28.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">DANIEL WELLINGTON 40 mm Nam DW00100126</a>
+                            </h3>
+
+                            <strong>5.300.000₫</strong>
+
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img29.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">ESPRIT 42 mm Nam ES1G062M0055</a>
+                            </h3>
+                            <p>Chỉ bán online</p>
+                            <del>5.800.000₫</del>
+                            <span>-25%</span>
+                            <strong>4.192.000₫</strong>
+
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img30.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">ESPRIT 38 mm Nam ES1G038L0015</a>
+                            </h3>
+                            <del>3.100.000₫</del>
+                            <span>-25%</span>
+                            <strong>4.192.000₫</strong>
+
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img21.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">CITIZEN 41 mm Nam AN3616-75L</a>
+                            </h3>
+                            <del>5.590.000₫</del>
+                            <span>-25%</span>
+                            <strong>4.192.000₫</strong>
+
+                        </div>
+                    </div>
+
+
+                    <!--show-->
+                    <div class="container_product-mobilet" id="showitem2" style="display: none; ">
+                        <div class="container_product-sale border " id="c1">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img62.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="">ESPRIT 40 mm Nam ES1G056M0055</a>
+                                </h3>
+                                <p>Chỉ bán online</p>
+                                <del>3.800.000₫</del>
+                                <span>-25%</span>
+                                <strong>2.850.000₫</strong>
+
+
+                            </div>
+                        </div>
+                        <div class="container_product-sale border " id="c2">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img63.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="">ESPRIT 41 mm Nam ES1G098L0025
+                                    </a>
+                                </h3>
+                                <p>Chỉ bán online</p>
+                                <del>4.400.000₫</del> <span>-25%</span>
+                                <strong>3.300.000₫</strong>
+
+
+                            </div>
+                        </div>
+                        <div class="container_product-sale border " id="c3">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img64.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="">ESPRIT 40 mm Nam ES1G056L0025</a>
+                                </h3>
+                                <p>Chỉ bán online</p>
+                                <del>3.500.000₫</del> <span>-25%</span>
+                                <strong>4.690.000₫</strong>
+
+                            </div>
+                        </div>
+
+                        <div class="container_product-sale border " id="c5">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img65.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="">ESPRIT 42 mm Nam ES1G062L0035
+                                    </a>
+                                </h3>
+                                <p>Chỉ bán online</p>
+                                <del> 5.400.000₫ </del>
+                                <span>-25%</span>
+                                <strong>4.050.000₫</strong>
+
+                            </div>
+                        </div>
+                        <div class="container_product-sale border " id="c6">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img66.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="">ESPRIT 38 mm Nam ES1G038M0065</a>
+                                </h3>
+                                <p>Chỉ bán online</p>
+                                <del>3.400.000₫</del>
+                                <span>-25%</span>
+                                <strong>2.550.000₫</strong>
+
+                            </div>
+                        </div>
+                        <div class="container_product-sale border " id="c6">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img67.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="">MVW 42 mm kính sapphire Nam MS075-01</a>
+                                </h3>
+                                <del>1.990.000₫</del>
+                                <span>-25%</span>
+                                <strong>1.492.000₫</strong>
+
+                            </div>
+                        </div>
+                        <div class="container_product-sale border " id="c6">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img68.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="">MVW 42 mm kính sapphire Nam ML064-01</a>
+                                </h3>
+                                <del>1.990.000₫ </del> <span>-25%</span>
+                                <strong>1.492.000₫</strong>
+
+                            </div>
+                        </div>
+
+                        <div class="container_product-sale border " id="c6">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img69.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="">MVW 42 mm kính sapphire Nam ML057-01 </a>
+                                </h3>
+
+                                <del>3.990.999đ</del> <span>-25%</span>
+                                <strong>1.342.000₫</strong>
+
+                            </div>
+                        </div>
+
+                        <div class="container_product-sale border " id="c6">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img70.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="">MVW 40 mm kính sapphire Nam ML054-01
+                                    </a>
+                                </h3>
+                                <del>1.690.000₫</del> <span>-25%</span>
+                                <strong>1.267.000₫</strong>
+
+                            </div>
+                        </div>
+
+                        <div class="container_product-sale border " id="c6">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/donghott/img71.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="">JUST CAVALLI 41 mm Nam JC1G054M0045</a>
+                                </h3>
+                                <p>Chỉ bán online</p>
+                                <strong>4.300.000₫</strong>
+                                <span>Qùa 500.000đ</span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button id="Xemthem2">Xem thêm đồng hồ phái mạnh</button>
+            </section>
+            <!--end đồng hồ phái mạnh-->
+
+            <!--đồng hồ phái nữ-->
+            <section class="container_product-mobilets">
+                <div class="container_product-mobilet">
+                    <div class="container_product-sale border " id="c1">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img32.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">ESPRIT 38 mm Nữ ES1L286P0025</a>
+                            </h3>
+                            <p>Online giá rẻ</p>
+                            <del>4.200.000₫</del>
+                            <span>-35%</span>
+                            <strong>2.730.000₫</strong>
+
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c2">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img33.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">ESPRIT 34 mm Nữ ES1L297M0065</a>
+                            </h3>
+                            <p>Online giá rẻ</p>
+                            <del>4.200.000₫</del>
+                            <span>-35%</span>
+                            <strong>2.730.000₫</strong>
+
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c3">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img34.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">ESPRIT 34 mm Nữ ES1L287L0025</a>
+                            </h3>
+                            <p>Online giá rẻ</p>
+                            <del>3.800.000₫</del>
+                            <span>-35%</span>
+                            <strong>4.192.000₫</strong>
+
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border " id="c5">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img35.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">ESPRIT 32 mm Nữ ES1L314L0035
+                                </a>
+                            </h3>
+                            <p>Online giá rẻ</p>
+                            <del>3.500.000₫</del>
+                            <span>-35%</span>
+                            <strong>2.275.000₫</strong>
+
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img36.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">ESPRIT 32 mm Nữ ES1L276M1055</a>
+                            </h3>
+                            <p>Online giá rẻ</p>
+                            <del>4.500.000₫</del>
+                            <span>-35%</span>
+                            <strong>2.925.000₫</strong>
+
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img37.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">ESPRIT 30 mm Nữ ES1L292L0035</a>
+                            </h3>
+                            <p>Online giá rẻ</p>
+                            <del>3.500.000₫ </del>
+                            <span>-35%</span>
+                            <strong>2.275.000₫</strong>
+
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img38.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">ESPRIT 32 mm Nữ ES1L314L0025</a>
+                            </h3>
+                            <p>Online giá rẻ</p>
+                            <del>3.500.000₫</del>
+                            <span>-35%</span>
+                            <strong>2.275.000₫</strong>
+
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img39.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">ESPRIT 30 mm Nữ ES1L239L1035</a>
+                            </h3>
+                            <p>Online giá rẻ</p>
+                            <del>3.500.000₫</del>
+                            <span>-35%</span>
+                            <strong>2.275.000₫</strong>
+
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img21.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">ESPRIT 30 mm Nữ ES1L239L1025</a>
+                            </h3>
+                            <p>Online giá rẻ</p>
+                            <del>3.500.000₫</del>
+                            <span>-35%</span>
+                            <strong>2.275.000₫</strong>
+
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/donghott/img21.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">ESPRIT 30 mm Nữ ES1L239L1185</a>
+                            </h3>
+                            <p>Online giá rẻ</p>
+                            <del>3.200.000₫</del>
+                            <span>-35%</span>
+                            <strong>2.080.000₫</strong>
+
+                        </div>
+                    </div>
+            </section>
+            <!--end đồng hồ phái nữ-->
+        </main>
+        <!--end main-->
+
+        <!--Footer-->
+        <footer>
+            <div class="container_footer">
+                <div class="container_footer-row">
+                    <div class="container_footer-column">
+                        <ul>
+                            <li>
+                                <a href="../index.html">Lịch sử mua hàng</a>
+                            </li>
+                            <li>
+                                <a href="../index.html">Cộng tác bán hàng TGDĐ</a>
+                            </li>
+                            <li>
+                                <a href="../index.html">Tìm hiểu về mua trả góp</a>
+                            </li>
+                            <li>
+                                <a href="../index.html">Chính sách bảo hành</a>
+                            </li>
+
+                            <div id="show" style="display: none;">
+                                <li>
+                                    <a href="../index.html">Chính sách đổi trả</a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">Giao hàng & Thanh toán</a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">Hướng dẫn mua online</a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">Bán hàng doanh nghiệp</a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">Phiếu mua hàng</a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">In hóa đơn điện tử</a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">Quy chế hoạt động</a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">Nội dung cửa hàng</a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">Chất lượng phục vụ</a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">Cảnh báo giả mạo</a>
+                                </li>
+                                <li><a href="../index.html">Chính sách khui hộp sản phẩm Apple</a></li>
+                            </div>
+                            <li id="toggle" style="margin: 2% 0; cursor: pointer;">
+                                Xem thêm
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="container_footer-column">
+                        <ul>
+                            <li>
+                                <a href="../index.html">Gioi thiệu công ty</a>
+                            </li>
+                            <li>
+                                <a href="../index.html">Tuyển dụng</a>
+                            </li>
+                            <li>
+                                <a href="../index.html">Gửi góp ý, khiếu nại</a>
+                            </li>
+                            <li>
+                                <a href="../index.html">Chính sách bảo hành</a>
+                            </li>
+                            <li>
+                                <a href="../index.html">Tìm siêu thị (2.736 shop)</a>
+                            </li>
+                            <li>
+                                <a href="../index.html">Xem bản moblet</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="container_footer-column">
+                        <ul>
+                            <li>
+                                <p><b>Tổng đài hỗ trợ</b> (Miễn phí gọi)</p>
+                            </li>
+                            <li>
+                                <span>Gọi mua:</span><a href="">1800.1060 (7:30 - 22:00)</a>
+                            </li>
+                            <li>
+                                <span>Gọi mua:</span><a href="">1800.1763 (7:30 - 22:00)</a>
+                            </li>
+                            <li>
+                                <span>Gọi mua:</span><a href="">1800.1062 (8:00 - 21:30)</a>
+                            </li>
+                            <li>
+                                <span>Bảo hảnh:</span><a href="">1800.1064 (8:00 - 21:00)</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="container_footer-column width">
+                        <ul class="flex">
+                            <li>
+                                <a href="https://www.facebook.com/thegioididongcom"><i
+                                        class="fab fa-facebook"></i>3689.2k Fan</a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/user/TGDDVideoReviews"><i class="fab fa-youtube"
+                                        style="color: red;"></i>818k
+                                    Đăng ký</a>
+                            </li>
+
+                        </ul>
+                        <div class="container_footer_column-img">
+                            <p>Website cùng tập đoàn</p>
+                            <div class="container_footer_column-imgs flex">
+                                <img src="./images/foo2.png">
+                                <img src="./images/foo3.png">
+                                <img src="./images/foo4.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+        <!--end footer-->
+    </div>
+    <!--end giao diện-->
+
+    <!--script-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- Glidejs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+    <!-- Glide Carousel Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <!-- Animate On Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./Backend/Js/Menu.js"></script>
+
+
+    <script>
+        const myslide = document.querySelectorAll(".images"),
+            dot = document.querySelectorAll(".dot");
+        let counter = 1;
+        slidefun(counter);
+
+        let timer = setInterval(autoSlide, 1000);
+
+        function autoSlide() {
+            counter += 1;
+            slidefun(counter);
+            resetTimer();
+        }
+
+        function plusSlides(n) {
+            counter += n;
+            slidefun(counter);
+            resetTimer();
+        }
+
+
+        function resetTimer() {
+            clearInterval(timer);
+            timer = setInterval(autoSlide, 1000);
+        }
+
+        function slidefun(n) {
+            let i;
+            for (i = 0; i < myslide.length; i++) {
+                myslide[i].style.display = "none";
+            }
+            for (i = 0; i < dot.length; i++) {
+                dot[i].className = dot[i].className.replace(" active", "");
+            }
+            if (n > myslide.length) {
+                counter = 1;
+            }
+            if (n < 1) {
+                counter = myslide.length;
+            }
+            myslide[counter - 1].style.display = "block";
+            dot[counter - 1].className += " active";
+        }
+
+
+
+        const myslide1 = document.querySelectorAll(".container_slider_left-img"),
+            dot1 = document.querySelectorAll(".dot");
+        let counter1 = 1;
+        slidefun1(counter);
+
+        let timer1 = setInterval(autoSlide1, 5000);
+
+        function autoSlide1() {
+            counter += 1;
+            slidefun1(counter1);
+        }
+
+        function plusSlides1(n) {
+            counter1 += n;
+            slidefun1(counter1);
+
+            resetTimer1();
+        }
+
+        function currentSlide1(n) {
+            counter1 = n;
+            slidefun1(counter1);
+            resetTimer1();
+        }
+
+
+        function resetTimer1() {
+            clearInterval(timer1);
+            timer1 = setInterval(autoSlide1, 5000);
+        }
+
+        function slidefun1(n) {
+            let i;
+            for (i = 0; i < myslide1.length; i++) {
+                myslide1[i].style.display = "none";
+            }
+            for (i = 0; i < dot1.length; i++) {
+                dot1[i].className = dot1[i].className.replace(" active", "");
+            }
+            if (n > myslide1.length) {
+                counter1 = 1;
+            }
+            if (n < 1) {
+                counter1 = myslide1.length;
+            }
+            myslide1[counter1 - 1].style.display = "block";
+            dot1[counter1 - 1].className += " active";
+        }
+
+
+
+        var toggle = document.getElementById("toggle").addEventListener("click", function () {
+            var box = document.getElementById("show");
+            var box1 = document.getElementById("hide");
+            if (box.style.display == "block") {
+                box.style.display = "none";
+
+            } else {
+                box.style.display = "block";
+
+            }
+        });
+        document.getElementById("Xemthem").addEventListener("click", function () {
+            var box = document.getElementById("showitem");
+            if (box.style.display == "block") {
+                box.style.display = "none";
+            } else {
+                box.style.display = "block";
+                box.style.display = "flex";
+
+            }
+        });
+        document.getElementById("Xemthem1").addEventListener("click", function () {
+            var box = document.getElementById("showitem1");
+            if (box.style.display == "block") {
+                box.style.display = "none";
+            } else {
+                box.style.display = "block";
+                box.style.display = "flex";
+
+            }
+        });
+        document.getElementById("Xemthem2").addEventListener("click", function () {
+            var box = document.getElementById("showitem2");
+            if (box.style.display == "block") {
+                box.style.display = "none";
+            } else {
+                box.style.display = "block";
+                box.style.display = "flex";
+
+            }
+        });
+
+        document.getElementById("filter").addEventListener("click", function () {
+            var box = document.getElementById("showfilter");
+            if (box.style.display == "block") {
+                box.style.display = "none";
+            } else {
+                box.style.display = "block";
+            }
+        });
+        document.getElementById("hang").addEventListener("click", function () {
+            var box = document.getElementById("showhang");
+            if (box.style.display == "block") {
+                box.style.display = "none";
+            } else {
+                box.style.display = "block";
+            }
+        });
+
+        document.getElementById("gia").addEventListener("click", function () {
+            var box1 = document.getElementById("showgia");
+            if (box1.style.display == "block") {
+                box1.style.display = "none";
+            } else {
+                box1.style.display = "block";
+            }
+        });
+
+
+        document.getElementById("tinhnang").addEventListener("click", function () {
+            var box1 = document.getElementById("showtinhnang");
+            if (box1.style.display == "block") {
+                box1.style.display = "none";
+            } else {
+                box1.style.display = "block";
+            }
+        });
+        document.getElementById("nhucau").addEventListener("click", function () {
+            var box1 = document.getElementById("shownhucau");
+            if (box1.style.display == "block") {
+                box1.style.display = "none";
+            } else {
+                box1.style.display = "block";
+            }
+        });
+        document.getElementById("sale").addEventListener("click", function () {
+            var box1 = document.getElementById("showsale");
+            if (box1.style.display == "block") {
+                box1.style.display = "none";
+            } else {
+                box1.style.display = "block";
+            }
+        });
+        document.getElementById("tragop").addEventListener("click", function () {
+            var box1 = document.getElementById("showtragop");
+            if (box1.style.display == "block") {
+                box1.style.display = "none";
+            } else {
+                box1.style.display = "block";
+            }
+        });
+        document.getElementById("chatlieu").addEventListener("click", function () {
+            var box1 = document.getElementById("showchatlieu");
+            if (box1.style.display == "block") {
+                box1.style.display = "none";
+            } else {
+                box1.style.display = "block";
+            }
+        });
+        document.getElementById("matso").addEventListener("click", function () {
+            var box1 = document.getElementById("showmatso");
+            if (box1.style.display == "block") {
+                box1.style.display = "none";
+            } else {
+                box1.style.display = "block";
+            }
+        });
+
+        document.getElementById("hinhdang").addEventListener("click", function () {
+            var box1 = document.getElementById("showhinhdang");
+            if (box1.style.display == "block") {
+                box1.style.display = "none";
+            } else {
+                box1.style.display = "block";
+            }
+        });
+
+        document.getElementById("day").addEventListener("click", function () {
+            var box1 = document.getElementById("showday");
+            if (box1.style.display == "block") {
+                box1.style.display = "none";
+            } else {
+                box1.style.display = "block";
+            }
+        });
+
+        document.getElementById("khangnuoc").addEventListener("click", function () {
+            var box1 = document.getElementById("showkhangnuoc");
+            if (box1.style.display == "block") {
+                box1.style.display = "none";
+            } else {
+                box1.style.display = "block";
+            }
+        });
+
+        document.getElementById("maumat").addEventListener("click", function () {
+            var box1 = document.getElementById("showmaumat");
+            if (box1.style.display == "block") {
+                box1.style.display = "none";
+            } else {
+                box1.style.display = "block";
+            }
+        });
+        document.getElementById("mauday").addEventListener("click", function () {
+            var box1 = document.getElementById("showmauday");
+            if (box1.style.display == "block") {
+                box1.style.display = "none";
+            } else {
+                box1.style.display = "block";
+            }
+        });
+        document.getElementById("chucnang").addEventListener("click", function () {
+            var box1 = document.getElementById("showchucnang");
+            if (box1.style.display == "block") {
+                box1.style.display = "none";
+            } else {
+                box1.style.display = "block";
+            }
+        });
+        document.getElementById("nhom").addEventListener("click", function () {
+            var box1 = document.getElementById("shownhom");
+            if (box1.style.display == "block") {
+                box1.style.display = "none";
+            } else {
+                box1.style.display = "block";
+            }
+        });
+    </script>
+</body>
+
+</html>

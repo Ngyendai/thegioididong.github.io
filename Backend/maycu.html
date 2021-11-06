@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Glidejs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css">
+    <link rel='shortcut icon' href='../images/iconlogo.jpg' />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./style/laptop.css" />
+    <title>Máy cũ</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--slider top-->
+        <div class="container_slider">
+            <div class="container_slider-box">
+                <div class="container_slider_box-img">
+                    <img src="../images/slider1.png" style="width: 100%; height: 100%" class="images" />
+                    <img src="../images/slider2.png" style="width: 100%; height: 100%" class="images" />
+                    <img src="../images/slider3.png" style="width: 100%; height: 100%" class="images" />
+                </div>
+                <!-- slider controls -->
+                <div class="container_slider_box-icons">
+                    <i class="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></i>
+
+                    <i class="next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></i>
+                </div>
+            </div>
+        </div>
+        <!--end Slider top-->
+
+        <!--Header-->
+        <header>
+            <div class="container_header">
+                <div class="container_header-logo">
+                    <a href="../index.html">
+                        <img src="../images/logo.jpg" class="container_header_logo-img" />
+                    </a>
+                </div>
+                <div class="container_header-center flex">
+                    <div class="container_header_center-text" id="login-btn">
+                        <p>Xem giá, khuyến mãi tại</p>
+                        <p>Hồ Chí Minh<i class="fas fa-caret-down down"></i></p>
+                    </div>
+                    <div class="container_header_center-search">
+                        <input type="text" placeholder="Bạn tìm gì" name="" id="" />
+                        <i class="fas fa-search search"></i>
+                    </div>
+                    <div class="container_header_center-cart flex">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>Gio hàng</p>
+                    </div>
+                    <div class="container_header_center-order">
+                        <p>Lịch sử đơn hàng</p>
+                    </div>
+                </div>
+                <div class="container_header-right flex">
+                    <div class="pluse">
+                        <i class="fas fa-circle" style="font-size: 20px"></i>
+                    </div>
+                    <div class="container_header_right-text">
+                        <a href="">
+                            Mobifore trả sau đến hạn thanh toán. Mua thẻ nạp ngay</a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">24h<br />Công nghệ</a>
+                        </li>
+                        <li>
+                            <a href="">Hỏi đáp</a>
+                        </li>
+                        <li>
+                            <a href="">Game App</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!--end Header-->
+
+        <!-- information form  -->
+        <div class="login-form-container">
+            <div id="close-login-btn">
+                <i class="fas fa-times"></i>
+                <p>Đóng</p>
+            </div>
+            <form action="">
+                <h5>Chọn địa chỉ, nhận hàng</h5>
+                <div class="form-des">
+                    <span><b>Chọn đầy đủ địa chỉ nhận hàng</b> để biết chính xác thời gian giao</span>
+                    <select class="section">
+                        <option value="nam">Bình Định</option>
+                        <option value="nu">Hồ Chí Minh</option>
+                    </select>
+                    <select class="section">
+                        <option value="nam">Vui lòng chọn Quận/Huyện</option>
+                        <option value="nu">TP.Quy Nhơn</option>
+                        <option value="nu">Huyện Hoài A</option>
+                        <option value="nu">Huyện Phù Cát</option>
+                        <option value="nu">Huyện Vĩnh Thạnh</option>
+                    </select>
+                    <select class="section">
+                        <option value="nam">Vui lòng chọn Phường/Xã</option>
+                        <option value="nu">Xã Cát Chánh</option>
+                        <option value="nu">Xã Cát Hải</option>
+                        <option value="nu">Xã Cát Sơn</option>
+                        <option value="nu">Xã Cát Tài</option>
+                        <option value="nu">Xã Cát Tường</option>
+                    </select>
+                    <input type="text" class="section" placeholder="Số nhà, tên đường (không bắt buộc)" />
+                    <button>XÁC NHẬN</button>
+                </div>
+
+            </form>
+        </div>
+        <!-- end information form  -->
+
+        <!--nav-->
+        <nav class="nav">
+            <ul class="nav_menu">
+                <div class="top">
+                    <label for="" class="btn close-btn"><i class="fas fa-times"></i></label>
+                </div>
+                <li>
+                    <a href="dienthoai.html"><i class="fas fa-mobile-alt"></i>Điện thoại</a>
+                </li>
+                <li>
+                    <a href="Laptop.html"><i class="fas fa-laptop"></i>Laptop</a>
+                </li>
+                <li>
+                    <a href="tablet.html"><i class="fas fa-tablet-alt"></i>Tablet</a>
+                </li>
+                <li>
+                    <a href="phukien.html"><i class="fas fa-headphones-alt"></i>Phụ kiện<i
+                            class="fas fa-caret-down"></i></a>
+                    <div class="mega_menu">
+                        <div class="mega_rows">
+                            <div class="mega_column">
+                                <div class="mega_column-title">PHỤ KIỆN DI ĐỘNG</div>
+                                <ul>
+                                    <li>
+                                        <a href="phukien.html">Pin sạc dự phòng</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Sạc, cáp</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Miếng dán màn hình</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Ốp lưng điện thoại</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Ốp lưng máy tính bảng</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div class="mega_column">
+                                <div class="mega_column-title">PHỤ KIỆN LAPTOP</div>
+                                <ul>
+                                    <li>
+                                        <a href="phukien.html">Chuột, bàn phím</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Thiết bị mạng</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Camera, Webcam</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Balo, túi chống sốc</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Phần mềm</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mega_column mega_column-width">
+                                <div class="mega_column-title">THƯƠNG HIỆU HÀNG ĐẦU<a href="" style="color:#288ad6">Xem
+                                        tất cả<i class="fas fa-caret-right"
+                                            style="margin-left:-1px;color:#288ad6"></i></a></div>
+                                <ul>
+                                    <li>
+                                        <a href="phukien.html">Apple</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Samsung</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Sony</a>
+                                    </li>
+                                    <li><a href="phukien.html">Anker</a></li>
+
+                                </ul>
+                            </div>
+                            <div class="mega_column mega_column-width">
+
+                                <ul>
+                                    <li>
+                                        <a href="phukien.html">Gậy tự sướng</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Gía đỡ laptop, điện thoại</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Đế, móc điện thoại</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Túi chống nước</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Túi đựng Airpods</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Phụ kiện Apad</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mega_column">
+                                <div class="mega_column-title">THIẾT BỊ ÂM THANH</a>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="phukien.html">Tai nghe</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Loa</a>
+                                    </li>
+                                    <div class="mega_column-title ">THIẾT BỊ ÂM THANH</a>
+                                    </div>
+                                    <li>
+                                        <a href="phukien.html">Thẻ nhớ</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">USB</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Ổ cứng di động</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mega_column mega_column-width">
+                                <div class="mega_column-title">PHỤ KIỆN KHÁC</div>
+                                <ul>
+                                    <li>
+                                        <a href="phukien.html">Thiết bị thông minh</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Phụ kiện ô tô</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Máy tính cầm tay</a>
+                                    </li>
+                                    <li><a href="phukien.html">May chiếu, TV Box</a></li>
+                                    <li>
+                                        <a href="phukien.html">Quạt mini</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Pin tiểu, pin điện thoại</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                </li>
+                <li>
+                    <a href="donghotm.html"><i class="fas fa-clock"></i>Đồng hồ thông minh</a>
+                </li>
+                <li>
+                    <a href="donghott.html"><i class="fas fa-clock"></i>Đồng hồ thời trang</a>
+                </li>
+                <li>
+                    <a href="mayin.html"><i class="fas fa-desktop"></i>PC, Máy in<i class="fas fa-caret-down"></i></a>
+
+                    <ul class="dropdown_menu">
+                        <li>
+                            <a href="mayin.html">Máy in</a>
+                        </li>
+                        <li>
+                            <a href="mayin.html">Mực in</a>
+                        </li>
+                        <li>
+                            <a href="mayin.html">Màn hình máy tính</a>
+                        </li>
+                        <li>
+                            <a href="mayin.html">Máy tính để bàn</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="maycu.html" class="active">Máy cũ giá rẻ</a>
+                </li>
+                <li>
+                    <a href="sim.html">Sim, Thẻ cào</a>
+                </li>
+                <li>
+                    <a href="tragop.html">Trả góp tiền điện</a>
+                </li>
+            </ul>
+            <label for="" class="btn open-btn"><i class="fas fa-bars" style="color: white;"></i></label>
+        </nav>
+        <!--end nav-->
+
+        <!--main-->
+        <main class="container_product">
+            <h2 style="margin: 2% 0;">Đang cập nhật</h2>
+        </main>
+        <!--end main-->
+
+        <!--Footer-->
+        <footer>
+            <div class="container_footer">
+                <div class="container_footer-row">
+                    <div class="container_footer-column">
+                        <ul>
+                            <li>
+                                <a href="../index.html">Lịch sử mua hàng</a>
+                            </li>
+                            <li>
+                                <a href="../index.html">Cộng tác bán hàng TGDĐ</a>
+                            </li>
+                            <li>
+                                <a href="../index.html">Tìm hiểu về mua trả góp</a>
+                            </li>
+                            <li>
+                                <a href="../index.html">Chính sách bảo hành</a>
+                            </li>
+
+                            <div id="show" style="display: none;">
+                                <li>
+                                    <a href="../index.html">Chính sách đổi trả</a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">Giao hàng & Thanh toán</a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">Hướng dẫn mua online</a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">Bán hàng doanh nghiệp</a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">Phiếu mua hàng</a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">In hóa đơn điện tử</a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">Quy chế hoạt động</a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">Nội dung cửa hàng</a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">Chất lượng phục vụ</a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">Cảnh báo giả mạo</a>
+                                </li>
+                                <li><a href="../index.html">Chính sách khui hộp sản phẩm Apple</a></li>
+                            </div>
+                            <li id="toggle" style="margin: 2% 0; cursor: pointer;">
+                                Xem thêm
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="container_footer-column">
+                        <ul>
+                            <li>
+                                <a href="../index.html">Gioi thiệu công ty</a>
+                            </li>
+                            <li>
+                                <a href="../index.html">Tuyển dụng</a>
+                            </li>
+                            <li>
+                                <a href="../index.html">Gửi góp ý, khiếu nại</a>
+                            </li>
+                            <li>
+                                <a href="../index.html">Chính sách bảo hành</a>
+                            </li>
+                            <li>
+                                <a href="../index.html">Tìm siêu thị (2.736 shop)</a>
+                            </li>
+                            <li>
+                                <a href="">Xem bản moblet</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="container_footer-column">
+                        <ul>
+                            <li>
+                                <p><b>Tổng đài hỗ trợ</b> (Miễn phí gọi)</p>
+                            </li>
+                            <li>
+                                <span>Gọi mua:</span><a href="">1800.1060 (7:30 - 22:00)</a>
+                            </li>
+                            <li>
+                                <span>Gọi mua:</span><a href="">1800.1763 (7:30 - 22:00)</a>
+                            </li>
+                            <li>
+                                <span>Gọi mua:</span><a href="">1800.1062 (8:00 - 21:30)</a>
+                            </li>
+                            <li>
+                                <span>Bảo hảnh:</span><a href="">1800.1064 (8:00 - 21:00)</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="container_footer-column width">
+                        <ul class="flex">
+                            <li>
+                                <a href="https://www.facebook.com/thegioididongcom"><i
+                                        class="fab fa-facebook"></i>3689.2k Fan</a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/user/TGDDVideoReviews"><i class="fab fa-youtube"
+                                        style="color: red;"></i>818k
+                                    Đăng ký</a>
+                            </li>
+
+                        </ul>
+                        <div class="container_footer_column-img">
+                            <p>Website cùng tập đoàn</p>
+                            <div class="container_footer_column-imgs flex">
+                                <img src="../images/foo2.png">
+                                <img src="../images/foo3.png">
+                                <img src="../images/foo4.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+        <!--end footer-->
+    </div>
+    <!--end giao diện-->
+
+    <!--JS-->
+    <!--swiper-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- Glidejs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+    <!-- Carousel Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <!-- Animate On Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../Backend/Js/Menu.js"></script>
+
+
+    <script>
+        const myslide = document.querySelectorAll(".images"),
+            dot = document.querySelectorAll(".dot");
+        let counter = 1;
+        slidefun(counter);
+
+        let timer = setInterval(autoSlide, 1000);
+
+        function autoSlide() {
+            counter += 1;
+            slidefun(counter);
+            resetTimer();
+        }
+
+        function plusSlides(n) {
+            counter += n;
+            slidefun(counter);
+            resetTimer();
+        }
+
+
+        function resetTimer() {
+            clearInterval(timer);
+            timer = setInterval(autoSlide, 1000);
+        }
+
+        function slidefun(n) {
+            let i;
+            for (i = 0; i < myslide.length; i++) {
+                myslide[i].style.display = "none";
+            }
+            for (i = 0; i < dot.length; i++) {
+                dot[i].className = dot[i].className.replace(" active", "");
+            }
+            if (n > myslide.length) {
+                counter = 1;
+            }
+            if (n < 1) {
+                counter = myslide.length;
+            }
+            myslide[counter - 1].style.display = "block";
+            dot[counter - 1].className += " active";
+        }
+
+
+
+        const myslide1 = document.querySelectorAll(".container_slider_left-img"),
+            dot1 = document.querySelectorAll(".dot");
+        let counter1 = 1;
+        slidefun1(counter);
+
+        let timer1 = setInterval(autoSlide1, 5000);
+
+        function autoSlide1() {
+            counter += 1;
+            slidefun1(counter1);
+        }
+
+        function plusSlides1(n) {
+            counter1 += n;
+            slidefun1(counter1);
+
+            resetTimer1();
+        }
+
+        function currentSlide1(n) {
+            counter1 = n;
+            slidefun1(counter1);
+            resetTimer1();
+        }
+
+
+        function resetTimer1() {
+            clearInterval(timer1);
+            timer1 = setInterval(autoSlide1, 5000);
+        }
+
+        function slidefun1(n) {
+            let i;
+            for (i = 0; i < myslide1.length; i++) {
+                myslide1[i].style.display = "none";
+            }
+            for (i = 0; i < dot1.length; i++) {
+                dot1[i].className = dot1[i].className.replace(" active", "");
+            }
+            if (n > myslide1.length) {
+                counter1 = 1;
+            }
+            if (n < 1) {
+                counter1 = myslide1.length;
+            }
+            myslide1[counter1 - 1].style.display = "block";
+            dot1[counter1 - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>

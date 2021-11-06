@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Glidejs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css">
+    <link rel='shortcut icon' href='../images/iconlogo.jpg' />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./style/phukien.css" />
+    <title>Phụ kiện</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--slider top-->
+        <div class="container_slider">
+            <div class="container_slider-box">
+                <div class="container_slider_box-img">
+                    <img src="../images/slider1.png" style="width: 100%; height: 100%" class="images" />
+                    <img src="../images/slider2.png" style="width: 100%; height: 100%" class="images" />
+                    <img src="../images/slider3.png" style="width: 100%; height: 100%" class="images" />
+                </div>
+                <!-- slider controls -->
+                <div class="container_slider_box-icons">
+                    <i class="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></i>
+
+                    <i class="next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></i>
+                </div>
+            </div>
+        </div>
+        <!--end Slider top-->
+
+        <!--Header-->
+        <header>
+            <div class="container_header">
+                <div class="container_header-logo">
+                    <a href="../index.html">
+                        <img src="../images/logo.jpg" class="container_header_logo-img" />
+                    </a>
+                </div>
+                <div class="container_header-center flex">
+                    <div class="container_header_center-text" id="login-btn">
+                        <p>Xem giá, khuyến mãi tại</p>
+                        <p>Hồ Chí Minh<i class="fas fa-caret-down down"></i></p>
+                    </div>
+                    <div class="container_header_center-search">
+                        <input type="text" placeholder="Bạn tìm gì" name="" id="" />
+                        <i class="fas fa-search search"></i>
+                    </div>
+                    <div class="container_header_center-cart flex">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>Gio hàng</p>
+                    </div>
+                    <div class="container_header_center-order">
+                        <p>Lịch sử đơn hàng</p>
+                    </div>
+                </div>
+                <div class="container_header-right flex">
+                    <div class="pluse">
+                        <i class="fas fa-circle" style="font-size: 20px"></i>
+                    </div>
+                    <div class="container_header_right-text">
+                        <a href="">
+                            Mobifore trả sau đến hạn thanh toán. Mua thẻ nạp ngay</a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">24h<br />Công nghệ</a>
+                        </li>
+                        <li>
+                            <a href="">Hỏi đáp</a>
+                        </li>
+                        <li>
+                            <a href="">Game App</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!--end Header-->
+
+        <!-- information form  -->
+        <div class="login-form-container">
+            <div id="close-login-btn">
+                <i class="fas fa-times"></i>
+                <p>Đóng</p>
+            </div>
+            <form action="">
+                <h5>Chọn địa chỉ, nhận hàng</h5>
+                <div class="form-des">
+                    <span><b>Chọn đầy đủ địa chỉ nhận hàng</b> để biết chính xác thời gian giao</span>
+                    <select class="section">
+                        <option value="nam">Bình Định</option>
+                        <option value="nu">Hồ Chí Minh</option>
+                    </select>
+                    <select class="section">
+                        <option value="nam">Vui lòng chọn Quận/Huyện</option>
+                        <option value="nu">TP.Quy Nhơn</option>
+                        <option value="nu">Huyện Hoài A</option>
+                        <option value="nu">Huyện Phù Cát</option>
+                        <option value="nu">Huyện Vĩnh Thạnh</option>
+                    </select>
+                    <select class="section">
+                        <option value="nam">Vui lòng chọn Phường/Xã</option>
+                        <option value="nu">Xã Cát Chánh</option>
+                        <option value="nu">Xã Cát Hải</option>
+                        <option value="nu">Xã Cát Sơn</option>
+                        <option value="nu">Xã Cát Tài</option>
+                        <option value="nu">Xã Cát Tường</option>
+                    </select>
+                    <input type="text" class="section" placeholder="Số nhà, tên đường (không bắt buộc)" />
+                    <button>XÁC NHẬN</button>
+                </div>
+
+            </form>
+        </div>
+        <!-- end information form  -->
+
+        <!--nav-->
+        <nav class="nav">
+            <ul class="nav_menu">
+                <div class="top">
+                    <label for="" class="btn close-btn"><i class="fas fa-times"></i></label>
+                </div>
+                <li>
+                    <a href="dienthoai.html"><i class="fas fa-mobile-alt"></i>Điện thoại</a>
+                </li>
+                <li>
+                    <a href="Laptop.html"><i class="fas fa-laptop"></i>Laptop</a>
+                </li>
+                <li>
+                    <a href="tablet.html"><i class="fas fa-tablet-alt"></i>Tablet</a>
+                </li>
+                <li>
+                    <a href="phukien.html" class="active"><i class="fas fa-headphones-alt"></i>Phụ kiện<i
+                            class="fas fa-caret-down"></i></a>
+                    <div class="mega_menu">
+                        <div class="mega_rows">
+                            <div class="mega_column">
+                                <div class="mega_column-title">PHỤ KIỆN DI ĐỘNG</div>
+                                <ul>
+                                    <li>
+                                        <a href="phukien.html">Pin sạc dự phòng</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Sạc, cáp</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Miếng dán màn hình</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Ốp lưng điện thoại</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Ốp lưng máy tính bảng</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div class="mega_column">
+                                <div class="mega_column-title">PHỤ KIỆN LAPTOP</div>
+                                <ul>
+                                    <li>
+                                        <a href="phukien.html">Chuột, bàn phím</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Thiết bị mạng</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Camera, Webcam</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Balo, túi chống sốc</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Phần mềm</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mega_column mega_column-width">
+                                <div class="mega_column-title">THƯƠNG HIỆU HÀNG ĐẦU<a href="" style="color:#288ad6">Xem
+                                        tất cả<i class="fas fa-caret-right"
+                                            style="margin-left:-1px;color:#288ad6"></i></a></div>
+                                <ul>
+                                    <li>
+                                        <a href="phukien.html">Apple</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Samsung</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Sony</a>
+                                    </li>
+                                    <li><a href="phukien.html">Anker</a></li>
+
+                                </ul>
+                            </div>
+                            <div class="mega_column mega_column-width">
+
+                                <ul>
+                                    <li>
+                                        <a href="phukien.html">Gậy tự sướng</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Gía đỡ laptop, điện thoại</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Đế, móc điện thoại</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Túi chống nước</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Túi đựng Airpods</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Phụ kiện Apad</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mega_column">
+                                <div class="mega_column-title">THIẾT BỊ ÂM THANH</a>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="phukien.html">Tai nghe</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Loa</a>
+                                    </li>
+                                    <div class="mega_column-title ">THIẾT BỊ ÂM THANH</a>
+                                    </div>
+                                    <li>
+                                        <a href="phukien.html">Thẻ nhớ</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">USB</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Ổ cứng di động</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mega_column mega_column-width">
+                                <div class="mega_column-title">PHỤ KIỆN KHÁC</div>
+                                <ul>
+                                    <li>
+                                        <a href="phukien.html">Thiết bị thông minh</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Phụ kiện ô tô</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Máy tính cầm tay</a>
+                                    </li>
+                                    <li><a href="phukien.html">May chiếu, TV Box</a></li>
+                                    <li>
+                                        <a href="phukien.html">Quạt mini</a>
+                                    </li>
+                                    <li>
+                                        <a href="phukien.html">Pin tiểu, pin điện thoại</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                </li>
+                <li>
+                    <a href="donghotm.html"><i class="fas fa-clock"></i>Đồng hồ thông minh</a>
+                </li>
+                <li>
+                    <a href="donghott.html"><i class="fas fa-clock"></i>Đồng hồ thời trang</a>
+                </li>
+                <li>
+                    <a href="mayin.html"><i class="fas fa-desktop"></i>PC, Máy in<i class="fas fa-caret-down"></i></a>
+
+                    <ul class="dropdown_menu">
+                        <li>
+                            <a href="mayin.html">Máy in</a>
+                        </li>
+                        <li>
+                            <a href="mayin.html">Mực in</a>
+                        </li>
+                        <li>
+                            <a href="mayin.html">Màn hình máy tính</a>
+                        </li>
+                        <li>
+                            <a href="mayin.html">Máy tính để bàn</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="maycu.html">Máy cũ giá rẻ</a>
+                </li>
+                <li>
+                    <a href="sim.html">Sim, Thẻ cào</a>
+                </li>
+                <li>
+                    <a href="tragop.html">Trả góp tiền điện</a>
+                </li>
+            </ul>
+            <label for="" class="btn open-btn"><i class="fas fa-bars" style="color: white;"></i></label>
+        </nav>
+        <!--end nav-->
+
+        <!--Slider bar-->
+        <div class="container_slide">
+            <div class="container_slide-left">
+                <div class="container_slider_left-img">
+                    <img src="./images/phukien/slider1.png" style="width: 100%; height: 100%" />
+                </div>
+                <div class="container_slider_left-img">
+                    <img src="./images/phukien/slider2.gif" style="width: 100%; height: 100%" />
+                </div>
+
+                <div class="container_slider_left-img">
+                    <img src="./images/phukien/slider3.png" style="width: 100%; height: 100%" />
+                </div>
+                <div class="container_slider_left-img">
+                    <img src="./images/phukien/slider4.png" style="width: 100%; height: 100%" />
+                </div>
+                <div class="container_slider_left-img">
+                    <img src="./images/phukien/slider5.png" style="width: 100%; height: 100%" />
+                </div>
+                <div class="container_slider_left-img">
+                    <img src="./images/phukien/slider6.png" style="width: 100%; height: 100%" />
+                </div>
+                <div class="container_slider_left-img">
+                    <img src="./images/phukien/slider7.png" style="width: 100%; height: 100%" />
+                </div>
+                <div class="container_slider_left-img">
+                    <img src="./images/phukien/slider8.png" style="width: 100%; height: 100%" />
+                </div>
+                <!-- onclick js -->
+                <i class="prev1" onclick="plusSlides1(-1)"><i class="fas fa-chevron-left"></i></i>
+
+                <i class="next1" onclick="plusSlides1(1)"><i class="fas fa-chevron-right"></i></i>
+            </div>
+            <div class="dotsbox" style="text-align:center">
+                <span class="dot" onclick="currentSlide1(1)"></span>
+                <span class="dot" onclick="currentSlide1(2)"></span>
+                <span class="dot" onclick="currentSlide2(3)"></span>
+                <span class="dot" onclick="currentSlide3(4)"></span>
+                <span class="dot" onclick="currentSlide4(5)"></span>
+            </div>
+
+
+        </div>
+        <!--end slider bar-->
+
+        <!--main-->
+        <main class="container_product">
+            <!--items-->
+            <div class="container_product_items">
+                <div class="container_product_items_menu">
+                    <!--iphone, tablet-->
+                    <div class="container_product_items_menu_iphone">
+                        <ul>
+                            <li>
+                                <a href="phukien.html" class="heading">PHONE, TABLET</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">Sạc dự phòng</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">Sạc, cáp</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">Ốp lưng đ.thoại</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">Ốp lưng tablet</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">Dán màn hình</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">Thẻ nhớ</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">Phụ kiện tablet</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">Gía đỡ đ.thoại, tablet</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">Gậy tự sướng</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">Chống nước</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--end iphone, tablet-->
+
+                    <!--PC, LAPTOP-->
+                    <div class="container_product_items_menu_iphone" id="blue">
+                        <ul>
+                            <li>
+                                <a href="phukien.html" class="heading" id="blue1">PC, LAPTOP</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">Sạc, cáp</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">Adapter, chuyển đổi</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">Chuột máy tính</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">Thiết bị mạng</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">Màn hình</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">USB</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">Camera, webcam</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">Ổ cứng di động</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">Balo, túi chống sốc</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">Phần mềm</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">Gía đỡ laptop</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--end PC, LAPTOP-->
+
+                    <!--Âm thanh-->
+                    <div class="container_product_items_menu_iphone width">
+                        <ul>
+                            <li>
+                                <a href="phukien.html" class="heading" id="pink">ÂM THANH</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">Tai nghe</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">Loa</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!--end Âm thanh-->
+
+                    <!--Phụ kiện khác-->
+                    <div class="container_product_items_menu_iphone width1">
+                        <ul>
+                            <li>
+                                <a href="phukien.html" class="heading" id="blue">PHỤ KIỆN KHÁC</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">Thiết bị thông minh</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">Máy chiếu, TV box</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">Phụ kiện ô tô</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">Máy tính cầm tay</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">Quạt mini</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">Pin tiểu, pin đ.thoại</a>
+                            </li>
+                            <li>
+                                <a href="phukien.html">Túi đựng AirPods, Air Tag</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--end phụ kiện khác-->
+                </div>
+                <div class="container_product_items_top">
+                    <p>
+                        THƯƠNG HIỆU NỔI BẬT
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="images/phukien/item1.jpg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/phukien/item2.jpg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/phukien/item3.jpg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/phukien/item4.png" />
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <img src="images/phukien/item5.jpg" />
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <img src="images/phukien/item6.jpg" class="padding" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/phukien/item7.jpg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/phukien/item8.png" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/phukien/item9.png" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Xem thêm
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container_product_items_botton">
+                    <h2>PHỤ KIỆN NỔI BẬT</h2>
+                </div>
+            </div>
+
+            <!--Moblet-->
+            <section class="container_product-mobilets">
+                <div class="container_product-mobilet">
+                    <div class="container_product-sale border " id="c1">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/phukien/img1.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">Pin sạc dự phòng 7500 mAh AVA+ LJ JP199</a>
+                            </h3>
+                            <del>350.000₫</del>
+                            <span>43%</span>
+                            <strong>199.000₫</strong>
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c2">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/phukien/img2.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">Cáp Lightning 1m Xmobile LTL-01X Xanh rêu</a>
+                            </h3>
+                            <p>Online giá rẻ</p>
+                            <del>170.000₫</del>
+                            <span>-40%</span>
+                            <strong>102.000₫</strong>
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star"></i>
+                                <span>28</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c3">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/phukien/img3.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">Pin sạc dự phòng 7.500 mAh AVA+ DS005-PP</a>
+                            </h3>
+                            <del>350.000₫ </del>
+                            <span>-43%</span>
+                            <strong>199.000₫</strong>
+
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border " id="c5">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/phukien/img4.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">Cáp Micro 1m Xmobile LTM-02 Xanh rêu</a>
+                            </h3>
+                            <p>Online giá rẻ
+
+                            </p>
+                            <del>100.000₫ </del>
+                            <span>-40%</span><br>
+                            <strong>60.000₫</strong>
+
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star"></i>
+                                <span>13</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/phukien/img5.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">Cáp Micro 1m AVA LTPL-05X</a>
+                            </h3>
+                            <p>Online giá rẻ</p>
+                            <del>70.000₫</del>
+                            <span>-50%</span>
+                            <strong>35.000₫</strong>
+
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star"></i>
+                                <span>4</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/phukien/img6.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">Pin sạc dự phòng 7.500 mAh AVA+ Y68</a>
+                            </h3>
+                            <del>350.000₫</del>
+                            <span>-43%</span>
+                            <strong>199.000₫</strong>
+
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star"></i>
+                                <span>4</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/phukien/img7.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">Tai nghe Bluetooth True Wireless Mozard TS13</a>
+                            </h3>
+                            <del>650.000₫</del>
+                            <span>-46%</span>
+                            <strong>350.000₫</strong>
+
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star"></i>
+                                <span>218</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/phukien/img8.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">Cáp Micro 1m eValu LTM -01</a>
+                            </h3>
+                            <p>Online giá rẻ</p>
+
+                            <del>100.000₫</del>
+                            <span>-40%</span>
+                            <strong>60.000₫</strong>
+
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star"></i>
+                                <span>17</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/phukien/img9.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">Tai nghe EP Mozard DS510-WB Xanh</a>
+                            </h3>
+                            <p>Online giá rẻ</p>
+                            <del>150.000₫</del>
+                            <span>-30%</span>
+                            <strong>105.000₫</strong>
+
+                            <div class="container_product_sale_box-star">
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star color"></i>
+                                <i class="fas fa-star"></i>
+                                <span>28</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_product-sale border " id="c6">
+                        <div class="container_product_sale_img">
+                            <a href="oppo.html">
+                                <img src="./images/phukien/img10.jpg" />
+                            </a>
+                        </div>
+                        <div class="container_product_sale_box">
+                            <h3>
+                                <a href="oppo.html">Cáp Micro 1m AVA DR-M01 Trắng</a>
+                            </h3>
+                            <p>Online giá rẻ</p>
+                            <del>70.000₫</del>
+                            <span>-50%</span>
+                            <strong>35.000₫</strong>
+
+                        </div>
+                    </div>
+
+
+                    <!--show-->
+                    <div class="container_product-mobilet" id="showitem" style="display: none; ">
+                        <div class="container_product-sale border " id="c1">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/phukien/img11.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">Tai nghe Bluetooth True Wireless Samsung Galaxy Buds 2 R177N</a>
+                                </h3>
+
+                                <strong>2.990.000₫</strong>
+
+
+                            </div>
+                        </div>
+                        <div class="container_product-sale border " id="c2">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/phukien/img12.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">Tai nghe Bluetooth True Wireless Samsung Galaxy Buds 2
+                                        R177N...</a>
+                                </h3>
+
+                                <strong>2.990.000₫</strong>
+
+
+                            </div>
+                        </div>
+                        <div class="container_product-sale border " id="c3">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/phukien/img13.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">Tai nghe Bluetooth AirPods Pro Wireless Charge Apple MWP22</a>
+                                </h3>
+                                <del>6.790.000₫</del>
+                                <span>-26%</span>
+                                <strong>4.990.000₫</strong>
+
+                                <div class="container_product_sale_box-star">
+                                    <i class="fas fa-star color"></i>
+                                    <i class="fas fa-star color"></i>
+                                    <i class="fas fa-star color"></i>
+                                    <i class="fas fa-star color"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>17</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container_product-sale border " id="c5">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/phukien/img14.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">Tai nghe Bluetooth AirPods 2 Wireless charge Apple MRXJ2</a>
+                                </h3>
+                                <p>Online giá rẻ</p>
+                                <del>5.590.000₫ </del>
+                                <span>-15%</span><br>
+                                <strong>4.751.000₫</strong>
+
+                            </div>
+                        </div>
+                        <div class="container_product-sale border " id="c6">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/phukien/img15.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">Tai nghe Bluetooth AirPods 2 Apple MV7N2</a>
+                                </h3>
+                                <del>4.390.000₫ </del>
+                                <span>-31%</span>
+                                <strong>2.990.000₫</strong>
+
+                                <div class="container_product_sale_box-star">
+                                    <i class="fas fa-star color"></i>
+                                    <i class="fas fa-star color"></i>
+                                    <i class="fas fa-star color"></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>56</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container_product-sale border " id="c6">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/phukien/img16.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">Tai nghe Bluetooth True Wireless Beats Studio Buds MJ503 Đỏ</a>
+                                </h3>
+                                <p>Chỉ bán online</p>
+                                <del>3.990.000₫ </del>
+                                <span>-5%</span>
+                                <strong>17.990.000₫3.790.000₫</strong>
+
+                            </div>
+                        </div>
+                        <div class="container_product-sale border " id="c6">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/phukien/img17.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">Tai nghe Bluetooth True Wireless Beats Studio Buds MJ4X3</a>
+                                </h3>
+                                <del>3.990.000₫</del>
+                                <span>-5%</span>
+                                <strong>3.790.000₫</strong>
+
+                            </div>
+                        </div>
+
+                        <div class="container_product-sale border " id="c6">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/phukien/img18.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">Tai nghe chụp tai Bluetooth AirPods Max Apple MGYH3</a>
+                                </h3>
+
+                                <del>13.990.000₫</del>
+                                <span>-5%</span>
+                                <strong>13.290.000₫</strong>
+
+                            </div>
+                        </div>
+
+                        <div class="container_product-sale border " id="c6">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/phukien/img19.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">Adapter Sạc Type C 20W dùng cho iPhone/iPad Apple MHJE3...</a>
+                                </h3>
+                                <p>Online giá rẻ</p>
+                                <del>690.000₫</del>
+                                <span>-15%</span>
+                                <strong>586.000₫</strong>
+
+                                <div class="container_product_sale_box-star">
+                                    <i class="fas fa-star color"></i>
+                                    <i class="fas fa-star color"></i>
+                                    <i class="fas fa-star color"></i>
+                                    <i class="fas fa-star color"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>26</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container_product-sale border " id="c6">
+                            <div class="container_product_sale_img">
+                                <a href="oppo.html">
+                                    <img src="./images/phukien/img20.jpg" />
+                                </a>
+                            </div>
+                            <div class="container_product_sale_box">
+                                <h3>
+                                    <a href="oppo.html">Thiết bị định vị thông minh AirTag 1 Pack MX532</a>
+                                </h3>
+                                <del>790.000₫</del>
+                                <span>-5%</span>
+                                <strong>750.000₫</strong>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button id="Xemthem">Xem thêm</button>
+            </section>
+            <!--end Moblet-->
+        </main>
+        <!--end main-->
+
+        <!--Footer-->
+        <footer>
+            <div class="container_footer">
+                <div class="container_footer-row">
+                    <div class="container_footer-column">
+                        <ul>
+                            <li>
+                                <a href="../index.html">Lịch sử mua hàng</a>
+                            </li>
+                            <li>
+                                <a href="../index.html">Cộng tác bán hàng TGDĐ</a>
+                            </li>
+                            <li>
+                                <a href="../index.html">Tìm hiểu về mua trả góp</a>
+                            </li>
+                            <li>
+                                <a href="../index.html">Chính sách bảo hành</a>
+                            </li>
+
+                            <div id="show" style="display: none;">
+                                <li>
+                                    <a href="../index.html">Chính sách đổi trả</a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">Giao hàng & Thanh toán</a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">Hướng dẫn mua online</a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">Bán hàng doanh nghiệp</a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">Phiếu mua hàng</a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">In hóa đơn điện tử</a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">Quy chế hoạt động</a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">Nội dung cửa hàng</a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">Chất lượng phục vụ</a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">Cảnh báo giả mạo</a>
+                                </li>
+                                <li><a href="../index.html">Chính sách khui hộp sản phẩm Apple</a></li>
+                            </div>
+                            <li id="toggle" style="margin: 2% 0; cursor: pointer;">
+                                Xem thêm
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="container_footer-column">
+                        <ul>
+                            <li>
+                                <a href="../index.html">Gioi thiệu công ty</a>
+                            </li>
+                            <li>
+                                <a href="../index.html">Tuyển dụng</a>
+                            </li>
+                            <li>
+                                <a href="../index.html">Gửi góp ý, khiếu nại</a>
+                            </li>
+                            <li>
+                                <a href="../index.html">Chính sách bảo hành</a>
+                            </li>
+                            <li>
+                                <a href="../index.html">Tìm siêu thị (2.736 shop)</a>
+                            </li>
+                            <li>
+                                <a href="../index.html">Xem bản moblet</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="container_footer-column">
+                        <ul>
+                            <li>
+                                <p><b>Tổng đài hỗ trợ</b> (Miễn phí gọi)</p>
+                            </li>
+                            <li>
+                                <span>Gọi mua:</span><a href="">1800.1060 (7:30 - 22:00)</a>
+                            </li>
+                            <li>
+                                <span>Gọi mua:</span><a href="">1800.1763 (7:30 - 22:00)</a>
+                            </li>
+                            <li>
+                                <span>Gọi mua:</span><a href="">1800.1062 (8:00 - 21:30)</a>
+                            </li>
+                            <li>
+                                <span>Bảo hảnh:</span><a href="">1800.1064 (8:00 - 21:00)</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="container_footer-column width">
+                        <ul class="flex">
+                            <li>
+                                <a href="https://www.facebook.com/thegioididongcom"><i
+                                        class="fab fa-facebook"></i>3689.2k Fan</a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/user/TGDDVideoReviews"><i class="fab fa-youtube"
+                                        style="color: red;"></i>818k
+                                    Đăng ký</a>
+                            </li>
+
+                        </ul>
+                        <div class="container_footer_column-img">
+                            <p>Website cùng tập đoàn</p>
+                            <div class="container_footer_column-imgs flex">
+                                <img src="../images/foo2.png">
+                                <img src="../images/foo3.png">
+                                <img src="../images/foo4.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+        <!--end footer-->
+    </div>
+    <!--end giao diện-->
+
+    <!--JS-->
+    <!--Swipter-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- Glidejs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+    <!--Carousel Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <!-- Animate On Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../Backend/Js/Menu.js"></script>
+
+    <script>
+        const myslide = document.querySelectorAll(".images"),
+            dot = document.querySelectorAll(".dot");
+        let counter = 1;
+        slidefun(counter);
+
+        let timer = setInterval(autoSlide, 1000);
+
+        function autoSlide() {
+            counter += 1;
+            slidefun(counter);
+            resetTimer();
+        }
+
+        function plusSlides(n) {
+            counter += n;
+            slidefun(counter);
+            resetTimer();
+        }
+
+
+        function resetTimer() {
+            clearInterval(timer);
+            timer = setInterval(autoSlide, 1000);
+        }
+
+        function slidefun(n) {
+            let i;
+            for (i = 0; i < myslide.length; i++) {
+                myslide[i].style.display = "none";
+            }
+            for (i = 0; i < dot.length; i++) {
+                dot[i].className = dot[i].className.replace(" active", "");
+            }
+            if (n > myslide.length) {
+                counter = 1;
+            }
+            if (n < 1) {
+                counter = myslide.length;
+            }
+            myslide[counter - 1].style.display = "block";
+            dot[counter - 1].className += " active";
+        }
+
+
+
+        const myslide1 = document.querySelectorAll(".container_slider_left-img"),
+            dot1 = document.querySelectorAll(".dot");
+        let counter1 = 1;
+        slidefun1(counter);
+
+        let timer1 = setInterval(autoSlide1, 5000);
+
+        function autoSlide1() {
+            counter += 1;
+            slidefun1(counter1);
+        }
+
+        function plusSlides1(n) {
+            counter1 += n;
+            slidefun1(counter1);
+
+            resetTimer1();
+        }
+
+        function currentSlide1(n) {
+            counter1 = n;
+            slidefun1(counter1);
+            resetTimer1();
+        }
+
+
+        function resetTimer1() {
+            clearInterval(timer1);
+            timer1 = setInterval(autoSlide1, 5000);
+        }
+
+        function slidefun1(n) {
+            let i;
+            for (i = 0; i < myslide1.length; i++) {
+                myslide1[i].style.display = "none";
+            }
+            for (i = 0; i < dot1.length; i++) {
+                dot1[i].className = dot1[i].className.replace(" active", "");
+            }
+            if (n > myslide1.length) {
+                counter1 = 1;
+            }
+            if (n < 1) {
+                counter1 = myslide1.length;
+            }
+            myslide1[counter1 - 1].style.display = "block";
+            dot1[counter1 - 1].className += " active";
+        }
+
+
+
+        var toggle = document.getElementById("toggle").addEventListener("click", function () {
+            var box = document.getElementById("show");
+            var box1 = document.getElementById("hide");
+            if (box.style.display == "block") {
+                box.style.display = "none";
+
+            } else {
+                box.style.display = "block";
+
+            }
+        });
+        document.getElementById("Xemthem").addEventListener("click", function () {
+            var box = document.getElementById("showitem");
+            if (box.style.display == "block") {
+                box.style.display = "none";
+            } else {
+                box.style.display = "block";
+                box.style.display = "flex";
+
+            }
+        });
+        document.getElementById("filter").addEventListener("click", function () {
+            var box = document.getElementById("showfilter");
+            if (box.style.display == "block") {
+                box.style.display = "none";
+            } else {
+                box.style.display = "block";
+            }
+        });
+        document.getElementById("hang").addEventListener("click", function () {
+            var box = document.getElementById("showhang");
+            if (box.style.display == "block") {
+                box.style.display = "none";
+            } else {
+                box.style.display = "block";
+            }
+        });
+
+        document.getElementById("gia").addEventListener("click", function () {
+            var box1 = document.getElementById("showgia");
+            if (box1.style.display == "block") {
+                box1.style.display = "none";
+            } else {
+                box1.style.display = "block";
+            }
+        });
+
+        document.getElementById("screen").addEventListener("click", function () {
+            var box1 = document.getElementById("showscreen");
+            if (box1.style.display == "block") {
+                box1.style.display = "none";
+            } else {
+                box1.style.display = "block";
+            }
+        });
+
+
+        document.getElementById("ram").addEventListener("click", function () {
+            var box1 = document.getElementById("showram");
+            if (box1.style.display == "block") {
+                box1.style.display = "none";
+            } else {
+                box1.style.display = "block";
+            }
+        });
+
+
+        document.getElementById("rom").addEventListener("click", function () {
+            var box1 = document.getElementById("showrom");
+            if (box1.style.display == "block") {
+                box1.style.display = "none";
+            } else {
+                box1.style.display = "block";
+            }
+        });
+        document.getElementById("tinhnang").addEventListener("click", function () {
+            var box1 = document.getElementById("showtinhnang");
+            if (box1.style.display == "block") {
+                box1.style.display = "none";
+            } else {
+                box1.style.display = "block";
+            }
+        });
+        document.getElementById("sort").addEventListener("click", function () {
+            var box1 = document.getElementById("showsort");
+            if (box1.style.display == "block") {
+                box1.style.display = "none";
+            } else {
+                box1.style.display = "block";
+            }
+        });
+    </script>
+</body>
+
+</html>
